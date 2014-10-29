@@ -4,7 +4,7 @@
 //
 //  Created by Casey Cole on 10/29/14.
 //  Copyright (c) 2014 Casey Cole. All rights reserved.
-// hELLOOOO 
+// 
 
 #import <UIKit/UIKit.h>
 
