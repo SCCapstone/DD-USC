@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7FF139371A1505EA0055A95D /* Twitter&Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FF139351A1505EA0055A95D /* Twitter&Facebook.png */; };
-		7FF139381A1505EA0055A95D /* DiscoveryDayPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FF139361A1505EA0055A95D /* DiscoveryDayPic.png */; };
+		BF97622D1A15123F005A5114 /* DiscoveryDayPic.png in Resources */ = {isa = PBXBuildFile; fileRef = BF97622C1A15123F005A5114 /* DiscoveryDayPic.png */; };
+		BF97622F1A151243005A5114 /* Twitter&Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = BF97622E1A151243005A5114 /* Twitter&Facebook.png */; };
 		CDE680F11A015AD50070F870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F01A015AD50070F870 /* main.m */; };
 		CDE680F41A015AD50070F870 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F31A015AD50070F870 /* AppDelegate.m */; };
 		CDE680F71A015AD50070F870 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F61A015AD50070F870 /* RootViewController.m */; };
@@ -31,8 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7FF139351A1505EA0055A95D /* Twitter&Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Twitter&Facebook.png"; path = "../../../../../Desktop/Twitter&Facebook.png"; sourceTree = "<group>"; };
-		7FF139361A1505EA0055A95D /* DiscoveryDayPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DiscoveryDayPic.png; path = ../../../../../Desktop/DiscoveryDayPic.png; sourceTree = "<group>"; };
+		BF97622C1A15123F005A5114 /* DiscoveryDayPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DiscoveryDayPic.png; sourceTree = SOURCE_ROOT; };
+		BF97622E1A151243005A5114 /* Twitter&Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter&Facebook.png"; sourceTree = SOURCE_ROOT; };
 		CDE680EB1A015AD50070F870 /* DD-USC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DD-USC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE680EF1A015AD50070F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE680F01A015AD50070F870 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -110,8 +110,8 @@
 		CDE680EE1A015AD50070F870 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7FF139351A1505EA0055A95D /* Twitter&Facebook.png */,
-				7FF139361A1505EA0055A95D /* DiscoveryDayPic.png */,
+				BF97622E1A151243005A5114 /* Twitter&Facebook.png */,
+				BF97622C1A15123F005A5114 /* DiscoveryDayPic.png */,
 				CDE680EF1A015AD50070F870 /* Info.plist */,
 				CDE680F01A015AD50070F870 /* main.m */,
 			);
@@ -217,8 +217,8 @@
 			files = (
 				CDE681001A015AD50070F870 /* Main.storyboard in Resources */,
 				CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */,
-				7FF139371A1505EA0055A95D /* Twitter&Facebook.png in Resources */,
-				7FF139381A1505EA0055A95D /* DiscoveryDayPic.png in Resources */,
+				BF97622F1A151243005A5114 /* Twitter&Facebook.png in Resources */,
+				BF97622D1A15123F005A5114 /* DiscoveryDayPic.png in Resources */,
 				CDE681021A015AD50070F870 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
