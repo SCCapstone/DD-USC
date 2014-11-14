@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		BF9762351A15147E005A5114 /* DiscoveryDayPic.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9762341A15147E005A5114 /* DiscoveryDayPic.png */; };
 		BF9762371A151483005A5114 /* Twitter&Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9762361A151483005A5114 /* Twitter&Facebook.png */; };
+		BFCACC231A15A61D0099D27D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC221A15A61D0099D27D /* MapViewController.m */; };
+		BFCACC261A15A9480099D27D /* RHLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC251A15A9480099D27D /* RHLocation.m */; };
+		BFCACC291A15AB920099D27D /* RHLocationDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC281A15AB920099D27D /* RHLocationDataController.m */; };
+		BFCACC2B1A15B1020099D27D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCACC2A1A15B1020099D27D /* MapKit.framework */; };
 		CDE680F11A015AD50070F870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F01A015AD50070F870 /* main.m */; };
 		CDE680F41A015AD50070F870 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F31A015AD50070F870 /* AppDelegate.m */; };
 		CDE680F71A015AD50070F870 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F61A015AD50070F870 /* RootViewController.m */; };
@@ -33,6 +37,13 @@
 /* Begin PBXFileReference section */
 		BF9762341A15147E005A5114 /* DiscoveryDayPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DiscoveryDayPic.png; sourceTree = SOURCE_ROOT; };
 		BF9762361A151483005A5114 /* Twitter&Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter&Facebook.png"; sourceTree = SOURCE_ROOT; };
+		BFCACC211A15A61D0099D27D /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		BFCACC221A15A61D0099D27D /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		BFCACC241A15A9480099D27D /* RHLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHLocation.h; sourceTree = "<group>"; };
+		BFCACC251A15A9480099D27D /* RHLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHLocation.m; sourceTree = "<group>"; };
+		BFCACC271A15AB920099D27D /* RHLocationDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHLocationDataController.h; sourceTree = "<group>"; };
+		BFCACC281A15AB920099D27D /* RHLocationDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHLocationDataController.m; sourceTree = "<group>"; };
+		BFCACC2A1A15B1020099D27D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CDE680EB1A015AD50070F870 /* DD-USC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DD-USC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE680EF1A015AD50070F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE680F01A015AD50070F870 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -57,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFCACC2B1A15B1020099D27D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +85,7 @@
 		CDE680E21A015AD50070F870 = {
 			isa = PBXGroup;
 			children = (
+				BFCACC2A1A15B1020099D27D /* MapKit.framework */,
 				CDE680ED1A015AD50070F870 /* DD-USC */,
 				CDE6810D1A015AD50070F870 /* DD-USCTests */,
 				CDE680EC1A015AD50070F870 /* Products */,
@@ -100,6 +113,12 @@
 				CDE680FB1A015AD50070F870 /* ModelController.h */,
 				CDE680FC1A015AD50070F870 /* ModelController.m */,
 				CDE680FE1A015AD50070F870 /* Main.storyboard */,
+				BFCACC241A15A9480099D27D /* RHLocation.h */,
+				BFCACC251A15A9480099D27D /* RHLocation.m */,
+				BFCACC271A15AB920099D27D /* RHLocationDataController.h */,
+				BFCACC281A15AB920099D27D /* RHLocationDataController.m */,
+				BFCACC211A15A61D0099D27D /* MapViewController.h */,
+				BFCACC221A15A61D0099D27D /* MapViewController.m */,
 				CDE681011A015AD50070F870 /* Images.xcassets */,
 				CDE681031A015AD50070F870 /* LaunchScreen.xib */,
 				CDE680EE1A015AD50070F870 /* Supporting Files */,
@@ -237,10 +256,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFCACC261A15A9480099D27D /* RHLocation.m in Sources */,
 				CDE680FA1A015AD50070F870 /* DataViewController.m in Sources */,
 				CDE680F41A015AD50070F870 /* AppDelegate.m in Sources */,
 				CDE680FD1A015AD50070F870 /* ModelController.m in Sources */,
+				BFCACC231A15A61D0099D27D /* MapViewController.m in Sources */,
 				CDE680F11A015AD50070F870 /* main.m in Sources */,
+				BFCACC291A15AB920099D27D /* RHLocationDataController.m in Sources */,
 				CDE680F71A015AD50070F870 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

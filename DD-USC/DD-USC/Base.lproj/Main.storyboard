@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dFP-6k-boM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cZo-Gp-4Ks">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
@@ -99,6 +100,9 @@
                                 <state key="normal" title="Map">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="gPh-gs-XPC" kind="show" id="Og0-7i-Mjg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2W-v6-aNc">
                                 <rect key="frame" x="114" y="424" width="147" height="30"/>
@@ -137,15 +141,79 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="03y-ud-hKE"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a0P-hV-Vyv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2704.5" y="-1750.5"/>
+            <point key="canvasLocation" x="-2072.5" y="-1757.5"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="ctu-SV-NTd">
+            <objects>
+                <viewController id="gPh-gs-XPC" customClass="MapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TNG-m9-JfA"/>
+                        <viewControllerLayoutGuide type="bottom" id="V2F-Ox-mpX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VmJ-VK-vJZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bDq-G8-w1L">
+                                <rect key="frame" x="47" y="72" width="280" height="250"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1400 Greene St, Columbia, SC 29208" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cw-bh-leW">
+                                <rect key="frame" x="42" y="342" width="290" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.62065972219999999" green="0.077416089120000003" blue="0.1086289384" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bDq-G8-w1L" firstAttribute="top" secondItem="TNG-m9-JfA" secondAttribute="bottom" constant="8" symbolic="YES" id="6QW-1J-YOx"/>
+                            <constraint firstItem="6cw-bh-leW" firstAttribute="top" secondItem="bDq-G8-w1L" secondAttribute="bottom" constant="20" id="Ceo-GP-grD"/>
+                            <constraint firstAttribute="centerY" secondItem="bDq-G8-w1L" secondAttribute="centerY" constant="136.5" id="Fjl-Ge-s92"/>
+                            <constraint firstItem="bDq-G8-w1L" firstAttribute="leading" secondItem="6cw-bh-leW" secondAttribute="leading" constant="5" id="Kwv-9e-Nur"/>
+                            <constraint firstAttribute="centerX" secondItem="bDq-G8-w1L" secondAttribute="centerX" constant="0.5" id="WGg-Ws-kdr"/>
+                            <constraint firstAttribute="centerY" secondItem="6cw-bh-leW" secondAttribute="centerY" constant="-17.5" id="YQe-r1-glC"/>
+                            <constraint firstItem="bDq-G8-w1L" firstAttribute="leading" secondItem="VmJ-VK-vJZ" secondAttribute="leadingMargin" constant="31" id="loQ-3M-Gds"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="6cw-bh-leW" id="DnV-Dy-CI2"/>
+                        <outlet property="mapView" destination="bDq-G8-w1L" id="R1m-I4-gfC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDS-rC-STm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2072.5" y="-951.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2iJ-Bj-ls8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cZo-Gp-4Ks" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sjg-bW-U3E">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dFP-6k-boM" kind="relationship" relationship="rootViewController" id="Qex-Bi-yCN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BoQ-1C-Wu9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2705" y="-1751"/>
         </scene>
     </scenes>
     <resources>
         <image name="DiscoveryDayPic.png" width="182" height="115"/>
         <image name="Twitter&amp;Facebook.png" width="262" height="67"/>
     </resources>
+    <color key="tintColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
