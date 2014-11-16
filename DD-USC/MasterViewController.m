@@ -35,7 +35,7 @@
     self.abstractsInfos = [AbstractsDB database].abstractsInfos;
     self.title = @"Abstracts";
     
-    //self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -57,13 +57,14 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"searchDetails"])
+    if ([[segue identifier] isEqualToString:@"showDetails"])
     {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         DetailViewController *controller = segue.destinationViewController;
         controller.abstract = [_abstractsInfos objectAtIndex:indexPath.row];
-        //[controller setDetailItem:object];
-        //controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
+        controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
+
+        
         controller.navigationItem.leftItemsSupplementBackButton = YES;
     }
 }

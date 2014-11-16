@@ -17,8 +17,9 @@
     UILabel *_locationLabel;
     int _uniqueId;
 }
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 
 
 @property (strong, nonatomic) id detailItem;

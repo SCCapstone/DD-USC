@@ -41,6 +41,7 @@
     {
         self.detailDescriptionLabel.text = [self.detailItem description];
     }
+    self.nameLabel.text = _abstract.name;
 }
 
 

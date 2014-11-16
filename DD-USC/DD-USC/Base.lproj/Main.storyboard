@@ -104,13 +104,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIf-dG-b4Z">
-                                <rect key="frame" x="145" y="82" width="33" height="21"/>
+                                <rect key="frame" x="6" y="82" width="315" height="82"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFt-Rq-gJM">
-                                <rect key="frame" x="138" y="111" width="46" height="21"/>
+                                <rect key="frame" x="16" y="167" width="359" height="118"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -118,15 +118,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="KSq-JW-bFK"/>
+                    <navigationItem key="navigationItem" title="Details" id="KSq-JW-bFK">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="L2O-K1-gBT"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="nameLabel" destination="eFt-Rq-gJM" id="pDe-e1-73Q"/>
-                        <outlet property="titleLabel" destination="ZIf-dG-b4Z" id="WBO-4j-kEL"/>
+                        <outlet property="nameLabel" destination="eFt-Rq-gJM" id="2xM-FN-ORU"/>
+                        <outlet property="titleLabel" destination="ZIf-dG-b4Z" id="Fkj-Hd-HWI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZO-YA-16u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-648.5" y="-1694.5"/>
+            <point key="canvasLocation" x="-848.5" y="-1757.5"/>
         </scene>
         <!--Root View-->
         <scene sceneID="4eh-Cl-1Vy">
@@ -157,7 +159,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="soM-rw-LWT" kind="showDetail" identifier="@searchDetails" id="dj2-jG-EnA"/>
+                                    <segue destination="soM-rw-LWT" kind="show" identifier="@showDetails" id="Rok-Db-ClQ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -170,7 +172,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="am1-oF-1i8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1160" y="-1694"/>
+            <point key="canvasLocation" x="-1468.5" y="-1757.5"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="ctu-SV-NTd">
