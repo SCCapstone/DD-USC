@@ -13,6 +13,10 @@
 		BFCACC261A15A9480099D27D /* RHLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC251A15A9480099D27D /* RHLocation.m */; };
 		BFCACC291A15AB920099D27D /* RHLocationDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC281A15AB920099D27D /* RHLocationDataController.m */; };
 		BFCACC2B1A15B1020099D27D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCACC2A1A15B1020099D27D /* MapKit.framework */; };
+		CDA02B7B1A17ACBE00D3CD5E /* AbstractsDB.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA02B7A1A17ACBE00D3CD5E /* AbstractsDB.m */; };
+		CDA02B7D1A17ACDE00D3CD5E /* Abstracts.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA02B7C1A17ACDE00D3CD5E /* Abstracts.m */; };
+		CDA02B821A17AD1900D3CD5E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA02B7F1A17AD1900D3CD5E /* DetailViewController.m */; };
+		CDA02B831A17AD1900D3CD5E /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA02B811A17AD1900D3CD5E /* MasterViewController.m */; };
 		CDE680F11A015AD50070F870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F01A015AD50070F870 /* main.m */; };
 		CDE680F41A015AD50070F870 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F31A015AD50070F870 /* AppDelegate.m */; };
 		CDE680F71A015AD50070F870 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F61A015AD50070F870 /* RootViewController.m */; };
@@ -22,6 +26,8 @@
 		CDE681021A015AD50070F870 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE681011A015AD50070F870 /* Images.xcassets */; };
 		CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE681031A015AD50070F870 /* LaunchScreen.xib */; };
 		CDE681111A015AD50070F870 /* DD_USCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE681101A015AD50070F870 /* DD_USCTests.m */; };
+		CDE681E51A168C2F0070F870 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE681E41A168C2F0070F870 /* libsqlite3.dylib */; };
+		CDE681E71A168C430070F870 /* test_db.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = CDE681E61A168C430070F870 /* test_db.sqlite3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,14 @@
 		BFCACC271A15AB920099D27D /* RHLocationDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHLocationDataController.h; sourceTree = "<group>"; };
 		BFCACC281A15AB920099D27D /* RHLocationDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHLocationDataController.m; sourceTree = "<group>"; };
 		BFCACC2A1A15B1020099D27D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CDA02B791A17ACBE00D3CD5E /* AbstractsDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractsDB.h; path = ../AbstractsDB.h; sourceTree = "<group>"; };
+		CDA02B7A1A17ACBE00D3CD5E /* AbstractsDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractsDB.m; path = ../AbstractsDB.m; sourceTree = "<group>"; };
+		CDA02B7C1A17ACDE00D3CD5E /* Abstracts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Abstracts.m; path = ../Abstracts.m; sourceTree = "<group>"; };
+		CDA02B7E1A17ACEF00D3CD5E /* Abstracts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Abstracts.h; path = ../Abstracts.h; sourceTree = "<group>"; };
+		CDA02B7F1A17AD1900D3CD5E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
+		CDA02B801A17AD1900D3CD5E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
+		CDA02B811A17AD1900D3CD5E /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = ../MasterViewController.m; sourceTree = "<group>"; };
+		CDA02B841A17AD2500D3CD5E /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = ../MasterViewController.h; sourceTree = "<group>"; };
 		CDE680EB1A015AD50070F870 /* DD-USC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DD-USC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE680EF1A015AD50070F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE680F01A015AD50070F870 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -61,6 +75,8 @@
 		CDE6810A1A015AD50070F870 /* DD-USCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DD-USCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE6810F1A015AD50070F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE681101A015AD50070F870 /* DD_USCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DD_USCTests.m; sourceTree = "<group>"; };
+		CDE681E41A168C2F0070F870 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CDE681E61A168C430070F870 /* test_db.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = test_db.sqlite3; path = ../../../../test_db.sqlite3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE681E51A168C2F0070F870 /* libsqlite3.dylib in Frameworks */,
 				BFCACC2B1A15B1020099D27D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +102,8 @@
 		CDE680E21A015AD50070F870 = {
 			isa = PBXGroup;
 			children = (
+				CDE681E61A168C430070F870 /* test_db.sqlite3 */,
+				CDE681E41A168C2F0070F870 /* libsqlite3.dylib */,
 				BFCACC2A1A15B1020099D27D /* MapKit.framework */,
 				CDE680ED1A015AD50070F870 /* DD-USC */,
 				CDE6810D1A015AD50070F870 /* DD-USCTests */,
@@ -119,6 +138,14 @@
 				BFCACC281A15AB920099D27D /* RHLocationDataController.m */,
 				BFCACC211A15A61D0099D27D /* MapViewController.h */,
 				BFCACC221A15A61D0099D27D /* MapViewController.m */,
+				CDA02B7E1A17ACEF00D3CD5E /* Abstracts.h */,
+				CDA02B7C1A17ACDE00D3CD5E /* Abstracts.m */,
+				CDA02B791A17ACBE00D3CD5E /* AbstractsDB.h */,
+				CDA02B7A1A17ACBE00D3CD5E /* AbstractsDB.m */,
+				CDA02B841A17AD2500D3CD5E /* MasterViewController.h */,
+				CDA02B811A17AD1900D3CD5E /* MasterViewController.m */,
+				CDA02B801A17AD1900D3CD5E /* DetailViewController.h */,
+				CDA02B7F1A17AD1900D3CD5E /* DetailViewController.m */,
 				CDE681011A015AD50070F870 /* Images.xcassets */,
 				CDE681031A015AD50070F870 /* LaunchScreen.xib */,
 				CDE680EE1A015AD50070F870 /* Supporting Files */,
@@ -237,6 +264,7 @@
 				CDE681001A015AD50070F870 /* Main.storyboard in Resources */,
 				CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */,
 				BF9762371A151483005A5114 /* Twitter&Facebook.png in Resources */,
+				CDE681E71A168C430070F870 /* test_db.sqlite3 in Resources */,
 				BF9762351A15147E005A5114 /* DiscoveryDayPic.png in Resources */,
 				CDE681021A015AD50070F870 /* Images.xcassets in Resources */,
 			);
@@ -257,13 +285,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFCACC261A15A9480099D27D /* RHLocation.m in Sources */,
+				CDA02B7B1A17ACBE00D3CD5E /* AbstractsDB.m in Sources */,
 				CDE680FA1A015AD50070F870 /* DataViewController.m in Sources */,
 				CDE680F41A015AD50070F870 /* AppDelegate.m in Sources */,
+				CDA02B831A17AD1900D3CD5E /* MasterViewController.m in Sources */,
 				CDE680FD1A015AD50070F870 /* ModelController.m in Sources */,
 				BFCACC231A15A61D0099D27D /* MapViewController.m in Sources */,
 				CDE680F11A015AD50070F870 /* main.m in Sources */,
+				CDA02B821A17AD1900D3CD5E /* DetailViewController.m in Sources */,
 				BFCACC291A15AB920099D27D /* RHLocationDataController.m in Sources */,
 				CDE680F71A015AD50070F870 /* RootViewController.m in Sources */,
+				CDA02B7D1A17ACDE00D3CD5E /* Abstracts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

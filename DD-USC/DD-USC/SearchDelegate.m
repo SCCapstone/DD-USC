@@ -1,23 +1,34 @@
 //
-//  AppDelegate.m
+//  SearchDelegate.m
 //  DD-USC
 //
-//  Created by Casey Cole on 10/29/14.
+//  Created by Casey Cole on 11/14/14.
 //  Copyright (c) 2014 Casey Cole. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "SearchDelegate.h"
+#import "DetailViewController.h"
+#import "AbstractsDB.h"
+#import "Abstracts.h"
 
-
-@interface AppDelegate () <UISplitViewControllerDelegate>
+@interface SearchDelegate () <UISplitViewControllerDelegate>
 
 @end
 
-@implementation AppDelegate
+@implementation SearchDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
+    UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
+    navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
+    splitViewController.delegate = self;
+    NSArray *abstractsInfos = [AbstractsDB database].abstractsInfos;
+    for (Abstracts *info in abstractsInfos)
+    {
+        NSLog(@"%d: %@, %@, %@ %@", info.uniqueId, info.name, info.title, info.time, info.location);
+    }
     return YES;
 }
 
@@ -43,5 +54,15 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - Split view
+
+- (BOOL)splitViewController:(UISplitViewController *)splitViewController collapseSecondaryViewController:(UIViewController *)secondaryViewController ontoPrimaryViewController:(UIViewController *)primaryViewController {
+    if ([secondaryViewController isKindOfClass:[UINavigationController class]] && [[(UINavigationController *)secondaryViewController topViewController] isKindOfClass:[DetailViewController class]] && ([(DetailViewController *)[(UINavigationController *)secondaryViewController topViewController] detailItem] == nil)) {
+        // Return YES to indicate that we have handled the collapse by doing nothing; the secondary controller will be discarded.
+        return YES;
+    } else {
+        return NO;
+    }
+}
 
 @end
