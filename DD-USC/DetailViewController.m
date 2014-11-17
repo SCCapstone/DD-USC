@@ -54,6 +54,8 @@
     self.timeLabel.text = _abstract.time;
     self.locationLabel.text = _abstract.location;
     
+    NSLog(@"%d: %@, %@ ", _abstract.uniqueId, _abstract.name, _abstract.title);
+    
     [self configureView];
 }
 

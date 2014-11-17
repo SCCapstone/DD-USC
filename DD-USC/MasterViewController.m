@@ -18,6 +18,8 @@
 
 @implementation MasterViewController
 
+@synthesize abstractsInfos = _abstractsInfos;
+
 
 - (void)awakeFromNib
 {
@@ -64,8 +66,9 @@
         controller.abstract = [_abstractsInfos objectAtIndex:indexPath.row];
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
 
-        
         controller.navigationItem.leftItemsSupplementBackButton = YES;
+        //NSLog(@"%@ ", @"hello");
+
     }
 }
 
