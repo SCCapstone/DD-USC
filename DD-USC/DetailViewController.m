@@ -18,8 +18,8 @@
 
 #pragma mark - Managing the detail item
 
-@synthesize nameLabel = _nameLabel;
-@synthesize titleLabel = _titleLabel;
+@synthesize nameLabel;
+@synthesize titleLabel;
 @synthesize timeLabel = _timeLabel;
 @synthesize locationLabel = _locationLabel;
 @synthesize uniqueId = _uniqueId;
@@ -41,7 +41,7 @@
     {
         self.detailDescriptionLabel.text = [self.detailItem description];
     }
-    self.nameLabel.text = _abstract.name;
+    //self.nameLabel.text = _abstract.name;
 }
 
 
@@ -50,11 +50,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.nameLabel.text = _abstract.name;
+    //self.nameLabel.text = @"Testing Name Label";
     self.titleLabel.text = _abstract.title;
-    self.timeLabel.text = _abstract.time;
-    self.locationLabel.text = _abstract.location;
+    //self.timeLabel.text = _abstract.time;
+    //self.locationLabel.text = _abstract.location;
     
-    NSLog(@"%d: %@, %@ ", _abstract.uniqueId, _abstract.name, _abstract.title);
+   // NSLog(@"%d: %@, %@ ", details.uniqueId, details.name, details.title);
     
     [self configureView];
 }

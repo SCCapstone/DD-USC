@@ -17,6 +17,6 @@
 
 + (AbstractsDB*)database;
 - (NSArray *)abstractsInfos;
-//- (Abstracts *)abstractsInfos:(int)uniqueId;
+//- (Abstracts *)abstractsDetails:(int)uniqueId;
 
 @end

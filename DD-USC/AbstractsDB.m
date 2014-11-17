@@ -61,10 +61,10 @@ static AbstractsDB *_database;
     
 }
 
-/*- (Abstracts *)abstractsInfos:(int)uniqueId
+/*- (Abstracts *)abstractsDetails:(int)uniqueId
 {
     Abstracts *retval = nil;
-    NSString *query = @"SELECT id, name, title, time, location FROM abstracts";
+    NSString *query = [NSString stringWithFormat:@"SELECT id, name, title, time, location FROM abstracts WHERE id = %d", uniqueId];
     sqlite3_stmt *statement;
     if (sqlite3_prepare_v2(_database, [query UTF8String], -1, &statement, nil) == SQLITE_OK) {
         while (sqlite3_step(statement) == SQLITE_ROW) {

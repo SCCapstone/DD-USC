@@ -11,9 +11,9 @@
 #import "Abstracts.h"
 #import "AbstractsDB.h"
 
+
 @interface MasterViewController ()
 
-@property NSMutableArray *objects;
 @end
 
 @implementation MasterViewController
@@ -62,13 +62,12 @@
     if ([[segue identifier] isEqualToString:@"showDetails"])
     {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        DetailViewController *controller = segue.destinationViewController;
+        //DetailViewController *controller = segue.destinationViewController;
+        DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
         controller.abstract = [_abstractsInfos objectAtIndex:indexPath.row];
+        
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
-
         controller.navigationItem.leftItemsSupplementBackButton = YES;
-        //NSLog(@"%@ ", @"hello");
-
     }
 }
 
