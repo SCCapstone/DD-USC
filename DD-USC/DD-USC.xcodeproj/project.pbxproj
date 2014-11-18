@@ -13,6 +13,7 @@
 		BFCACC261A15A9480099D27D /* RHLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC251A15A9480099D27D /* RHLocation.m */; };
 		BFCACC291A15AB920099D27D /* RHLocationDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC281A15AB920099D27D /* RHLocationDataController.m */; };
 		BFCACC2B1A15B1020099D27D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCACC2A1A15B1020099D27D /* MapKit.framework */; };
+		BFFDFC9A1A1BC5C800F1D5E6 /* test_db.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = BFFDFC991A1BC5C800F1D5E6 /* test_db.sqlite3 */; };
 		CDA02B7B1A17ACBE00D3CD5E /* AbstractsDB.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA02B7A1A17ACBE00D3CD5E /* AbstractsDB.m */; };
 		CDA02B7D1A17ACDE00D3CD5E /* Abstracts.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA02B7C1A17ACDE00D3CD5E /* Abstracts.m */; };
 		CDA02B821A17AD1900D3CD5E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA02B7F1A17AD1900D3CD5E /* DetailViewController.m */; };
@@ -27,7 +28,6 @@
 		CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE681031A015AD50070F870 /* LaunchScreen.xib */; };
 		CDE681111A015AD50070F870 /* DD_USCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE681101A015AD50070F870 /* DD_USCTests.m */; };
 		CDE681E51A168C2F0070F870 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE681E41A168C2F0070F870 /* libsqlite3.dylib */; };
-		CDE681E71A168C430070F870 /* test_db.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = CDE681E61A168C430070F870 /* test_db.sqlite3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +50,7 @@
 		BFCACC271A15AB920099D27D /* RHLocationDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHLocationDataController.h; sourceTree = "<group>"; };
 		BFCACC281A15AB920099D27D /* RHLocationDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHLocationDataController.m; sourceTree = "<group>"; };
 		BFCACC2A1A15B1020099D27D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BFFDFC991A1BC5C800F1D5E6 /* test_db.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = test_db.sqlite3; path = "DD-USC/test_db.sqlite3"; sourceTree = "<group>"; };
 		CDA02B791A17ACBE00D3CD5E /* AbstractsDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractsDB.h; path = ../AbstractsDB.h; sourceTree = "<group>"; };
 		CDA02B7A1A17ACBE00D3CD5E /* AbstractsDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractsDB.m; path = ../AbstractsDB.m; sourceTree = "<group>"; };
 		CDA02B7C1A17ACDE00D3CD5E /* Abstracts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Abstracts.m; path = ../Abstracts.m; sourceTree = "<group>"; };
@@ -76,7 +77,6 @@
 		CDE6810F1A015AD50070F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE681101A015AD50070F870 /* DD_USCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DD_USCTests.m; sourceTree = "<group>"; };
 		CDE681E41A168C2F0070F870 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		CDE681E61A168C430070F870 /* test_db.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = test_db.sqlite3; path = ../../../../test_db.sqlite3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 		CDE680E21A015AD50070F870 = {
 			isa = PBXGroup;
 			children = (
-				CDE681E61A168C430070F870 /* test_db.sqlite3 */,
+				BFFDFC991A1BC5C800F1D5E6 /* test_db.sqlite3 */,
 				CDE681E41A168C2F0070F870 /* libsqlite3.dylib */,
 				BFCACC2A1A15B1020099D27D /* MapKit.framework */,
 				CDE680ED1A015AD50070F870 /* DD-USC */,
@@ -264,8 +264,8 @@
 				CDE681001A015AD50070F870 /* Main.storyboard in Resources */,
 				CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */,
 				BF9762371A151483005A5114 /* Twitter&Facebook.png in Resources */,
-				CDE681E71A168C430070F870 /* test_db.sqlite3 in Resources */,
 				BF9762351A15147E005A5114 /* DiscoveryDayPic.png in Resources */,
+				BFFDFC9A1A1BC5C800F1D5E6 /* test_db.sqlite3 in Resources */,
 				CDE681021A015AD50070F870 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
