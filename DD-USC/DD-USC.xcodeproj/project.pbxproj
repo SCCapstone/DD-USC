@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF9762351A15147E005A5114 /* DiscoveryDayPic.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9762341A15147E005A5114 /* DiscoveryDayPic.png */; };
-		BF9762371A151483005A5114 /* Twitter&Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9762361A151483005A5114 /* Twitter&Facebook.png */; };
+		BF1D2BCB1A1D0500001E88FF /* Abstracts.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D2BCA1A1D0500001E88FF /* Abstracts.m */; };
+		BF1D2BCE1A1D05D8001E88FF /* AbstractsDB.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D2BCD1A1D05D8001E88FF /* AbstractsDB.m */; };
+		BF1D2BD11A1D069E001E88FF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D2BD01A1D069E001E88FF /* DetailViewController.m */; };
+		BF1D2BD41A1D06FA001E88FF /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D2BD31A1D06FA001E88FF /* MasterViewController.m */; };
+		BF1D2BD61A1D0708001E88FF /* Twitter&Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1D2BD51A1D0708001E88FF /* Twitter&Facebook.png */; };
+		BF1D2BD81A1D070F001E88FF /* DiscoveryDayPic.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1D2BD71A1D070F001E88FF /* DiscoveryDayPic.png */; };
 		BFCACC231A15A61D0099D27D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC221A15A61D0099D27D /* MapViewController.m */; };
 		BFCACC261A15A9480099D27D /* RHLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC251A15A9480099D27D /* RHLocation.m */; };
 		BFCACC291A15AB920099D27D /* RHLocationDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC281A15AB920099D27D /* RHLocationDataController.m */; };
 		BFCACC2B1A15B1020099D27D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCACC2A1A15B1020099D27D /* MapKit.framework */; };
 		BFFDFC9A1A1BC5C800F1D5E6 /* test_db.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = BFFDFC991A1BC5C800F1D5E6 /* test_db.sqlite3 */; };
-		CDA02B7B1A17ACBE00D3CD5E /* AbstractsDB.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA02B7A1A17ACBE00D3CD5E /* AbstractsDB.m */; };
-		CDA02B7D1A17ACDE00D3CD5E /* Abstracts.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA02B7C1A17ACDE00D3CD5E /* Abstracts.m */; };
-		CDA02B821A17AD1900D3CD5E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA02B7F1A17AD1900D3CD5E /* DetailViewController.m */; };
-		CDA02B831A17AD1900D3CD5E /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA02B811A17AD1900D3CD5E /* MasterViewController.m */; };
 		CDE680F11A015AD50070F870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F01A015AD50070F870 /* main.m */; };
 		CDE680F41A015AD50070F870 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F31A015AD50070F870 /* AppDelegate.m */; };
 		CDE680F71A015AD50070F870 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F61A015AD50070F870 /* RootViewController.m */; };
@@ -41,8 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BF9762341A15147E005A5114 /* DiscoveryDayPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DiscoveryDayPic.png; sourceTree = SOURCE_ROOT; };
-		BF9762361A151483005A5114 /* Twitter&Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter&Facebook.png"; sourceTree = SOURCE_ROOT; };
+		BF1D2BC91A1D04F3001E88FF /* Abstracts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Abstracts.h; sourceTree = "<group>"; };
+		BF1D2BCA1A1D0500001E88FF /* Abstracts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Abstracts.m; sourceTree = "<group>"; };
+		BF1D2BCC1A1D05CE001E88FF /* AbstractsDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractsDB.h; sourceTree = "<group>"; };
+		BF1D2BCD1A1D05D8001E88FF /* AbstractsDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractsDB.m; sourceTree = "<group>"; };
+		BF1D2BCF1A1D068E001E88FF /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		BF1D2BD01A1D069E001E88FF /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		BF1D2BD21A1D06EB001E88FF /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		BF1D2BD31A1D06FA001E88FF /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		BF1D2BD51A1D0708001E88FF /* Twitter&Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter&Facebook.png"; sourceTree = "<group>"; };
+		BF1D2BD71A1D070F001E88FF /* DiscoveryDayPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DiscoveryDayPic.png; sourceTree = "<group>"; };
 		BFCACC211A15A61D0099D27D /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		BFCACC221A15A61D0099D27D /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		BFCACC241A15A9480099D27D /* RHLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHLocation.h; sourceTree = "<group>"; };
@@ -51,14 +59,6 @@
 		BFCACC281A15AB920099D27D /* RHLocationDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHLocationDataController.m; sourceTree = "<group>"; };
 		BFCACC2A1A15B1020099D27D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BFFDFC991A1BC5C800F1D5E6 /* test_db.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = test_db.sqlite3; path = "DD-USC/test_db.sqlite3"; sourceTree = "<group>"; };
-		CDA02B791A17ACBE00D3CD5E /* AbstractsDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractsDB.h; path = ../AbstractsDB.h; sourceTree = "<group>"; };
-		CDA02B7A1A17ACBE00D3CD5E /* AbstractsDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractsDB.m; path = ../AbstractsDB.m; sourceTree = "<group>"; };
-		CDA02B7C1A17ACDE00D3CD5E /* Abstracts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Abstracts.m; path = ../Abstracts.m; sourceTree = "<group>"; };
-		CDA02B7E1A17ACEF00D3CD5E /* Abstracts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Abstracts.h; path = ../Abstracts.h; sourceTree = "<group>"; };
-		CDA02B7F1A17AD1900D3CD5E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
-		CDA02B801A17AD1900D3CD5E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
-		CDA02B811A17AD1900D3CD5E /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = ../MasterViewController.m; sourceTree = "<group>"; };
-		CDA02B841A17AD2500D3CD5E /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = ../MasterViewController.h; sourceTree = "<group>"; };
 		CDE680EB1A015AD50070F870 /* DD-USC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DD-USC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE680EF1A015AD50070F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE680F01A015AD50070F870 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -138,14 +138,14 @@
 				BFCACC281A15AB920099D27D /* RHLocationDataController.m */,
 				BFCACC211A15A61D0099D27D /* MapViewController.h */,
 				BFCACC221A15A61D0099D27D /* MapViewController.m */,
-				CDA02B7E1A17ACEF00D3CD5E /* Abstracts.h */,
-				CDA02B7C1A17ACDE00D3CD5E /* Abstracts.m */,
-				CDA02B791A17ACBE00D3CD5E /* AbstractsDB.h */,
-				CDA02B7A1A17ACBE00D3CD5E /* AbstractsDB.m */,
-				CDA02B841A17AD2500D3CD5E /* MasterViewController.h */,
-				CDA02B811A17AD1900D3CD5E /* MasterViewController.m */,
-				CDA02B801A17AD1900D3CD5E /* DetailViewController.h */,
-				CDA02B7F1A17AD1900D3CD5E /* DetailViewController.m */,
+				BF1D2BC91A1D04F3001E88FF /* Abstracts.h */,
+				BF1D2BCA1A1D0500001E88FF /* Abstracts.m */,
+				BF1D2BCC1A1D05CE001E88FF /* AbstractsDB.h */,
+				BF1D2BCD1A1D05D8001E88FF /* AbstractsDB.m */,
+				BF1D2BD21A1D06EB001E88FF /* MasterViewController.h */,
+				BF1D2BD31A1D06FA001E88FF /* MasterViewController.m */,
+				BF1D2BCF1A1D068E001E88FF /* DetailViewController.h */,
+				BF1D2BD01A1D069E001E88FF /* DetailViewController.m */,
 				CDE681011A015AD50070F870 /* Images.xcassets */,
 				CDE681031A015AD50070F870 /* LaunchScreen.xib */,
 				CDE680EE1A015AD50070F870 /* Supporting Files */,
@@ -156,8 +156,8 @@
 		CDE680EE1A015AD50070F870 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BF9762361A151483005A5114 /* Twitter&Facebook.png */,
-				BF9762341A15147E005A5114 /* DiscoveryDayPic.png */,
+				BF1D2BD71A1D070F001E88FF /* DiscoveryDayPic.png */,
+				BF1D2BD51A1D0708001E88FF /* Twitter&Facebook.png */,
 				CDE680EF1A015AD50070F870 /* Info.plist */,
 				CDE680F01A015AD50070F870 /* main.m */,
 			);
@@ -261,10 +261,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1D2BD81A1D070F001E88FF /* DiscoveryDayPic.png in Resources */,
 				CDE681001A015AD50070F870 /* Main.storyboard in Resources */,
 				CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */,
-				BF9762371A151483005A5114 /* Twitter&Facebook.png in Resources */,
-				BF9762351A15147E005A5114 /* DiscoveryDayPic.png in Resources */,
+				BF1D2BD61A1D0708001E88FF /* Twitter&Facebook.png in Resources */,
 				BFFDFC9A1A1BC5C800F1D5E6 /* test_db.sqlite3 in Resources */,
 				CDE681021A015AD50070F870 /* Images.xcassets in Resources */,
 			);
@@ -285,17 +285,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFCACC261A15A9480099D27D /* RHLocation.m in Sources */,
-				CDA02B7B1A17ACBE00D3CD5E /* AbstractsDB.m in Sources */,
+				BF1D2BCE1A1D05D8001E88FF /* AbstractsDB.m in Sources */,
+				BF1D2BD41A1D06FA001E88FF /* MasterViewController.m in Sources */,
+				BF1D2BCB1A1D0500001E88FF /* Abstracts.m in Sources */,
 				CDE680FA1A015AD50070F870 /* DataViewController.m in Sources */,
 				CDE680F41A015AD50070F870 /* AppDelegate.m in Sources */,
-				CDA02B831A17AD1900D3CD5E /* MasterViewController.m in Sources */,
 				CDE680FD1A015AD50070F870 /* ModelController.m in Sources */,
 				BFCACC231A15A61D0099D27D /* MapViewController.m in Sources */,
 				CDE680F11A015AD50070F870 /* main.m in Sources */,
-				CDA02B821A17AD1900D3CD5E /* DetailViewController.m in Sources */,
+				BF1D2BD11A1D069E001E88FF /* DetailViewController.m in Sources */,
 				BFCACC291A15AB920099D27D /* RHLocationDataController.m in Sources */,
 				CDE680F71A015AD50070F870 /* RootViewController.m in Sources */,
-				CDA02B7D1A17ACDE00D3CD5E /* Abstracts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

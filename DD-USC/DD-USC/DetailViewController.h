@@ -1,8 +1,8 @@
 //
 //  DetailViewController.h
-//  DD-USC
+//  Abstracts_take3
 //
-//  Created by Casey Cole on 11/14/14.
+//  Created by Casey Cole on 11/12/14.
 //  Copyright (c) 2014 Casey Cole. All rights reserved.
 //
 
@@ -17,8 +17,10 @@
     UILabel *_locationLabel;
     int _uniqueId;
 }
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 
 
 @property (strong, nonatomic) id detailItem;
@@ -31,3 +33,4 @@
 
 
 @end
+

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cZo-Gp-4Ks">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cZo-Gp-4Ks">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -206,11 +206,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bDq-G8-w1L">
-                                <rect key="frame" x="47" y="72" width="280" height="250"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" translatesAutoresizingMaskIntoConstraints="NO" id="bDq-G8-w1L">
+                                <rect key="frame" x="42" y="72" width="295" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="IdR-lZ-BeV"/>
+                                    <constraint firstAttribute="height" constant="250" id="O6F-Ne-You"/>
+                                </constraints>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1400 Greene St, Columbia, SC 29208" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cw-bh-leW">
-                                <rect key="frame" x="42" y="342" width="290" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1400 Greene St, Columbia, SC 29208" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cw-bh-leW">
+                                <rect key="frame" x="45" y="342" width="288" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -221,10 +225,10 @@
                             <constraint firstItem="bDq-G8-w1L" firstAttribute="top" secondItem="TNG-m9-JfA" secondAttribute="bottom" constant="8" symbolic="YES" id="6QW-1J-YOx"/>
                             <constraint firstItem="6cw-bh-leW" firstAttribute="top" secondItem="bDq-G8-w1L" secondAttribute="bottom" constant="20" id="Ceo-GP-grD"/>
                             <constraint firstAttribute="centerY" secondItem="bDq-G8-w1L" secondAttribute="centerY" constant="136.5" id="Fjl-Ge-s92"/>
-                            <constraint firstItem="bDq-G8-w1L" firstAttribute="leading" secondItem="6cw-bh-leW" secondAttribute="leading" constant="5" id="Kwv-9e-Nur"/>
-                            <constraint firstAttribute="centerX" secondItem="bDq-G8-w1L" secondAttribute="centerX" constant="0.5" id="WGg-Ws-kdr"/>
+                            <constraint firstItem="bDq-G8-w1L" firstAttribute="leading" secondItem="6cw-bh-leW" secondAttribute="leading" constant="-3" id="Kwv-9e-Nur"/>
+                            <constraint firstAttribute="centerX" secondItem="bDq-G8-w1L" secondAttribute="centerX" constant="-2" id="WGg-Ws-kdr"/>
                             <constraint firstAttribute="centerY" secondItem="6cw-bh-leW" secondAttribute="centerY" constant="-17.5" id="YQe-r1-glC"/>
-                            <constraint firstItem="bDq-G8-w1L" firstAttribute="leading" secondItem="VmJ-VK-vJZ" secondAttribute="leadingMargin" constant="31" id="loQ-3M-Gds"/>
+                            <constraint firstItem="bDq-G8-w1L" firstAttribute="leading" secondItem="VmJ-VK-vJZ" secondAttribute="leadingMargin" constant="26" id="loQ-3M-Gds"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
