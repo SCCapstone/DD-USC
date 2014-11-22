@@ -19,6 +19,7 @@
 @implementation MasterViewController
 
 @synthesize abstractsInfos;
+@synthesize searchResults;
 
 
 - (void)awakeFromNib
@@ -80,7 +81,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.abstractsInfos count];
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        return [searchResults count];
+        
+    } else {
+        return [self.abstractsInfos count];
+    }
 }
 
 
@@ -89,12 +95,19 @@
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    Abstracts *info = nil;
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        info = [self.searchResults objectAtIndex:indexPath.row];
+    } else {
+        info = [self.abstractsInfos objectAtIndex:indexPath.row];
+    }
     if (cell == nil)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
 
-    Abstracts *info = [self.abstractsInfos objectAtIndex:indexPath.row];
+    //Abstracts *info = [self.abstractsInfos objectAtIndex:indexPath.row];
     cell.textLabel.text = info.title;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@, %@", info.name, info.time, info.location];
     
@@ -104,6 +117,22 @@
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
     return NO;
+}
+
+- (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
+{
+    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"name contains[c] %@", searchText];
+    searchResults = [abstractsInfos filteredArrayUsingPredicate:resultPredicate];
+}
+
+-(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    [self filterContentForSearchText:searchString
+                               scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
+                                      objectAtIndex:[self.searchDisplayController.searchBar
+                                                     selectedScopeButtonIndex]]];
+    
+    return YES;
 }
 
 @end

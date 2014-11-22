@@ -17,6 +17,7 @@
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
 @property (nonatomic, retain) NSArray *abstractsInfos;
+@property (nonatomic, retain) NSArray *searchResults;
 
 
 @end
