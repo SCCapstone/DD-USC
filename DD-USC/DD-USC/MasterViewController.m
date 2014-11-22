@@ -18,7 +18,7 @@
 
 @implementation MasterViewController
 
-@synthesize abstractsInfos = _abstractsInfos;
+@synthesize abstractsInfos;
 
 
 - (void)awakeFromNib
@@ -62,9 +62,9 @@
     if ([[segue identifier] isEqualToString:@"showDetails"])
     {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        //DetailViewController *controller = segue.destinationViewController;
-        DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
-        controller.abstract = [_abstractsInfos objectAtIndex:indexPath.row];
+        DetailViewController *controller = segue.destinationViewController;
+        //DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
+        controller.abstract = [self.abstractsInfos objectAtIndex:indexPath.row];
         
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
@@ -80,7 +80,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [_abstractsInfos count];
+    return [self.abstractsInfos count];
 }
 
 
@@ -94,7 +94,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
 
-    Abstracts *info = [_abstractsInfos objectAtIndex:indexPath.row];
+    Abstracts *info = [self.abstractsInfos objectAtIndex:indexPath.row];
     cell.textLabel.text = info.title;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@, %@", info.name, info.time, info.location];
     
@@ -104,11 +104,6 @@
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
     return NO;
-}
-
-- (void)dealloc
-{
-    self.detailViewController = nil;
 }
 
 @end

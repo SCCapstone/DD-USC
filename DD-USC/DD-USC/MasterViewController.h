@@ -11,9 +11,9 @@
 @class DetailViewController;
 
 @interface MasterViewController : UITableViewController
-{
-    NSArray *_abstractsInfos;
-}
+//{
+  //  NSArray *_abstractsInfos;
+//}
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
 @property (nonatomic, retain) NSArray *abstractsInfos;

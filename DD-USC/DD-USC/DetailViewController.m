@@ -20,43 +20,27 @@
 
 @synthesize nameLabel;
 @synthesize titleLabel;
-@synthesize timeLabel = _timeLabel;
-@synthesize locationLabel = _locationLabel;
+@synthesize timeLabel;
+@synthesize locationLabel;
 @synthesize uniqueId = _uniqueId;
 
-- (void)setDetailItem:(id)newDetailItem
-{
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-            
-        // Update the view.
-        [self configureView];
-    }
-}
 
 - (void)configureView
 {
     // Update the user interface for the detail item.
-    if (self.detailItem)
-    {
-        self.detailDescriptionLabel.text = [self.detailItem description];
-    }
-    //self.nameLabel.text = _abstract.name;
+
 }
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    self.nameLabel.text = _abstract.name;
-    //self.nameLabel.text = @"Testing Name Label";
-    self.titleLabel.text = _abstract.title;
-    //self.timeLabel.text = _abstract.time;
-    //self.locationLabel.text = _abstract.location;
-    
-   // NSLog(@"%d: %@, %@ ", details.uniqueId, details.name, details.title);
-    
+    self.nameLabel.text = self.abstract.name;
+    self.titleLabel.text = self.abstract.title;
+    self.timeLabel.text = self.abstract.time;
+    self.locationLabel.text = self.abstract.location;
+
+    //cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@, %@", info.name, info.time, info.location];
     [self configureView];
 }
 
