@@ -20,11 +20,8 @@
 		BFFDFC9A1A1BC5C800F1D5E6 /* test_db.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = BFFDFC991A1BC5C800F1D5E6 /* test_db.sqlite3 */; };
 		CD5AD4C81A20ECA0009AC353 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5AD4C71A20ECA0009AC353 /* HomeViewController.m */; };
 		CD5AD4CA1A20F442009AC353 /* discoveryLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5AD4C91A20F442009AC353 /* discoveryLogo.png */; };
+		CD5AD4CD1A20F6EF009AC353 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5AD4CB1A20F6EF009AC353 /* AppDelegate.m */; };
 		CDE680F11A015AD50070F870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F01A015AD50070F870 /* main.m */; };
-		CDE680F41A015AD50070F870 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F31A015AD50070F870 /* AppDelegate.m */; };
-		CDE680F71A015AD50070F870 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F61A015AD50070F870 /* RootViewController.m */; };
-		CDE680FA1A015AD50070F870 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F91A015AD50070F870 /* DataViewController.m */; };
-		CDE680FD1A015AD50070F870 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680FC1A015AD50070F870 /* ModelController.m */; };
 		CDE681001A015AD50070F870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE680FE1A015AD50070F870 /* Main.storyboard */; };
 		CDE681021A015AD50070F870 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE681011A015AD50070F870 /* Images.xcassets */; };
 		CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE681031A015AD50070F870 /* LaunchScreen.xib */; };
@@ -64,17 +61,11 @@
 		CD5AD4C61A20ECA0009AC353 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		CD5AD4C71A20ECA0009AC353 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		CD5AD4C91A20F442009AC353 /* discoveryLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discoveryLogo.png; sourceTree = "<group>"; };
+		CD5AD4CB1A20F6EF009AC353 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD5AD4CC1A20F6EF009AC353 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CDE680EB1A015AD50070F870 /* DD-USC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DD-USC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE680EF1A015AD50070F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE680F01A015AD50070F870 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CDE680F21A015AD50070F870 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CDE680F31A015AD50070F870 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CDE680F51A015AD50070F870 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		CDE680F61A015AD50070F870 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		CDE680F81A015AD50070F870 /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
-		CDE680F91A015AD50070F870 /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
-		CDE680FB1A015AD50070F870 /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
-		CDE680FC1A015AD50070F870 /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
 		CDE680FF1A015AD50070F870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDE681011A015AD50070F870 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CDE681041A015AD50070F870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -128,14 +119,8 @@
 		CDE680ED1A015AD50070F870 /* DD-USC */ = {
 			isa = PBXGroup;
 			children = (
-				CDE680F21A015AD50070F870 /* AppDelegate.h */,
-				CDE680F31A015AD50070F870 /* AppDelegate.m */,
-				CDE680F51A015AD50070F870 /* RootViewController.h */,
-				CDE680F61A015AD50070F870 /* RootViewController.m */,
-				CDE680F81A015AD50070F870 /* DataViewController.h */,
-				CDE680F91A015AD50070F870 /* DataViewController.m */,
-				CDE680FB1A015AD50070F870 /* ModelController.h */,
-				CDE680FC1A015AD50070F870 /* ModelController.m */,
+				CD5AD4CB1A20F6EF009AC353 /* AppDelegate.m */,
+				CD5AD4CC1A20F6EF009AC353 /* AppDelegate.h */,
 				CDE680FE1A015AD50070F870 /* Main.storyboard */,
 				CD5AD4C61A20ECA0009AC353 /* HomeViewController.h */,
 				CD5AD4C71A20ECA0009AC353 /* HomeViewController.m */,
@@ -297,14 +282,11 @@
 				BF1D2BCE1A1D05D8001E88FF /* AbstractsDB.m in Sources */,
 				BF1D2BD41A1D06FA001E88FF /* MasterViewController.m in Sources */,
 				BF1D2BCB1A1D0500001E88FF /* Abstracts.m in Sources */,
-				CDE680FA1A015AD50070F870 /* DataViewController.m in Sources */,
-				CDE680F41A015AD50070F870 /* AppDelegate.m in Sources */,
-				CDE680FD1A015AD50070F870 /* ModelController.m in Sources */,
+				CD5AD4CD1A20F6EF009AC353 /* AppDelegate.m in Sources */,
 				BFCACC231A15A61D0099D27D /* MapViewController.m in Sources */,
 				CDE680F11A015AD50070F870 /* main.m in Sources */,
 				BF1D2BD11A1D069E001E88FF /* DetailViewController.m in Sources */,
 				BFCACC291A15AB920099D27D /* RHLocationDataController.m in Sources */,
-				CDE680F71A015AD50070F870 /* RootViewController.m in Sources */,
 				CD5AD4C81A20ECA0009AC353 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
