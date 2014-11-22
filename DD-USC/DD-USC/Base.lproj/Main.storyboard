@@ -8,7 +8,7 @@
         <!--HomePage-->
         <scene sceneID="l2Y-N8-HL2">
             <objects>
-                <viewController title="HomePage" id="dFP-6k-boM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home View" title="HomePage" id="dFP-6k-boM" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ehy-4a-9O8"/>
                         <viewControllerLayoutGuide type="bottom" id="el5-64-ULF"/>
@@ -78,11 +78,12 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiscoveryDayPic.png" translatesAutoresizingMaskIntoConstraints="NO" id="tRo-Ao-te8">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="discoveryLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="tRo-Ao-te8">
                                 <rect key="frame" x="94" y="72" width="187" height="128"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.62065972219999999" green="0.077416089120000003" blue="0.1086289384" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration" label="Home View"/>
                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                         <variation key="default">
                             <mask key="subviews">
@@ -92,6 +93,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="03y-ud-hKE"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="faqButton" destination="U2W-v6-aNc" id="9tg-gK-8oU"/>
+                        <outlet property="mapButton" destination="sN5-r7-HCE" id="RbF-Vx-0fc"/>
+                        <outlet property="masterScheduleButton" destination="YmY-nH-dmo" id="VGx-Kw-Oks"/>
+                        <outlet property="personalScheduleButton" destination="HUi-2E-u2g" id="apF-9Y-niN"/>
+                        <outlet property="searchButton" destination="zJi-ct-7bB" id="XFq-Pe-MJ5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a0P-hV-Vyv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,6 +165,7 @@
                     <navigationItem key="navigationItem" title="Details" id="KSq-JW-bFK">
                         <barButtonItem key="backBarButtonItem" title="Back" id="L2O-K1-gBT"/>
                     </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="locationLabel" destination="mNh-bU-4no" id="gIT-eC-b8T"/>
                         <outlet property="nameLabel" destination="eFt-Rq-gJM" id="2xM-FN-ORU"/>
@@ -177,7 +186,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Seach Name, Abstract, Time etc..." id="V4J-bl-qhe">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="64" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
                             <connections>
@@ -216,6 +225,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="GAo-U8-Oja"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="vXF-Zj-Faz" id="sxZ-L8-Dna"/>
                     </connections>
@@ -301,8 +311,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="DiscoveryDayPic.png" width="182" height="115"/>
         <image name="Twitter&amp;Facebook.png" width="262" height="67"/>
+        <image name="discoveryLogo.png" width="180" height="124"/>
     </resources>
     <color key="tintColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

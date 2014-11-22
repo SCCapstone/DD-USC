@@ -18,6 +18,8 @@
 		BFCACC291A15AB920099D27D /* RHLocationDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC281A15AB920099D27D /* RHLocationDataController.m */; };
 		BFCACC2B1A15B1020099D27D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCACC2A1A15B1020099D27D /* MapKit.framework */; };
 		BFFDFC9A1A1BC5C800F1D5E6 /* test_db.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = BFFDFC991A1BC5C800F1D5E6 /* test_db.sqlite3 */; };
+		CD5AD4C81A20ECA0009AC353 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5AD4C71A20ECA0009AC353 /* HomeViewController.m */; };
+		CD5AD4CA1A20F442009AC353 /* discoveryLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5AD4C91A20F442009AC353 /* discoveryLogo.png */; };
 		CDE680F11A015AD50070F870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F01A015AD50070F870 /* main.m */; };
 		CDE680F41A015AD50070F870 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F31A015AD50070F870 /* AppDelegate.m */; };
 		CDE680F71A015AD50070F870 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F61A015AD50070F870 /* RootViewController.m */; };
@@ -59,6 +61,9 @@
 		BFCACC281A15AB920099D27D /* RHLocationDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHLocationDataController.m; sourceTree = "<group>"; };
 		BFCACC2A1A15B1020099D27D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BFFDFC991A1BC5C800F1D5E6 /* test_db.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = test_db.sqlite3; path = "DD-USC/test_db.sqlite3"; sourceTree = "<group>"; };
+		CD5AD4C61A20ECA0009AC353 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		CD5AD4C71A20ECA0009AC353 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		CD5AD4C91A20F442009AC353 /* discoveryLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discoveryLogo.png; sourceTree = "<group>"; };
 		CDE680EB1A015AD50070F870 /* DD-USC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DD-USC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE680EF1A015AD50070F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE680F01A015AD50070F870 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -132,6 +137,8 @@
 				CDE680FB1A015AD50070F870 /* ModelController.h */,
 				CDE680FC1A015AD50070F870 /* ModelController.m */,
 				CDE680FE1A015AD50070F870 /* Main.storyboard */,
+				CD5AD4C61A20ECA0009AC353 /* HomeViewController.h */,
+				CD5AD4C71A20ECA0009AC353 /* HomeViewController.m */,
 				BFCACC241A15A9480099D27D /* RHLocation.h */,
 				BFCACC251A15A9480099D27D /* RHLocation.m */,
 				BFCACC271A15AB920099D27D /* RHLocationDataController.h */,
@@ -156,6 +163,7 @@
 		CDE680EE1A015AD50070F870 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CD5AD4C91A20F442009AC353 /* discoveryLogo.png */,
 				BF1D2BD71A1D070F001E88FF /* DiscoveryDayPic.png */,
 				BF1D2BD51A1D0708001E88FF /* Twitter&Facebook.png */,
 				CDE680EF1A015AD50070F870 /* Info.plist */,
@@ -265,6 +273,7 @@
 				CDE681001A015AD50070F870 /* Main.storyboard in Resources */,
 				CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */,
 				BF1D2BD61A1D0708001E88FF /* Twitter&Facebook.png in Resources */,
+				CD5AD4CA1A20F442009AC353 /* discoveryLogo.png in Resources */,
 				BFFDFC9A1A1BC5C800F1D5E6 /* test_db.sqlite3 in Resources */,
 				CDE681021A015AD50070F870 /* Images.xcassets in Resources */,
 			);
@@ -296,6 +305,7 @@
 				BF1D2BD11A1D069E001E88FF /* DetailViewController.m in Sources */,
 				BFCACC291A15AB920099D27D /* RHLocationDataController.m in Sources */,
 				CDE680F71A015AD50070F870 /* RootViewController.m in Sources */,
+				CD5AD4C81A20ECA0009AC353 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
