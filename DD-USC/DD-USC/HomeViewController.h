@@ -10,10 +10,13 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
 @property (weak, nonatomic) IBOutlet UIButton *personalScheduleButton;
 @property (weak, nonatomic) IBOutlet UIButton *masterScheduleButton;
 @property (weak, nonatomic) IBOutlet UIButton *mapButton;
 @property (weak, nonatomic) IBOutlet UIButton *faqButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *fbButton;
 
 @end
