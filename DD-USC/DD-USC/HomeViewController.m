@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import <FacebookSDK/FacebookSDK.h>
 
 @implementation HomeViewController
 
@@ -17,6 +18,7 @@
 @synthesize masterScheduleButton;
 @synthesize mapButton;
 @synthesize faqButton;
+@synthesize fbButton;
 
 
 - (void)configureView
@@ -47,6 +49,15 @@
     faqButton.layer.cornerRadius = 3;
     faqButton.layer.borderWidth = 1;
     faqButton.layer.borderColor = [[UIColor grayColor]CGColor];
+    
+    CGSize screenSize = [[UIScreen mainScreen] bounds].size;
+    FBLikeControl *like = [[FBLikeControl alloc] init];
+    like.objectID = @"http://shareitexampleapp.parseapp.com/photo1/";
+    like.center = CGPointMake(self.view.center.x, screenSize.height - 50);
+    
+    [self.view addSubview:like];
+    
     [self configureView];
 }
+
 @end

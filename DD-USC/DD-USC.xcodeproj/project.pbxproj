@@ -27,6 +27,7 @@
 		CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE681031A015AD50070F870 /* LaunchScreen.xib */; };
 		CDE681111A015AD50070F870 /* DD_USCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE681101A015AD50070F870 /* DD_USCTests.m */; };
 		CDE681E51A168C2F0070F870 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE681E41A168C2F0070F870 /* libsqlite3.dylib */; };
+		DD54565A1A22A2B000A89593 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5456591A22A2B000A89593 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		CDE6810F1A015AD50070F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE681101A015AD50070F870 /* DD_USCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DD_USCTests.m; sourceTree = "<group>"; };
 		CDE681E41A168C2F0070F870 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DD5456591A22A2B000A89593 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD54565A1A22A2B000A89593 /* FacebookSDK.framework in Frameworks */,
 				CDE681E51A168C2F0070F870 /* libsqlite3.dylib in Frameworks */,
 				BFCACC2B1A15B1020099D27D /* MapKit.framework in Frameworks */,
 			);
@@ -98,6 +101,7 @@
 		CDE680E21A015AD50070F870 = {
 			isa = PBXGroup;
 			children = (
+				DD5456591A22A2B000A89593 /* FacebookSDK.framework */,
 				BFFDFC991A1BC5C800F1D5E6 /* test_db.sqlite3 */,
 				CDE681E41A168C2F0070F870 /* libsqlite3.dylib */,
 				BFCACC2A1A15B1020099D27D /* MapKit.framework */,
@@ -411,8 +415,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Mendesc/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = "DD-USC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Mendesc/Documents/FacebookSDK/FacebookSDK.framework/Versions/A,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -421,8 +433,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Mendesc/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = "DD-USC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Mendesc/Documents/FacebookSDK/FacebookSDK.framework/Versions/A,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
