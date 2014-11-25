@@ -12,5 +12,8 @@
 @interface MapViewController : UIViewController
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) IBOutlet UILabel *addressLabel;
+@property (strong, nonatomic) IBOutlet UIButton *GetDirections;
+- (IBAction)Go:(id)sender;
+
 
 @end

@@ -58,6 +58,8 @@
     [self.view addSubview:like];
     
     [self configureView];
+    
+   
 }
 
 @end

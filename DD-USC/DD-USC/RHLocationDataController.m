@@ -15,6 +15,7 @@
     RHLocation *myLocation = [[RHLocation alloc] init];
     myLocation.address = @"1400 Greene St, Columbia, SC 29208";
     myLocation.building = @"Russell House University Union";
+    myLocation.urlString =  @"http://maps.apple.com/maps?daddr=1400+Greene+St,+Columbia,+SC+29208";
     myLocation.latitude = 33.996497;
     myLocation.longitude = -81.0271789;
     

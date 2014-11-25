@@ -15,9 +15,14 @@
 @end
 
 @implementation MapViewController
+@synthesize GetDirections;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    GetDirections.layer.cornerRadius = 3;
+    GetDirections.layer.borderWidth = 1;
+    GetDirections.layer.borderColor = [[UIColor grayColor]CGColor];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -49,7 +54,18 @@
     
     [self.mapView setRegion:viewRegion animated:YES];
     [self.mapView addAnnotation:pointAnnotationA];
+    
+    
 }
 
 
+
+- (IBAction)Go:(id)sender {
+    RHLocationDataController *model = [[RHLocationDataController alloc] init];
+    RHLocation *place = [model getRusselHouseLoc];
+    NSString *theAddress = place.urlString;
+    
+    
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:theAddress]];
+}
 @end

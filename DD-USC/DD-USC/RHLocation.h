@@ -14,6 +14,9 @@
 
 @property (strong, nonatomic) NSString *building;
 
+@property (strong, nonatomic) NSString *urlString;
+
+
 @property (nonatomic) float latitude;
 
 @property (nonatomic) float longitude;
