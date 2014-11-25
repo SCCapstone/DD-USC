@@ -22,6 +22,7 @@
 		CD5AD4CA1A20F442009AC353 /* discoveryLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5AD4C91A20F442009AC353 /* discoveryLogo.png */; };
 		CD5AD4CD1A20F6EF009AC353 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5AD4CB1A20F6EF009AC353 /* AppDelegate.m */; };
 		CD5AD4CF1A236273009AC353 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5AD4CE1A236273009AC353 /* FacebookSDK.framework */; };
+		CD5AD4D11A23ABD4009AC353 /* star-2-256.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5AD4D01A23ABD4009AC353 /* star-2-256.png */; };
 		CDE680F11A015AD50070F870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F01A015AD50070F870 /* main.m */; };
 		CDE681001A015AD50070F870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE680FE1A015AD50070F870 /* Main.storyboard */; };
 		CDE681021A015AD50070F870 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE681011A015AD50070F870 /* Images.xcassets */; };
@@ -65,6 +66,7 @@
 		CD5AD4CB1A20F6EF009AC353 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CD5AD4CC1A20F6EF009AC353 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD5AD4CE1A236273009AC353 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = "DD-USC/FacebookSDK.framework"; sourceTree = "<group>"; };
+		CD5AD4D01A23ABD4009AC353 /* star-2-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star-2-256.png"; path = "../../../../../Downloads/star-2-256.png"; sourceTree = "<group>"; };
 		CDE680EB1A015AD50070F870 /* DD-USC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DD-USC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE680EF1A015AD50070F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE680F01A015AD50070F870 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 		CDE680EE1A015AD50070F870 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CD5AD4D01A23ABD4009AC353 /* star-2-256.png */,
 				CD5AD4C91A20F442009AC353 /* discoveryLogo.png */,
 				BF1D2BD71A1D070F001E88FF /* DiscoveryDayPic.png */,
 				BF1D2BD51A1D0708001E88FF /* Twitter&Facebook.png */,
@@ -262,6 +265,7 @@
 				CDE681001A015AD50070F870 /* Main.storyboard in Resources */,
 				CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */,
 				BF1D2BD61A1D0708001E88FF /* Twitter&Facebook.png in Resources */,
+				CD5AD4D11A23ABD4009AC353 /* star-2-256.png in Resources */,
 				CD5AD4CA1A20F442009AC353 /* discoveryLogo.png in Resources */,
 				BFFDFC9A1A1BC5C800F1D5E6 /* test_db.sqlite3 in Resources */,
 				CDE681021A015AD50070F870 /* Images.xcassets in Resources */,

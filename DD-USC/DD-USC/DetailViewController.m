@@ -24,6 +24,9 @@
 @synthesize locationLabel;
 @synthesize uniqueId = _uniqueId;
 
+@synthesize favButton;
+
+
 
 - (void)configureView
 {
