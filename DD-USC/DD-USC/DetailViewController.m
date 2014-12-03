@@ -38,10 +38,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.nameLabel.text = self.abstract.name;
+    //self.nameLabel.text = self.abstract.sFName1;
+    self.nameLabel.text = [NSString stringWithFormat:@"%@ %@", self.abstract.sFName1, self.abstract.sLName1];
     self.titleLabel.text = self.abstract.title;
-    self.timeLabel.text = self.abstract.time;
-    self.locationLabel.text = self.abstract.location;
+    self.timeLabel.text = self.abstract.FinalTime;
+    self.locationLabel.text = self.abstract.Room;
 
     //cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@, %@", info.name, info.time, info.location];
     [self configureView];

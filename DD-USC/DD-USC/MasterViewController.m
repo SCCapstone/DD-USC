@@ -109,7 +109,7 @@
 
     //Abstracts *info = [self.abstractsInfos objectAtIndex:indexPath.row];
     cell.textLabel.text = info.title;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@, %@", info.name, info.time, info.location];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@", info.sFName1, info.sLName1];
     
     return cell;
 }

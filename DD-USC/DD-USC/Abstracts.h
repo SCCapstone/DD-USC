@@ -10,19 +10,21 @@
 
 @interface Abstracts : NSObject {
     int _uniqueId;
-    NSString *_name;
+    NSString *_sFName1;
+    NSString *_sLName1;
     NSString *_title;
-    NSString *_time;
-    NSString *_location;
+    NSString *_FinalTime;
+    NSString *_Room;
 }
 
 @property (nonatomic, assign) int uniqueId;
-@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *sFName1;
+@property (nonatomic, copy) NSString *sLName1;
 @property (nonatomic, copy) NSString *title;
-@property (nonatomic, copy) NSString *time;
-@property (nonatomic, copy) NSString *location;
+@property (nonatomic, copy) NSString *FinalTime;
+@property (nonatomic, copy) NSString *Room;
 
-- (id)initWithUniqueId:(int)uniqueId name:(NSString *)name title:(NSString *)title
-                  time:(NSString *)time location:(NSString *)location;
+- (id)initWithUniqueId:(int)uniqueId sFName1:(NSString *)sFName1 sLName1:(NSString*)sLName1 title:(NSString *)title
+             FinalTime:(NSString *)FinalTime Room:(NSString *)Room;
 
 @end
