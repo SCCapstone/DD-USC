@@ -23,6 +23,7 @@
 		CD5AD4CA1A20F442009AC353 /* discoveryLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5AD4C91A20F442009AC353 /* discoveryLogo.png */; };
 		CD5AD4CD1A20F6EF009AC353 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5AD4CB1A20F6EF009AC353 /* AppDelegate.m */; };
 		CD5AD4CF1A236273009AC353 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5AD4CE1A236273009AC353 /* FacebookSDK.framework */; };
+		CDCED43D1A2FC783005184E8 /* Abstract_real.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = CDCED43C1A2FC783005184E8 /* Abstract_real.sqlite3 */; };
 		CDE680F11A015AD50070F870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F01A015AD50070F870 /* main.m */; };
 		CDE681001A015AD50070F870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE680FE1A015AD50070F870 /* Main.storyboard */; };
 		CDE681021A015AD50070F870 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE681011A015AD50070F870 /* Images.xcassets */; };
@@ -67,6 +68,7 @@
 		CD5AD4CB1A20F6EF009AC353 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CD5AD4CC1A20F6EF009AC353 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD5AD4CE1A236273009AC353 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = "DD-USC/FacebookSDK.framework"; sourceTree = "<group>"; };
+		CDCED43C1A2FC783005184E8 /* Abstract_real.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Abstract_real.sqlite3; sourceTree = "<group>"; };
 		CDE680EB1A015AD50070F870 /* DD-USC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DD-USC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE680EF1A015AD50070F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE680F01A015AD50070F870 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		CDE680E21A015AD50070F870 = {
 			isa = PBXGroup;
 			children = (
+				CDCED43C1A2FC783005184E8 /* Abstract_real.sqlite3 */,
 				BFFDFC991A1BC5C800F1D5E6 /* test_db.sqlite3 */,
 				CDE681E41A168C2F0070F870 /* libsqlite3.dylib */,
 				CD5AD4CE1A236273009AC353 /* FacebookSDK.framework */,
@@ -230,6 +233,7 @@
 				TargetAttributes = {
 					CDE680EA1A015AD50070F870 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = HQDQV63ALH;
 					};
 					CDE681091A015AD50070F870 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -261,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDCED43D1A2FC783005184E8 /* Abstract_real.sqlite3 in Resources */,
 				BF1D2BD81A1D070F001E88FF /* DiscoveryDayPic.png in Resources */,
 				CDE681001A015AD50070F870 /* Main.storyboard in Resources */,
 				CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */,
@@ -419,6 +424,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Mendesc/Documents/FacebookSDK,
@@ -431,6 +438,7 @@
 					/Users/Mendesc/Documents/FacebookSDK/FacebookSDK.framework/Versions/A,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -438,6 +446,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Mendesc/Documents/FacebookSDK,
@@ -450,6 +460,7 @@
 					/Users/Mendesc/Documents/FacebookSDK/FacebookSDK.framework/Versions/A,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
