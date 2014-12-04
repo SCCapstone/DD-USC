@@ -18,6 +18,10 @@
 		BFCACC261A15A9480099D27D /* RHLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC251A15A9480099D27D /* RHLocation.m */; };
 		BFCACC291A15AB920099D27D /* RHLocationDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC281A15AB920099D27D /* RHLocationDataController.m */; };
 		BFCACC2B1A15B1020099D27D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCACC2A1A15B1020099D27D /* MapKit.framework */; };
+		BFF517FF1A30125B0007FFBF /* Fourth Floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF517FE1A30125B0007FFBF /* Fourth Floor.jpg */; };
+		BFF518011A3012640007FFBF /* Basement.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF518001A3012640007FFBF /* Basement.jpg */; };
+		BFF518031A30126D0007FFBF /* Second Floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF518021A30126D0007FFBF /* Second Floor.jpg */; };
+		BFF518051A3012740007FFBF /* Third Floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF518041A3012740007FFBF /* Third Floor.jpg */; };
 		BFFDFC9A1A1BC5C800F1D5E6 /* test_db.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = BFFDFC991A1BC5C800F1D5E6 /* test_db.sqlite3 */; };
 		CD5AD4C81A20ECA0009AC353 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5AD4C71A20ECA0009AC353 /* HomeViewController.m */; };
 		CD5AD4CA1A20F442009AC353 /* discoveryLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5AD4C91A20F442009AC353 /* discoveryLogo.png */; };
@@ -61,6 +65,10 @@
 		BFCACC271A15AB920099D27D /* RHLocationDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHLocationDataController.h; sourceTree = "<group>"; };
 		BFCACC281A15AB920099D27D /* RHLocationDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHLocationDataController.m; sourceTree = "<group>"; };
 		BFCACC2A1A15B1020099D27D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BFF517FE1A30125B0007FFBF /* Fourth Floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fourth Floor.jpg"; sourceTree = "<group>"; };
+		BFF518001A3012640007FFBF /* Basement.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Basement.jpg; sourceTree = "<group>"; };
+		BFF518021A30126D0007FFBF /* Second Floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Second Floor.jpg"; sourceTree = "<group>"; };
+		BFF518041A3012740007FFBF /* Third Floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Third Floor.jpg"; sourceTree = "<group>"; };
 		BFFDFC991A1BC5C800F1D5E6 /* test_db.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = test_db.sqlite3; path = "DD-USC/test_db.sqlite3"; sourceTree = "<group>"; };
 		CD5AD4C61A20ECA0009AC353 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		CD5AD4C71A20ECA0009AC353 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
@@ -157,6 +165,10 @@
 		CDE680EE1A015AD50070F870 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BFF518041A3012740007FFBF /* Third Floor.jpg */,
+				BFF518021A30126D0007FFBF /* Second Floor.jpg */,
+				BFF518001A3012640007FFBF /* Basement.jpg */,
+				BFF517FE1A30125B0007FFBF /* Fourth Floor.jpg */,
 				BF8A31561A24F23100B973AA /* star-2-256.png */,
 				CD5AD4C91A20F442009AC353 /* discoveryLogo.png */,
 				BF1D2BD71A1D070F001E88FF /* DiscoveryDayPic.png */,
@@ -266,14 +278,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDCED43D1A2FC783005184E8 /* Abstract_real.sqlite3 in Resources */,
+				BFF518011A3012640007FFBF /* Basement.jpg in Resources */,
 				BF1D2BD81A1D070F001E88FF /* DiscoveryDayPic.png in Resources */,
 				CDE681001A015AD50070F870 /* Main.storyboard in Resources */,
 				CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */,
+				BFF518031A30126D0007FFBF /* Second Floor.jpg in Resources */,
 				BF1D2BD61A1D0708001E88FF /* Twitter&Facebook.png in Resources */,
 				BF8A31571A24F23100B973AA /* star-2-256.png in Resources */,
+				BFF518051A3012740007FFBF /* Third Floor.jpg in Resources */,
 				CD5AD4CA1A20F442009AC353 /* discoveryLogo.png in Resources */,
 				BFFDFC9A1A1BC5C800F1D5E6 /* test_db.sqlite3 in Resources */,
 				CDE681021A015AD50070F870 /* Images.xcassets in Resources */,
+				BFF517FF1A30125B0007FFBF /* Fourth Floor.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

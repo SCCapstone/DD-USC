@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cZo-Gp-4Ks">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cZo-Gp-4Ks">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -264,24 +264,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" translatesAutoresizingMaskIntoConstraints="NO" id="bDq-G8-w1L">
-                                <rect key="frame" x="42" y="72" width="295" height="250"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="295" id="IdR-lZ-BeV"/>
-                                    <constraint firstAttribute="height" constant="250" id="O6F-Ne-You"/>
-                                </constraints>
-                            </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1400 Greene St, Columbia, SC 29208" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cw-bh-leW">
-                                <rect key="frame" x="45" y="342" width="288" height="17"/>
+                                <rect key="frame" x="43" y="418" width="288" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qys-mc-zVV">
-                                <rect key="frame" x="125" y="367" width="125" height="30"/>
+                                <rect key="frame" x="125" y="450" width="125" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="125" id="L63-FD-MEH"/>
+                                    <constraint firstAttribute="width" constant="125" id="7De-RH-2nz"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Get Directions">
@@ -291,19 +284,27 @@
                                     <action selector="Go:" destination="gPh-gs-XPC" eventType="touchUpInside" id="C4v-eQ-xkK"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" translatesAutoresizingMaskIntoConstraints="NO" id="bDq-G8-w1L">
+                                <rect key="frame" x="34" y="72" width="307" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="307" id="IdR-lZ-BeV"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="NA2-52-7gl"/>
+                                    <constraint firstAttribute="height" constant="300" id="O6F-Ne-You"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="307" id="jI9-OH-uyL"/>
+                                </constraints>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="0.62065972219999999" green="0.077416089120000003" blue="0.1086289384" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="bDq-G8-w1L" firstAttribute="top" secondItem="TNG-m9-JfA" secondAttribute="bottom" constant="8" symbolic="YES" id="6QW-1J-YOx"/>
-                            <constraint firstItem="Qys-mc-zVV" firstAttribute="centerX" secondItem="VmJ-VK-vJZ" secondAttribute="centerX" id="A3a-M8-oRp"/>
-                            <constraint firstItem="Qys-mc-zVV" firstAttribute="top" secondItem="6cw-bh-leW" secondAttribute="bottom" constant="8" symbolic="YES" id="C6L-hm-uUS"/>
-                            <constraint firstItem="6cw-bh-leW" firstAttribute="top" secondItem="bDq-G8-w1L" secondAttribute="bottom" constant="20" id="Ceo-GP-grD"/>
-                            <constraint firstAttribute="centerY" secondItem="bDq-G8-w1L" secondAttribute="centerY" constant="136.5" id="Fjl-Ge-s92"/>
-                            <constraint firstItem="bDq-G8-w1L" firstAttribute="leading" secondItem="6cw-bh-leW" secondAttribute="leading" constant="-3" id="Kwv-9e-Nur"/>
-                            <constraint firstAttribute="centerY" secondItem="Qys-mc-zVV" secondAttribute="centerY" constant="-48.5" id="OeC-X5-90m"/>
-                            <constraint firstAttribute="centerX" secondItem="bDq-G8-w1L" secondAttribute="centerX" constant="-2" id="WGg-Ws-kdr"/>
-                            <constraint firstAttribute="centerY" secondItem="6cw-bh-leW" secondAttribute="centerY" constant="-17.5" id="YQe-r1-glC"/>
-                            <constraint firstItem="bDq-G8-w1L" firstAttribute="leading" secondItem="VmJ-VK-vJZ" secondAttribute="leadingMargin" constant="26" id="loQ-3M-Gds"/>
+                            <constraint firstItem="6cw-bh-leW" firstAttribute="top" secondItem="bDq-G8-w1L" secondAttribute="bottom" constant="46" id="Ceo-GP-grD"/>
+                            <constraint firstItem="Qys-mc-zVV" firstAttribute="centerX" secondItem="6cw-bh-leW" secondAttribute="centerX" id="FWB-5E-fMi"/>
+                            <constraint firstAttribute="centerY" secondItem="bDq-G8-w1L" secondAttribute="centerY" constant="111.5" id="Fjl-Ge-s92"/>
+                            <constraint firstItem="bDq-G8-w1L" firstAttribute="leading" secondItem="6cw-bh-leW" secondAttribute="leading" constant="-9" id="Kwv-9e-Nur"/>
+                            <constraint firstAttribute="centerX" secondItem="bDq-G8-w1L" secondAttribute="centerX" id="WGg-Ws-kdr"/>
+                            <constraint firstAttribute="centerY" secondItem="6cw-bh-leW" secondAttribute="centerY" constant="-93" id="YQe-r1-glC"/>
+                            <constraint firstItem="Qys-mc-zVV" firstAttribute="top" secondItem="6cw-bh-leW" secondAttribute="bottom" constant="15" id="geq-4G-1tV"/>
+                            <constraint firstItem="bDq-G8-w1L" firstAttribute="leading" secondItem="VmJ-VK-vJZ" secondAttribute="leadingMargin" constant="18" id="loQ-3M-Gds"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
