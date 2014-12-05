@@ -25,7 +25,8 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+    {
         self.clearsSelectionOnViewWillAppear = NO;
         self.preferredContentSize = CGSizeMake(320.0, 600.0);
     }
@@ -63,11 +64,10 @@
         NSIndexPath *indexPath = nil;
         Abstracts *abstract = nil;
         
-        if (self.searchDisplayController.isActive)
+        if (self.searchDisplayController.active)
         {
-            //indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
-            indexPath = [self.searchDisplayController.searchResultsTableView indexPathForCell:sender];
-            abstract = [self.searchResults objectAtIndex:indexPath.row];
+            indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
+            abstract = [self.searchResults objectAtIndex:self.searchDisplayController.searchResultsTableView.indexPathForSelectedRow.row];
         }
         else
         {
@@ -106,7 +106,8 @@
 {
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier: CellIdentifier];
     Abstracts *info = nil;
     if (cell == nil)
     {
@@ -134,10 +135,26 @@
     return NO;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 71;
+}
+
 - (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
     NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"title contains[c] %@", searchText];
     searchResults = [abstractsInfos filteredArrayUsingPredicate:resultPredicate];
+    
+    NSArray *tempArray = [searchResults filteredArrayUsingPredicate:resultPredicate];
+    if (![scope isEqualToString:@"All"])
+    {
+        // Further filter the array with the scope
+        NSPredicate *scopePredicate = [NSPredicate predicateWithFormat:@"FinalTime contains[c] %@",scope];
+        tempArray = [tempArray filteredArrayUsingPredicate:scopePredicate];
+    }
+    
+    searchResults = [NSMutableArray arrayWithArray:tempArray];
+    
 }
 
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
@@ -149,20 +166,5 @@
     
     return YES;
 }
-
-/*-(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
-    // Update the filtered array based on the search text and scope.
-    // Remove all objects from the filtered search array
-    [self.searchResults removeAllObjects];
-    // Filter the array using NSPredicate
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.FinalTime contains[c] %@",searchText];
-    NSArray *tempArray = [searchResults filteredArrayUsingPredicate:predicate];
-    if (![scope isEqualToString:@"All"]) {
-        // Further filter the array with the scope
-        NSPredicate *scopePredicate = [NSPredicate predicateWithFormat:@"SELF.category contains[c] %@",scope];
-        tempArray = [tempArray filteredArrayUsingPredicate:scopePredicate];
-    }
-    searchResults = [NSMutableArray arrayWithArray:tempArray];
-}*/
 
 @end
