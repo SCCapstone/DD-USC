@@ -34,6 +34,7 @@
 		CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE681031A015AD50070F870 /* LaunchScreen.xib */; };
 		CDE681111A015AD50070F870 /* DD_USCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE681101A015AD50070F870 /* DD_USCTests.m */; };
 		CDE681E51A168C2F0070F870 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE681E41A168C2F0070F870 /* libsqlite3.dylib */; };
+		DD3E9A5B1A3243800005A169 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3E9A5A1A3243800005A169 /* EventViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		CDE6810F1A015AD50070F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE681101A015AD50070F870 /* DD_USCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DD_USCTests.m; sourceTree = "<group>"; };
 		CDE681E41A168C2F0070F870 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DD3E9A591A3243740005A169 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
+		DD3E9A5A1A3243800005A169 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +149,8 @@
 				BFCACC251A15A9480099D27D /* RHLocation.m */,
 				BFCACC271A15AB920099D27D /* RHLocationDataController.h */,
 				BFCACC281A15AB920099D27D /* RHLocationDataController.m */,
+				DD3E9A591A3243740005A169 /* EventViewController.h */,
+				DD3E9A5A1A3243800005A169 /* EventViewController.m */,
 				BFCACC211A15A61D0099D27D /* MapViewController.h */,
 				BFCACC221A15A61D0099D27D /* MapViewController.m */,
 				BF1D2BC91A1D04F3001E88FF /* Abstracts.h */,
@@ -317,6 +322,7 @@
 				CDE680F11A015AD50070F870 /* main.m in Sources */,
 				BF1681A41A322AEE00175385 /* InteriorViewController.m in Sources */,
 				BF1D2BD11A1D069E001E88FF /* DetailViewController.m in Sources */,
+				DD3E9A5B1A3243800005A169 /* EventViewController.m in Sources */,
 				BFCACC291A15AB920099D27D /* RHLocationDataController.m in Sources */,
 				CD5AD4C81A20ECA0009AC353 /* HomeViewController.m in Sources */,
 			);
