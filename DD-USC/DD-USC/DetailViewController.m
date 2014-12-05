@@ -48,6 +48,16 @@
     [self configureView];
 }
 
+- (IBAction)showMessage:(id)sender {
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Hello World!"
+                                                      message:@"This is your first UIAlertview message."
+                                                     delegate:nil
+                                            cancelButtonTitle:@"OK"
+                                            otherButtonTitles:nil];
+    
+    [message show];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

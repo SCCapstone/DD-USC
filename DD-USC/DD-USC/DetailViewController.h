@@ -26,6 +26,8 @@
 
 @property (nonatomic, strong) Abstracts *abstract;
 
+- (IBAction)showMessage:(id)sender;
+
 
 @end
 
