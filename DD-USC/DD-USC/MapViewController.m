@@ -16,12 +16,16 @@
 
 @implementation MapViewController
 @synthesize GetDirections;
+@synthesize Interior;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     GetDirections.layer.cornerRadius = 3;
     GetDirections.layer.borderWidth = 1;
     GetDirections.layer.borderColor = [[UIColor grayColor]CGColor];
+    Interior.layer.cornerRadius = 3;
+    Interior.layer.borderWidth = 1;
+    Interior.layer.borderColor = [[UIColor grayColor]CGColor];
     
     // Do any additional setup after loading the view.
 }

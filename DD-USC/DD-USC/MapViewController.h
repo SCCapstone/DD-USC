@@ -13,6 +13,7 @@
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) IBOutlet UILabel *addressLabel;
 @property (strong, nonatomic) IBOutlet UIButton *GetDirections;
+@property (strong, nonatomic) IBOutlet UIButton *Interior;
 - (IBAction)Go:(id)sender;
 
 
