@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1681A41A322AEE00175385 /* InteriorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1681A31A322AEE00175385 /* InteriorViewController.m */; };
 		BF1D2BCB1A1D0500001E88FF /* Abstracts.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D2BCA1A1D0500001E88FF /* Abstracts.m */; };
 		BF1D2BCE1A1D05D8001E88FF /* AbstractsDB.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D2BCD1A1D05D8001E88FF /* AbstractsDB.m */; };
 		BF1D2BD11A1D069E001E88FF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D2BD01A1D069E001E88FF /* DetailViewController.m */; };
@@ -46,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF1681A21A322AEE00175385 /* InteriorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorViewController.h; sourceTree = "<group>"; };
+		BF1681A31A322AEE00175385 /* InteriorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorViewController.m; sourceTree = "<group>"; };
 		BF1D2BC91A1D04F3001E88FF /* Abstracts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Abstracts.h; sourceTree = "<group>"; };
 		BF1D2BCA1A1D0500001E88FF /* Abstracts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Abstracts.m; sourceTree = "<group>"; };
 		BF1D2BCC1A1D05CE001E88FF /* AbstractsDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractsDB.h; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 				CDE681011A015AD50070F870 /* Images.xcassets */,
 				CDE681031A015AD50070F870 /* LaunchScreen.xib */,
 				CDE680EE1A015AD50070F870 /* Supporting Files */,
+				BF1681A21A322AEE00175385 /* InteriorViewController.h */,
+				BF1681A31A322AEE00175385 /* InteriorViewController.m */,
 			);
 			path = "DD-USC";
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 				CD5AD4CD1A20F6EF009AC353 /* AppDelegate.m in Sources */,
 				BFCACC231A15A61D0099D27D /* MapViewController.m in Sources */,
 				CDE680F11A015AD50070F870 /* main.m in Sources */,
+				BF1681A41A322AEE00175385 /* InteriorViewController.m in Sources */,
 				BF1D2BD11A1D069E001E88FF /* DetailViewController.m in Sources */,
 				BFCACC291A15AB920099D27D /* RHLocationDataController.m in Sources */,
 				CD5AD4C81A20ECA0009AC353 /* HomeViewController.m in Sources */,
