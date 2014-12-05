@@ -63,7 +63,7 @@
         NSIndexPath *indexPath = nil;
         Abstracts *abstract = nil;
         
-        if (self.searchDisplayController.active)
+        if (self.searchDisplayController.isActive)
         {
             indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
             abstract = [self.searchResults objectAtIndex:indexPath.row];
