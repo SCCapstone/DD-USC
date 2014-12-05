@@ -23,10 +23,10 @@
 		BFF518031A30126D0007FFBF /* Second Floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF518021A30126D0007FFBF /* Second Floor.jpg */; };
 		BFF518051A3012740007FFBF /* Third Floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF518041A3012740007FFBF /* Third Floor.jpg */; };
 		BFFDFC9A1A1BC5C800F1D5E6 /* test_db.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = BFFDFC991A1BC5C800F1D5E6 /* test_db.sqlite3 */; };
+		CD50D3FF1A31D2E800548149 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5AD4CE1A236273009AC353 /* FacebookSDK.framework */; };
 		CD5AD4C81A20ECA0009AC353 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5AD4C71A20ECA0009AC353 /* HomeViewController.m */; };
 		CD5AD4CA1A20F442009AC353 /* discoveryLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5AD4C91A20F442009AC353 /* discoveryLogo.png */; };
 		CD5AD4CD1A20F6EF009AC353 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5AD4CB1A20F6EF009AC353 /* AppDelegate.m */; };
-		CD5AD4CF1A236273009AC353 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5AD4CE1A236273009AC353 /* FacebookSDK.framework */; };
 		CDCED43D1A2FC783005184E8 /* Abstract_real.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = CDCED43C1A2FC783005184E8 /* Abstract_real.sqlite3 */; };
 		CDE680F11A015AD50070F870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F01A015AD50070F870 /* main.m */; };
 		CDE681001A015AD50070F870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE680FE1A015AD50070F870 /* Main.storyboard */; };
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD5AD4CF1A236273009AC353 /* FacebookSDK.framework in Frameworks */,
+				CD50D3FF1A31D2E800548149 /* FacebookSDK.framework in Frameworks */,
 				CDE681E51A168C2F0070F870 /* libsqlite3.dylib in Frameworks */,
 				BFCACC2B1A15B1020099D27D /* MapKit.framework in Frameworks */,
 			);
@@ -245,7 +245,7 @@
 				TargetAttributes = {
 					CDE680EA1A015AD50070F870 = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = HQDQV63ALH;
+						DevelopmentTeam = UG9DSHSSPH;
 					};
 					CDE681091A015AD50070F870 = {
 						CreatedOnToolsVersion = 6.0.1;
