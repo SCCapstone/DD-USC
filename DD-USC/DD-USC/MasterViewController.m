@@ -150,4 +150,19 @@
     return YES;
 }
 
+/*-(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
+    // Update the filtered array based on the search text and scope.
+    // Remove all objects from the filtered search array
+    [self.searchResults removeAllObjects];
+    // Filter the array using NSPredicate
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.FinalTime contains[c] %@",searchText];
+    NSArray *tempArray = [searchResults filteredArrayUsingPredicate:predicate];
+    if (![scope isEqualToString:@"All"]) {
+        // Further filter the array with the scope
+        NSPredicate *scopePredicate = [NSPredicate predicateWithFormat:@"SELF.category contains[c] %@",scope];
+        tempArray = [tempArray filteredArrayUsingPredicate:scopePredicate];
+    }
+    searchResults = [NSMutableArray arrayWithArray:tempArray];
+}*/
+
 @end

@@ -153,6 +153,8 @@
 				DD3E9A5A1A3243800005A169 /* EventViewController.m */,
 				BFCACC211A15A61D0099D27D /* MapViewController.h */,
 				BFCACC221A15A61D0099D27D /* MapViewController.m */,
+				BF1681A21A322AEE00175385 /* InteriorViewController.h */,
+				BF1681A31A322AEE00175385 /* InteriorViewController.m */,
 				BF1D2BC91A1D04F3001E88FF /* Abstracts.h */,
 				BF1D2BCA1A1D0500001E88FF /* Abstracts.m */,
 				BF1D2BCC1A1D05CE001E88FF /* AbstractsDB.h */,
@@ -166,8 +168,6 @@
 				CDE681011A015AD50070F870 /* Images.xcassets */,
 				CDE681031A015AD50070F870 /* LaunchScreen.xib */,
 				CDE680EE1A015AD50070F870 /* Supporting Files */,
-				BF1681A21A322AEE00175385 /* InteriorViewController.h */,
-				BF1681A31A322AEE00175385 /* InteriorViewController.m */,
 			);
 			path = "DD-USC";
 			sourceTree = "<group>";
