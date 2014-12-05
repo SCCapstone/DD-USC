@@ -161,6 +161,8 @@
 				CDE681011A015AD50070F870 /* Images.xcassets */,
 				CDE681031A015AD50070F870 /* LaunchScreen.xib */,
 				CDE680EE1A015AD50070F870 /* Supporting Files */,
+				BF1681A21A322AEE00175385 /* InteriorViewController.h */,
+				BF1681A31A322AEE00175385 /* InteriorViewController.m */,
 			);
 			path = "DD-USC";
 			sourceTree = "<group>";
@@ -316,6 +318,7 @@
 				CD5AD4CD1A20F6EF009AC353 /* AppDelegate.m in Sources */,
 				BFCACC231A15A61D0099D27D /* MapViewController.m in Sources */,
 				CDE680F11A015AD50070F870 /* main.m in Sources */,
+				BF1681A41A322AEE00175385 /* InteriorViewController.m in Sources */,
 				BF1D2BD11A1D069E001E88FF /* DetailViewController.m in Sources */,
 				BFCACC291A15AB920099D27D /* RHLocationDataController.m in Sources */,
 				CD5AD4C81A20ECA0009AC353 /* HomeViewController.m in Sources */,
