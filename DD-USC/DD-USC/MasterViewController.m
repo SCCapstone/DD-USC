@@ -65,7 +65,8 @@
         
         if (self.searchDisplayController.isActive)
         {
-            indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
+            //indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
+            indexPath = [self.searchDisplayController.searchResultsTableView indexPathForCell:sender];
             abstract = [self.searchResults objectAtIndex:indexPath.row];
         }
         else
