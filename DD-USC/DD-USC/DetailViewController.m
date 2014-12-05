@@ -9,6 +9,7 @@
 #import "DetailViewController.h"
 #import "Abstracts.h"
 #import "AbstractsDB.h"
+#import "PersonalScheduleTableViewController.h"
 
 @interface DetailViewController ()
 
@@ -51,6 +52,8 @@
 -(IBAction) addToSchedule:(id)sender
 {
     NSLog(@"add button clicked");
+    PersonalScheduleTableViewController *perSchd = [[PersonalScheduleTableViewController alloc] initWithNibName:@"PersonalScheduleTableViewController" bundle:nil];
+    [perSchd.favorites addObject:_abstract];
     [self addAlertView];
 }
 

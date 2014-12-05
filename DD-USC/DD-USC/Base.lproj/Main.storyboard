@@ -54,6 +54,32 @@
             </objects>
             <point key="canvasLocation" x="-1914" y="-2414"/>
         </scene>
+        <!--Personal Schedule-->
+        <scene sceneID="T2Y-zf-nkp">
+            <objects>
+                <tableViewController title="Personal Schedule" id="vdT-Nc-hw7" customClass="PersonalScheduleTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="bjl-07-4WF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="l2c-gM-EeJ">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l2c-gM-EeJ" id="cGP-Zw-5GQ">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vdT-Nc-hw7" id="QGT-pq-jzL"/>
+                            <outlet property="delegate" destination="vdT-Nc-hw7" id="rdV-jG-cg3"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ztJ-Jf-6Fh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2640" y="-2417"/>
+        </scene>
         <!--HomePage-->
         <scene sceneID="l2Y-N8-HL2">
             <objects>
@@ -132,6 +158,9 @@
                                 <state key="normal" title="Personal Schedule">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vdT-Nc-hw7" kind="show" id="MpF-og-Rjt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.62065972219999999" green="0.077416089120000003" blue="0.1086289384" alpha="1" colorSpace="calibratedRGB"/>

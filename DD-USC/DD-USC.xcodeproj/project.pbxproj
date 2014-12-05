@@ -24,6 +24,7 @@
 		BFF518051A3012740007FFBF /* Third Floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF518041A3012740007FFBF /* Third Floor.jpg */; };
 		BFFDFC9A1A1BC5C800F1D5E6 /* test_db.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = BFFDFC991A1BC5C800F1D5E6 /* test_db.sqlite3 */; };
 		CD50D3FF1A31D2E800548149 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5AD4CE1A236273009AC353 /* FacebookSDK.framework */; };
+		CD50D4051A326C9600548149 /* PersonalScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD50D4041A326C9600548149 /* PersonalScheduleTableViewController.m */; };
 		CD5AD4C81A20ECA0009AC353 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5AD4C71A20ECA0009AC353 /* HomeViewController.m */; };
 		CD5AD4CA1A20F442009AC353 /* discoveryLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5AD4C91A20F442009AC353 /* discoveryLogo.png */; };
 		CD5AD4CD1A20F6EF009AC353 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5AD4CB1A20F6EF009AC353 /* AppDelegate.m */; };
@@ -72,6 +73,8 @@
 		BFF518021A30126D0007FFBF /* Second Floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Second Floor.jpg"; sourceTree = "<group>"; };
 		BFF518041A3012740007FFBF /* Third Floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Third Floor.jpg"; sourceTree = "<group>"; };
 		BFFDFC991A1BC5C800F1D5E6 /* test_db.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = test_db.sqlite3; path = "DD-USC/test_db.sqlite3"; sourceTree = "<group>"; };
+		CD50D4031A326C9600548149 /* PersonalScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalScheduleTableViewController.h; sourceTree = "<group>"; };
+		CD50D4041A326C9600548149 /* PersonalScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalScheduleTableViewController.m; sourceTree = "<group>"; };
 		CD5AD4C61A20ECA0009AC353 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		CD5AD4C71A20ECA0009AC353 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		CD5AD4C91A20F442009AC353 /* discoveryLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discoveryLogo.png; sourceTree = "<group>"; };
@@ -153,8 +156,6 @@
 				DD3E9A5A1A3243800005A169 /* EventViewController.m */,
 				BFCACC211A15A61D0099D27D /* MapViewController.h */,
 				BFCACC221A15A61D0099D27D /* MapViewController.m */,
-				BF1681A21A322AEE00175385 /* InteriorViewController.h */,
-				BF1681A31A322AEE00175385 /* InteriorViewController.m */,
 				BF1D2BC91A1D04F3001E88FF /* Abstracts.h */,
 				BF1D2BCA1A1D0500001E88FF /* Abstracts.m */,
 				BF1D2BCC1A1D05CE001E88FF /* AbstractsDB.h */,
@@ -163,6 +164,8 @@
 				BF1D2BD31A1D06FA001E88FF /* MasterViewController.m */,
 				BF1D2BCF1A1D068E001E88FF /* DetailViewController.h */,
 				BF1D2BD01A1D069E001E88FF /* DetailViewController.m */,
+				CD50D4031A326C9600548149 /* PersonalScheduleTableViewController.h */,
+				CD50D4041A326C9600548149 /* PersonalScheduleTableViewController.m */,
 				7F5AA72E1A322F0B006BDC82 /* FAQViewController.h */,
 				7F5AA72F1A322F0B006BDC82 /* FAQViewController.m */,
 				CDE681011A015AD50070F870 /* Images.xcassets */,
@@ -318,12 +321,12 @@
 				BFCACC261A15A9480099D27D /* RHLocation.m in Sources */,
 				BF1D2BCE1A1D05D8001E88FF /* AbstractsDB.m in Sources */,
 				BF1D2BD41A1D06FA001E88FF /* MasterViewController.m in Sources */,
+				CD50D4051A326C9600548149 /* PersonalScheduleTableViewController.m in Sources */,
 				BF1D2BCB1A1D0500001E88FF /* Abstracts.m in Sources */,
 				7F5AA7301A322F0B006BDC82 /* FAQViewController.m in Sources */,
 				CD5AD4CD1A20F6EF009AC353 /* AppDelegate.m in Sources */,
 				BFCACC231A15A61D0099D27D /* MapViewController.m in Sources */,
 				CDE680F11A015AD50070F870 /* main.m in Sources */,
-				BF1681A41A322AEE00175385 /* InteriorViewController.m in Sources */,
 				BF1D2BD11A1D069E001E88FF /* DetailViewController.m in Sources */,
 				DD3E9A5B1A3243800005A169 /* EventViewController.m in Sources */,
 				BFCACC291A15AB920099D27D /* RHLocationDataController.m in Sources */,
