@@ -13,7 +13,6 @@
 		BF1D2BD41A1D06FA001E88FF /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D2BD31A1D06FA001E88FF /* MasterViewController.m */; };
 		BF1D2BD61A1D0708001E88FF /* Twitter&Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1D2BD51A1D0708001E88FF /* Twitter&Facebook.png */; };
 		BF1D2BD81A1D070F001E88FF /* DiscoveryDayPic.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1D2BD71A1D070F001E88FF /* DiscoveryDayPic.png */; };
-		BF8A31571A24F23100B973AA /* star-2-256.png in Resources */ = {isa = PBXBuildFile; fileRef = BF8A31561A24F23100B973AA /* star-2-256.png */; };
 		BFCACC231A15A61D0099D27D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC221A15A61D0099D27D /* MapViewController.m */; };
 		BFCACC261A15A9480099D27D /* RHLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC251A15A9480099D27D /* RHLocation.m */; };
 		BFCACC291A15AB920099D27D /* RHLocationDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC281A15AB920099D27D /* RHLocationDataController.m */; };
@@ -57,7 +56,6 @@
 		BF1D2BD31A1D06FA001E88FF /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		BF1D2BD51A1D0708001E88FF /* Twitter&Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter&Facebook.png"; sourceTree = "<group>"; };
 		BF1D2BD71A1D070F001E88FF /* DiscoveryDayPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DiscoveryDayPic.png; sourceTree = "<group>"; };
-		BF8A31561A24F23100B973AA /* star-2-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-2-256.png"; sourceTree = "<group>"; };
 		BFCACC211A15A61D0099D27D /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		BFCACC221A15A61D0099D27D /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		BFCACC241A15A9480099D27D /* RHLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHLocation.h; sourceTree = "<group>"; };
@@ -169,7 +167,6 @@
 				BFF518021A30126D0007FFBF /* Second Floor.jpg */,
 				BFF518001A3012640007FFBF /* Basement.jpg */,
 				BFF517FE1A30125B0007FFBF /* Fourth Floor.jpg */,
-				BF8A31561A24F23100B973AA /* star-2-256.png */,
 				CD5AD4C91A20F442009AC353 /* discoveryLogo.png */,
 				BF1D2BD71A1D070F001E88FF /* DiscoveryDayPic.png */,
 				BF1D2BD51A1D0708001E88FF /* Twitter&Facebook.png */,
@@ -284,7 +281,6 @@
 				CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */,
 				BFF518031A30126D0007FFBF /* Second Floor.jpg in Resources */,
 				BF1D2BD61A1D0708001E88FF /* Twitter&Facebook.png in Resources */,
-				BF8A31571A24F23100B973AA /* star-2-256.png in Resources */,
 				BFF518051A3012740007FFBF /* Third Floor.jpg in Resources */,
 				CD5AD4CA1A20F442009AC353 /* discoveryLogo.png in Resources */,
 				BFFDFC9A1A1BC5C800F1D5E6 /* test_db.sqlite3 in Resources */,

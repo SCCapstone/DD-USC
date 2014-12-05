@@ -37,8 +37,6 @@
     
     self.abstractsInfos = [AbstractsDB database].abstractsInfos;
     self.title = @"Abstracts";
-    
-    self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -62,10 +60,22 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetails"])
     {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSIndexPath *indexPath = nil;
+        Abstracts *abstract = nil;
+        
+        if (self.searchDisplayController.active)
+        {
+            indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
+            abstract = [self.searchResults objectAtIndex:indexPath.row];
+        }
+        else
+        {
+            indexPath = [self.tableView indexPathForSelectedRow];
+            abstract = [self.abstractsInfos objectAtIndex:indexPath.row];
+        }
+        
         DetailViewController *controller = segue.destinationViewController;
-        //DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
-        controller.abstract = [self.abstractsInfos objectAtIndex:indexPath.row];
+        controller.abstract = abstract;
         
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
@@ -81,7 +91,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (tableView == self.searchDisplayController.searchResultsTableView) {
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+    {
         return [searchResults count];
         
     } else {
@@ -95,16 +106,19 @@
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
     Abstracts *info = nil;
-    if (tableView == self.searchDisplayController.searchResultsTableView) {
-        info = [self.searchResults objectAtIndex:indexPath.row];
-    } else {
-        info = [self.abstractsInfos objectAtIndex:indexPath.row];
-    }
     if (cell == nil)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
+    
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+    {
+        info = [self.searchResults objectAtIndex:indexPath.row];
+    }
+    else
+    {
+        info = [self.abstractsInfos objectAtIndex:indexPath.row];
     }
 
     //Abstracts *info = [self.abstractsInfos objectAtIndex:indexPath.row];
