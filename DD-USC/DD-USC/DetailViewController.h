@@ -11,7 +11,7 @@
 #import "Abstracts.h"
 
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <UIAlertViewDelegate>
 {
     int _uniqueId;
 }
@@ -20,13 +20,15 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *favButton;
+- (IBAction)addToSchedule:(id)sender;
+
+
 
 @property (nonatomic, assign) int uniqueId;
 
 @property (nonatomic, strong) Abstracts *abstract;
 
-- (IBAction)showMessage:(id)sender;
+
 
 
 @end

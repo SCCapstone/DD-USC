@@ -17,8 +17,9 @@
 @synthesize FinalTime = _FinalTime;
 @synthesize Room = _Room;
 
+
 - (id)initWithUniqueId:(int)uniqueId sFName1:(NSString *)sFName1 sLName1:(NSString*)sLName1 title:(NSString *)title
-                  FinalTime:(NSString *)FinalTime Room:(NSString *)Room {
+             FinalTime:(NSString *)FinalTime Room:(NSString *)Room{
     if ((self = [super init])) {
         self.uniqueId = uniqueId;
         self.sFName1 = sFName1;

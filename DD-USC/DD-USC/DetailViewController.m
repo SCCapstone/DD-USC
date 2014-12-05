@@ -24,8 +24,7 @@
 @synthesize locationLabel;
 @synthesize uniqueId = _uniqueId;
 
-@synthesize favButton;
-
+//@synthesize addToSchedule;
 
 
 - (void)configureView
@@ -43,19 +42,39 @@
     self.titleLabel.text = self.abstract.title;
     self.timeLabel.text = self.abstract.FinalTime;
     self.locationLabel.text = self.abstract.Room;
-
-    //cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@, %@", info.name, info.time, info.location];
+    
     [self configureView];
 }
 
-- (IBAction)showMessage:(id)sender {
-    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Hello World!"
-                                                      message:@"This is your first UIAlertview message."
-                                                     delegate:nil
-                                            cancelButtonTitle:@"OK"
-                                            otherButtonTitles:nil];
+
+
+-(IBAction) addToSchedule:(id)sender
+{
+    NSLog(@"add button clicked");
+    [self addAlertView];
+}
+
+-(void)addAlertView
+{
+    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:
+                              @"Add event to favorites" message:@"Are you sure?" delegate:self
+                                             cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil];
     
-    [message show];
+    [alertView show];
+}
+
+#pragma mark - Alert view delegate
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex{
+    switch (buttonIndex) {
+        case 0:
+            NSLog(@"Cancel button clicked");
+            break;
+        case 1:
+            NSLog(@"OK button clicked");
+            break;
+        default:
+            break;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
