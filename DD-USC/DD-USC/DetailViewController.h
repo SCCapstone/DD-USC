@@ -20,6 +20,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *presenterInfo;
+@property (weak, nonatomic) IBOutlet UILabel *mentorNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *mentorInfo;
+@property (weak, nonatomic) IBOutlet UITextView *abstractText;
 - (IBAction)addToSchedule:(id)sender;
 
 

@@ -23,6 +23,10 @@
 @synthesize titleLabel;
 @synthesize timeLabel;
 @synthesize locationLabel;
+@synthesize mentorInfo;
+@synthesize mentorNameLabel;
+@synthesize presenterInfo;
+@synthesize abstractText;
 @synthesize uniqueId = _uniqueId;
 
 //@synthesize addToSchedule;
@@ -43,6 +47,10 @@
     self.titleLabel.text = self.abstract.title;
     self.timeLabel.text = self.abstract.FinalTime;
     self.locationLabel.text = self.abstract.Room;
+    self.mentorNameLabel.text = [NSString stringWithFormat:@"%@ %@", self.abstract.mFName1, self.abstract.mLName1];
+    self.mentorInfo.text = [NSString stringWithFormat:@"%@, %@, %@", self.abstract.mCampus1, self.abstract.mCollege1, self.abstract.mDepartment1];
+    self.presenterInfo.text = [NSString stringWithFormat:@"%@, %@, %@, %@", self.abstract.sCurrentYear1, self.abstract.sCampus1, self.abstract.sMajor1, self.abstract.sMinor1];
+    self.abstractText.text = self.abstract.Abstract;
     
     [self configureView];
 }
