@@ -25,6 +25,7 @@
 		BFFDFC9A1A1BC5C800F1D5E6 /* test_db.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = BFFDFC991A1BC5C800F1D5E6 /* test_db.sqlite3 */; };
 		CD50D3FF1A31D2E800548149 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5AD4CE1A236273009AC353 /* FacebookSDK.framework */; };
 		CD50D4051A326C9600548149 /* PersonalScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD50D4041A326C9600548149 /* PersonalScheduleTableViewController.m */; };
+		CD50D4081A34EFB300548149 /* InteriorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD50D4071A34EFB300548149 /* InteriorViewController.m */; };
 		CD5AD4C81A20ECA0009AC353 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5AD4C71A20ECA0009AC353 /* HomeViewController.m */; };
 		CD5AD4CA1A20F442009AC353 /* discoveryLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5AD4C91A20F442009AC353 /* discoveryLogo.png */; };
 		CD5AD4CD1A20F6EF009AC353 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5AD4CB1A20F6EF009AC353 /* AppDelegate.m */; };
@@ -75,6 +76,8 @@
 		BFFDFC991A1BC5C800F1D5E6 /* test_db.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = test_db.sqlite3; path = "DD-USC/test_db.sqlite3"; sourceTree = "<group>"; };
 		CD50D4031A326C9600548149 /* PersonalScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalScheduleTableViewController.h; sourceTree = "<group>"; };
 		CD50D4041A326C9600548149 /* PersonalScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalScheduleTableViewController.m; sourceTree = "<group>"; };
+		CD50D4061A34EFB300548149 /* InteriorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteriorViewController.h; sourceTree = "<group>"; };
+		CD50D4071A34EFB300548149 /* InteriorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteriorViewController.m; sourceTree = "<group>"; };
 		CD5AD4C61A20ECA0009AC353 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		CD5AD4C71A20ECA0009AC353 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		CD5AD4C91A20F442009AC353 /* discoveryLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discoveryLogo.png; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 				CD5AD4CB1A20F6EF009AC353 /* AppDelegate.m */,
 				CD5AD4CC1A20F6EF009AC353 /* AppDelegate.h */,
 				CDE680FE1A015AD50070F870 /* Main.storyboard */,
+				CD50D4061A34EFB300548149 /* InteriorViewController.h */,
+				CD50D4071A34EFB300548149 /* InteriorViewController.m */,
 				CD5AD4C61A20ECA0009AC353 /* HomeViewController.h */,
 				CD5AD4C71A20ECA0009AC353 /* HomeViewController.m */,
 				BFCACC241A15A9480099D27D /* RHLocation.h */,
@@ -324,6 +329,7 @@
 				CD50D4051A326C9600548149 /* PersonalScheduleTableViewController.m in Sources */,
 				BF1D2BCB1A1D0500001E88FF /* Abstracts.m in Sources */,
 				7F5AA7301A322F0B006BDC82 /* FAQViewController.m in Sources */,
+				CD50D4081A34EFB300548149 /* InteriorViewController.m in Sources */,
 				CD5AD4CD1A20F6EF009AC353 /* AppDelegate.m in Sources */,
 				BFCACC231A15A61D0099D27D /* MapViewController.m in Sources */,
 				CDE680F11A015AD50070F870 /* main.m in Sources */,

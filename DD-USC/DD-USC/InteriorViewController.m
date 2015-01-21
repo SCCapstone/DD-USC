@@ -10,6 +10,9 @@
 
 @interface InteriorViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *secondFloorImageView;
+@property (strong, nonatomic) IBOutlet UIPinchGestureRecognizer *scaleImage;
+
 @end
 
 @implementation InteriorViewController
@@ -17,11 +20,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIImage *image = [UIImage imageNamed:@"Second Floor.jpg"];
+    self.secondFloorImageView.image = image;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)scaleImage:(UIPinchGestureRecognizer *)recognizer
+{
+    recognizer.view.transform = CGAffineTransformScale(recognizer.view.transform, recognizer.scale, recognizer.scale);
+    recognizer.scale = 1;
 }
 
 /*

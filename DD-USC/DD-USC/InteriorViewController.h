@@ -10,4 +10,7 @@
 
 @interface InteriorViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UIImageView *image;
+
+- (IBAction)scaleImage:(UIPinchGestureRecognizer *)recognizer;
 @end
