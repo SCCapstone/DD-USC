@@ -10,6 +10,10 @@
 #import "RHLocationDataController.h"
 #import "RHLocation.h"
 
+/*!
+ @brief MapViewController
+        the class implements a few formats for the two buttons and the image is actually a mapviewcontroller linked to apple maps that zooms in on a location whose data is stored in "RHLocationDataController.m".
+ */
 @interface MapViewController ()
 
 @end
@@ -35,6 +39,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*!
+ @brief viewDidAppear this was created via combining a few tutorials on the mapview subject.  It pulls up a real sattelite image of Russel house then puts a pin at the coordinates in the "RHLocationDataController.m". However it is limited as it does not give directions only a overhead image with a pin in it. It also assigns the address from the same class above in the label below the image. 
+ */
 - (void)viewDidAppear:(BOOL)animated
 {
    
@@ -63,7 +70,9 @@
 }
 
 
-
+/*!
+ @Go this is the get directions buttons action code.  It takes all the address from RHLocationDataController.m and passes it to a AppleMaps URL page. This one allows the user to get the directions as the name of the actual button suggests.
+ */
 - (IBAction)Go:(id)sender {
     RHLocationDataController *model = [[RHLocationDataController alloc] init];
     RHLocation *place = [model getRusselHouseLoc];

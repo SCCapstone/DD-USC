@@ -18,10 +18,11 @@
 		BFCACC261A15A9480099D27D /* RHLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC251A15A9480099D27D /* RHLocation.m */; };
 		BFCACC291A15AB920099D27D /* RHLocationDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC281A15AB920099D27D /* RHLocationDataController.m */; };
 		BFCACC2B1A15B1020099D27D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCACC2A1A15B1020099D27D /* MapKit.framework */; };
-		BFF517FF1A30125B0007FFBF /* Fourth Floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF517FE1A30125B0007FFBF /* Fourth Floor.jpg */; };
-		BFF518011A3012640007FFBF /* Basement.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF518001A3012640007FFBF /* Basement.jpg */; };
-		BFF518031A30126D0007FFBF /* Second Floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF518021A30126D0007FFBF /* Second Floor.jpg */; };
-		BFF518051A3012740007FFBF /* Third Floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFF518041A3012740007FFBF /* Third Floor.jpg */; };
+		BFD7F5BF1A77DD2F00F7173C /* Basement.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFD7F5BA1A77DD2F00F7173C /* Basement.jpg */; };
+		BFD7F5C01A77DD2F00F7173C /* First Floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFD7F5BB1A77DD2F00F7173C /* First Floor.jpg */; };
+		BFD7F5C11A77DD2F00F7173C /* Fourth Floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFD7F5BC1A77DD2F00F7173C /* Fourth Floor.jpg */; };
+		BFD7F5C21A77DD2F00F7173C /* Second Floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFD7F5BD1A77DD2F00F7173C /* Second Floor.jpg */; };
+		BFD7F5C31A77DD2F00F7173C /* Third Floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFD7F5BE1A77DD2F00F7173C /* Third Floor.jpg */; };
 		BFFDFC9A1A1BC5C800F1D5E6 /* test_db.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = BFFDFC991A1BC5C800F1D5E6 /* test_db.sqlite3 */; };
 		CD50D3FF1A31D2E800548149 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5AD4CE1A236273009AC353 /* FacebookSDK.framework */; };
 		CD50D4051A326C9600548149 /* PersonalScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD50D4041A326C9600548149 /* PersonalScheduleTableViewController.m */; };
@@ -69,10 +70,11 @@
 		BFCACC271A15AB920099D27D /* RHLocationDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHLocationDataController.h; sourceTree = "<group>"; };
 		BFCACC281A15AB920099D27D /* RHLocationDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHLocationDataController.m; sourceTree = "<group>"; };
 		BFCACC2A1A15B1020099D27D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		BFF517FE1A30125B0007FFBF /* Fourth Floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fourth Floor.jpg"; sourceTree = "<group>"; };
-		BFF518001A3012640007FFBF /* Basement.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Basement.jpg; sourceTree = "<group>"; };
-		BFF518021A30126D0007FFBF /* Second Floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Second Floor.jpg"; sourceTree = "<group>"; };
-		BFF518041A3012740007FFBF /* Third Floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Third Floor.jpg"; sourceTree = "<group>"; };
+		BFD7F5BA1A77DD2F00F7173C /* Basement.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Basement.jpg; path = "../../../Photos For project/Basement.jpg"; sourceTree = "<group>"; };
+		BFD7F5BB1A77DD2F00F7173C /* First Floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "First Floor.jpg"; path = "../../../Photos For project/First Floor.jpg"; sourceTree = "<group>"; };
+		BFD7F5BC1A77DD2F00F7173C /* Fourth Floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Fourth Floor.jpg"; path = "../../../Photos For project/Fourth Floor.jpg"; sourceTree = "<group>"; };
+		BFD7F5BD1A77DD2F00F7173C /* Second Floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Second Floor.jpg"; path = "../../../Photos For project/Second Floor.jpg"; sourceTree = "<group>"; };
+		BFD7F5BE1A77DD2F00F7173C /* Third Floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Third Floor.jpg"; path = "../../../Photos For project/Third Floor.jpg"; sourceTree = "<group>"; };
 		BFFDFC991A1BC5C800F1D5E6 /* test_db.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = test_db.sqlite3; path = "DD-USC/test_db.sqlite3"; sourceTree = "<group>"; };
 		CD50D4031A326C9600548149 /* PersonalScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalScheduleTableViewController.h; sourceTree = "<group>"; };
 		CD50D4041A326C9600548149 /* PersonalScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalScheduleTableViewController.m; sourceTree = "<group>"; };
@@ -183,10 +185,11 @@
 		CDE680EE1A015AD50070F870 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BFF518041A3012740007FFBF /* Third Floor.jpg */,
-				BFF518021A30126D0007FFBF /* Second Floor.jpg */,
-				BFF518001A3012640007FFBF /* Basement.jpg */,
-				BFF517FE1A30125B0007FFBF /* Fourth Floor.jpg */,
+				BFD7F5BA1A77DD2F00F7173C /* Basement.jpg */,
+				BFD7F5BB1A77DD2F00F7173C /* First Floor.jpg */,
+				BFD7F5BC1A77DD2F00F7173C /* Fourth Floor.jpg */,
+				BFD7F5BD1A77DD2F00F7173C /* Second Floor.jpg */,
+				BFD7F5BE1A77DD2F00F7173C /* Third Floor.jpg */,
 				CD5AD4C91A20F442009AC353 /* discoveryLogo.png */,
 				BF1D2BD71A1D070F001E88FF /* DiscoveryDayPic.png */,
 				BF1D2BD51A1D0708001E88FF /* Twitter&Facebook.png */,
@@ -295,17 +298,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDCED43D1A2FC783005184E8 /* Abstract_real.sqlite3 in Resources */,
-				BFF518011A3012640007FFBF /* Basement.jpg in Resources */,
 				BF1D2BD81A1D070F001E88FF /* DiscoveryDayPic.png in Resources */,
+				BFD7F5C11A77DD2F00F7173C /* Fourth Floor.jpg in Resources */,
 				CDE681001A015AD50070F870 /* Main.storyboard in Resources */,
 				CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */,
-				BFF518031A30126D0007FFBF /* Second Floor.jpg in Resources */,
+				BFD7F5C21A77DD2F00F7173C /* Second Floor.jpg in Resources */,
 				BF1D2BD61A1D0708001E88FF /* Twitter&Facebook.png in Resources */,
-				BFF518051A3012740007FFBF /* Third Floor.jpg in Resources */,
 				CD5AD4CA1A20F442009AC353 /* discoveryLogo.png in Resources */,
+				BFD7F5C31A77DD2F00F7173C /* Third Floor.jpg in Resources */,
 				BFFDFC9A1A1BC5C800F1D5E6 /* test_db.sqlite3 in Resources */,
+				BFD7F5BF1A77DD2F00F7173C /* Basement.jpg in Resources */,
+				BFD7F5C01A77DD2F00F7173C /* First Floor.jpg in Resources */,
 				CDE681021A015AD50070F870 /* Images.xcassets in Resources */,
-				BFF517FF1A30125B0007FFBF /* Fourth Floor.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

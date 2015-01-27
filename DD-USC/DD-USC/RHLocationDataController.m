@@ -6,6 +6,13 @@
 //  Copyright (c) 2014 Casey Cole. All rights reserved.
 //
 
+/*!
+ @brief RHLocationDataController.h only holds
+ the values of the variables from RHLocation.m
+ this will make it easy to change the variables later as you will not need to look for them through a mass amount of code.
+ @property latitude was taken from google maps link to russel house after typing in the address.
+ @property longitude was also taken from google maps
+ */
 #import "RHLocationDataController.h"
 
 @implementation RHLocationDataController

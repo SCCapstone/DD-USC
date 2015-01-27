@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cZo-Gp-4Ks">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cZo-Gp-4Ks">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -618,17 +618,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Second Floor.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8bL-2V-eIk">
-                                <rect key="frame" x="0.0" y="64" width="320" height="325"/>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Second Floor.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8bL-2V-eIk">
+                                <rect key="frame" x="0.0" y="64" width="320" height="360"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="rmB-Tt-KTH" appends="YES" id="Qrt-7s-mwv"/>
                                 </connections>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HY6-wI-rl1">
+                                <rect key="frame" x="110" y="470" width="100" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BuV-Xh-jsi"/>
+                                </constraints>
+                                <color key="tintColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Change Floor">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="FloorUp:" destination="beA-mj-rla" eventType="touchUpInside" id="v4K-BP-73g"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.62065972219999999" green="0.077416089120000003" blue="0.1086289384" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8bL-2V-eIk" firstAttribute="top" secondItem="sKv-QU-Z0P" secondAttribute="bottom" id="3E9-Nw-ynT"/>
+                            <constraint firstItem="8bL-2V-eIk" firstAttribute="leading" secondItem="qhj-52-LA4" secondAttribute="leading" id="49n-yP-J1d"/>
+                            <constraint firstAttribute="trailing" secondItem="8bL-2V-eIk" secondAttribute="trailing" id="CQO-2u-phd"/>
+                            <constraint firstItem="HY6-wI-rl1" firstAttribute="top" secondItem="8bL-2V-eIk" secondAttribute="bottom" constant="46" id="MD2-77-UTl"/>
+                            <constraint firstItem="cQ0-j3-0Da" firstAttribute="top" secondItem="HY6-wI-rl1" secondAttribute="bottom" constant="68" id="gap-zm-dWp"/>
+                            <constraint firstItem="HY6-wI-rl1" firstAttribute="centerX" secondItem="8bL-2V-eIk" secondAttribute="centerX" id="mGr-S2-3H8"/>
+                            <constraint firstItem="HY6-wI-rl1" firstAttribute="leading" secondItem="qhj-52-LA4" secondAttribute="leadingMargin" constant="94" id="uzG-wn-LKx"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="ChangeFloor" destination="HY6-wI-rl1" id="LqN-3X-xT8"/>
                         <outlet property="scaleImage" destination="rmB-Tt-KTH" id="xvN-Qd-PhH"/>
                         <outlet property="secondFloorImageView" destination="8bL-2V-eIk" id="sT0-6B-pn7"/>
                     </connections>
@@ -659,7 +684,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Second Floor.jpg" width="947" height="634"/>
+        <image name="Second Floor.jpg" width="656" height="597"/>
         <image name="discoveryLogo.png" width="180" height="124"/>
     </resources>
     <color key="tintColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

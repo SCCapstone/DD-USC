@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface InteriorViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIButton *ChangeFloor;
 
 @property (nonatomic, weak) IBOutlet UIImageView *image;
 
