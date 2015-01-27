@@ -20,10 +20,12 @@
 
 @end
 /*!
- @brief variables for the class this includes the interior view controller the button synthesized and a counter initially set to 2.
+ @brief variables for the class this includes the interior view controller the button's synthesized and a counter initially set to 2.
  */
 @implementation InteriorViewController
-@synthesize ChangeFloor;
+
+@synthesize UpFloor;
+@synthesize DownFloor;
 static int counter = 2;
 
 /*!
@@ -32,12 +34,14 @@ static int counter = 2;
  */
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    UpFloor.layer.cornerRadius = 3;
+    UpFloor.layer.borderWidth = 1;
+    UpFloor.layer.borderColor = [[UIColor grayColor]CGColor];
+    DownFloor.layer.cornerRadius = 3;
+    DownFloor.layer.borderWidth = 1;
+    DownFloor.layer.borderColor = [[UIColor grayColor]CGColor];
     UIImage *image = [UIImage imageNamed:@"Second Floor.jpg"];
     self.secondFloorImageView.image = image;
-    ChangeFloor.layer.cornerRadius = 3;
-    ChangeFloor.layer.borderWidth = 1;
-    ChangeFloor.layer.borderColor = [[UIColor grayColor]CGColor];
 }
 
 /*!
@@ -58,25 +62,77 @@ static int counter = 2;
 }
 
 /*!
- @brief FloorUp this is the buttons code it is set to switch between floors one and 2 however can be adjusted easily to increment between more floors.
+ @brief FloorUp and FloorDown these are the buttons codes they're set to switch between floors.
  @property image this variable will change the image of secondFloorImageView depending on the code below.
  */
 - (IBAction)FloorUp:(id)sender {
-    UIImage *image;
-
-    if(counter == 2)
+    UIImage *theImage;
+    if(counter ==0)
     {
         counter++;
-        image = [UIImage imageNamed:@"Third Floor.jpg"];
-        self.secondFloorImageView.image = image;
+        theImage = [UIImage imageNamed:@"First Floor.jpg"];
+    }
+    else if(counter ==1)
+    {
+        counter++;
+        theImage = [UIImage imageNamed:@"Second Floor.jpg"];
+    }
+    else if(counter == 2)
+    {
+        counter++;
+        theImage = [UIImage imageNamed:@"Third Floor.jpg"];
+
     }
     else if(counter == 3)
     {
-        counter--;
-        image = [UIImage imageNamed:@"Second Floor.jpg"];
-        self.secondFloorImageView.image = image;
+        counter++;
+        theImage = [UIImage imageNamed:@"Fourth Floor.jpg"];
+
     }
+    else if(counter ==4)
+    {
+        counter = 0;
+        theImage = [UIImage imageNamed:@"Basement.jpg"];
+
+    }
+    self.secondFloorImageView.image = theImage;
 }
+
+- (IBAction)DownFloor:(id)sender {
+    UIImage *secondImage;
+    if(counter == 0)
+    {
+        counter = 4;
+        secondImage = [UIImage imageNamed:@"Fourth Floor.jpg"];
+    }
+    else if(counter ==1)
+    {
+        counter--;
+        secondImage = [UIImage imageNamed:@"Basement.jpg"];
+    }
+    else if(counter ==2)
+    {
+        counter--;
+        secondImage = [UIImage imageNamed:@"First Floor.jpg"];
+        
+    }
+    else if(counter ==3)
+    {
+        counter--;
+        secondImage = [UIImage imageNamed:@"Second Floor.jpg"];
+        
+    }
+    else if(counter ==4)
+    {
+        counter--;
+        secondImage = [UIImage imageNamed:@"Third Floor.jpg"];
+    }
+    
+    self.secondFloorImageView.image = secondImage;
+        
+}
+
+
 /*
 #pragma mark - Navigation
 
