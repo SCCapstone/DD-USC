@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FAQViewController : UIViewController
+@interface FAQViewController : UIViewController {
+    IBOutlet UIScrollView *scroller;
+}
+
+
+
+
 
 @property (weak,nonatomic) IBOutlet UIView *viewFAQ;
 @property (weak, nonatomic) IBOutlet UIView *viewFAQ2;
