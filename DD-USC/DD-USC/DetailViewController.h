@@ -23,8 +23,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *presenterInfo;
 @property (weak, nonatomic) IBOutlet UILabel *mentorNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *mentorInfo;
-@property (weak, nonatomic) IBOutlet UITextView *abstractText;
+@property (weak, nonatomic) IBOutlet UILabel *presentationType;
+
 - (IBAction)addToSchedule:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *seeAbstract;
 
 
 

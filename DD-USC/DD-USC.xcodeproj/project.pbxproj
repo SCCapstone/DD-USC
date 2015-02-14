@@ -30,6 +30,7 @@
 		CD5AD4C81A20ECA0009AC353 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5AD4C71A20ECA0009AC353 /* HomeViewController.m */; };
 		CD5AD4CA1A20F442009AC353 /* discoveryLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5AD4C91A20F442009AC353 /* discoveryLogo.png */; };
 		CD5AD4CD1A20F6EF009AC353 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5AD4CB1A20F6EF009AC353 /* AppDelegate.m */; };
+		CD987C2A1A8FE66C006CB8E2 /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD987C291A8FE66C006CB8E2 /* AbstractViewController.m */; };
 		CDCED43D1A2FC783005184E8 /* Abstract_real.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = CDCED43C1A2FC783005184E8 /* Abstract_real.sqlite3 */; };
 		CDE680F11A015AD50070F870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F01A015AD50070F870 /* main.m */; };
 		CDE681001A015AD50070F870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE680FE1A015AD50070F870 /* Main.storyboard */; };
@@ -86,6 +87,8 @@
 		CD5AD4CB1A20F6EF009AC353 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CD5AD4CC1A20F6EF009AC353 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD5AD4CE1A236273009AC353 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = "DD-USC/FacebookSDK.framework"; sourceTree = "<group>"; };
+		CD987C281A8FE66C006CB8E2 /* AbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractViewController.h; sourceTree = "<group>"; };
+		CD987C291A8FE66C006CB8E2 /* AbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractViewController.m; sourceTree = "<group>"; };
 		CDCED43C1A2FC783005184E8 /* Abstract_real.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Abstract_real.sqlite3; sourceTree = "<group>"; };
 		CDE680EB1A015AD50070F870 /* DD-USC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DD-USC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE680EF1A015AD50070F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -167,6 +170,8 @@
 				BF1D2BCA1A1D0500001E88FF /* Abstracts.m */,
 				BF1D2BCC1A1D05CE001E88FF /* AbstractsDB.h */,
 				BF1D2BCD1A1D05D8001E88FF /* AbstractsDB.m */,
+				CD987C281A8FE66C006CB8E2 /* AbstractViewController.h */,
+				CD987C291A8FE66C006CB8E2 /* AbstractViewController.m */,
 				BF1D2BD21A1D06EB001E88FF /* MasterViewController.h */,
 				BF1D2BD31A1D06FA001E88FF /* MasterViewController.m */,
 				BF1D2BCF1A1D068E001E88FF /* DetailViewController.h */,
@@ -337,6 +342,7 @@
 				CD5AD4CD1A20F6EF009AC353 /* AppDelegate.m in Sources */,
 				BFCACC231A15A61D0099D27D /* MapViewController.m in Sources */,
 				CDE680F11A015AD50070F870 /* main.m in Sources */,
+				CD987C2A1A8FE66C006CB8E2 /* AbstractViewController.m in Sources */,
 				BF1D2BD11A1D069E001E88FF /* DetailViewController.m in Sources */,
 				DD3E9A5B1A3243800005A169 /* EventViewController.m in Sources */,
 				BFCACC291A15AB920099D27D /* RHLocationDataController.m in Sources */,
