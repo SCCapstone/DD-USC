@@ -84,7 +84,7 @@
 {
     if (![[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"twitter://user?screen_name=UofSC"]]) {
         
-        if (![[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://twitter.com/UofSC"]]) {
+        if (![[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://twitter.com/@gamecock_OUR"]]) {
             
         }
     }
