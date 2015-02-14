@@ -32,6 +32,7 @@
 		CD5AD4CD1A20F6EF009AC353 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5AD4CB1A20F6EF009AC353 /* AppDelegate.m */; };
 		CD987C2A1A8FE66C006CB8E2 /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD987C291A8FE66C006CB8E2 /* AbstractViewController.m */; };
 		CD987C2C1A8FF1E8006CB8E2 /* Discovery Day Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD987C2B1A8FF1E8006CB8E2 /* Discovery Day Logo.jpg */; };
+		CD987C2E1A8FF8F6006CB8E2 /* USClogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CD987C2D1A8FF8F6006CB8E2 /* USClogo.png */; };
 		CDCED43D1A2FC783005184E8 /* Abstract_real.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = CDCED43C1A2FC783005184E8 /* Abstract_real.sqlite3 */; };
 		CDE680F11A015AD50070F870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F01A015AD50070F870 /* main.m */; };
 		CDE681001A015AD50070F870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE680FE1A015AD50070F870 /* Main.storyboard */; };
@@ -91,6 +92,7 @@
 		CD987C281A8FE66C006CB8E2 /* AbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractViewController.h; sourceTree = "<group>"; };
 		CD987C291A8FE66C006CB8E2 /* AbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractViewController.m; sourceTree = "<group>"; };
 		CD987C2B1A8FF1E8006CB8E2 /* Discovery Day Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Discovery Day Logo.jpg"; sourceTree = "<group>"; };
+		CD987C2D1A8FF8F6006CB8E2 /* USClogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USClogo.png; sourceTree = "<group>"; };
 		CDCED43C1A2FC783005184E8 /* Abstract_real.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Abstract_real.sqlite3; sourceTree = "<group>"; };
 		CDE680EB1A015AD50070F870 /* DD-USC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DD-USC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE680EF1A015AD50070F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 		CDE680EE1A015AD50070F870 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CD987C2D1A8FF8F6006CB8E2 /* USClogo.png */,
 				CD987C2B1A8FF1E8006CB8E2 /* Discovery Day Logo.jpg */,
 				BFD1FA311A784FED00A2FD9F /* Basement.jpg */,
 				BFD1FA321A784FED00A2FD9F /* First Floor.jpg */,
@@ -305,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD987C2E1A8FF8F6006CB8E2 /* USClogo.png in Resources */,
 				CDCED43D1A2FC783005184E8 /* Abstract_real.sqlite3 in Resources */,
 				BF1D2BD81A1D070F001E88FF /* DiscoveryDayPic.png in Resources */,
 				CD987C2C1A8FF1E8006CB8E2 /* Discovery Day Logo.jpg in Resources */,
