@@ -19,6 +19,7 @@
 @synthesize mapButton;
 @synthesize faqButton;
 @synthesize fbButton;
+@synthesize logo;
 
 
 - (void)configureView
@@ -30,35 +31,44 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    CGSize screenSize = [[UIScreen mainScreen] bounds].size;
+    
+    logo.center = CGPointMake(self.view.center.x, logo.center.y);
+    
     searchButton.layer.cornerRadius = 3;
     searchButton.layer.borderWidth = 1;
     searchButton.layer.borderColor = [[UIColor grayColor]CGColor];
+    searchButton.center = CGPointMake(self.view.center.x, searchButton.center.y);
     
     personalScheduleButton.layer.cornerRadius = 3;
     personalScheduleButton.layer.borderWidth = 1;
     personalScheduleButton.layer.borderColor = [[UIColor grayColor]CGColor];
+    personalScheduleButton.center = CGPointMake(self.view.center.x, personalScheduleButton.center.y);
     
     masterScheduleButton.layer.cornerRadius = 3;
     masterScheduleButton.layer.borderWidth = 1;
     masterScheduleButton.layer.borderColor = [[UIColor grayColor]CGColor];
+    masterScheduleButton.center = CGPointMake(self.view.center.x, masterScheduleButton.center.y);
     
     mapButton.layer.cornerRadius = 3;
     mapButton.layer.borderWidth = 1;
     mapButton.layer.borderColor = [[UIColor grayColor]CGColor];
+    mapButton.center = CGPointMake(self.view.center.x, mapButton.center.y);
     
     faqButton.layer.cornerRadius = 3;
     faqButton.layer.borderWidth = 1;
     faqButton.layer.borderColor = [[UIColor grayColor]CGColor];
+    faqButton.center = CGPointMake(self.view.center.x, faqButton.center.y);
     
-    CGSize screenSize = [[UIScreen mainScreen] bounds].size;
     FBLikeControl *like = [[FBLikeControl alloc] init];
+    
     like.objectID = @"http://shareitexampleapp.parseapp.com/photo1/";
     like.center = CGPointMake(self.view.center.x + screenSize.width/4, screenSize.height - 50);
     
     [self.view addSubview:like];
     
     //Add the twitter follow button
-    NSString *twitterFollowButton = @"<style>body{background-color:transparent}</style><a class='twitter-follow-button' href='https://twitter.com/twitterdev' data-show-count='false' data-lang='en' data-width='120'> Follow @twitterapi </a> <script type='text/javascript'> window.twttr = (function (d, s, id) { var t, js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src= 'https://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } }); }(document, 'script', 'twitter-wjs')); </script>";
+    NSString *twitterFollowButton = @"<style>body{background-color:transparent}</style><a class='twitter-follow-button' href='https://twitter.com/gamecock_OUR' data-show-count='false' data-lang='en' data-width='120'> Follow @twitterapi </a> <script type='text/javascript'> window.twttr = (function (d, s, id) { var t, js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src= 'https://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } }); }(document, 'script', 'twitter-wjs')); </script>";
     CGRect viewRect = CGRectMake(0, 0, 130, 30);
     UIWebView* TwitterView = [[UIWebView alloc] initWithFrame:viewRect];
     TwitterView.opaque = NO;
@@ -89,5 +99,7 @@
         }
     }
 }
+
+
 
 @end

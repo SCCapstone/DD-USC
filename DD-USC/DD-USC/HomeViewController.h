@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *masterScheduleButton;
 @property (weak, nonatomic) IBOutlet UIButton *mapButton;
 @property (weak, nonatomic) IBOutlet UIButton *faqButton;
+@property (weak, nonatomic) IBOutlet UIImageView *logo;
 
 @property (weak, nonatomic) IBOutlet UIButton *fbButton;
 
