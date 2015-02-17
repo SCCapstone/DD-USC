@@ -9,6 +9,7 @@
 #import "DetailViewController.h"
 #import "Abstracts.h"
 #import "AbstractsDB.h"
+#import "AbstractViewController.h"
 #import "PersonalScheduleTableViewController.h"
 
 @interface DetailViewController ()
@@ -26,8 +27,9 @@
 @synthesize mentorInfo;
 @synthesize mentorNameLabel;
 @synthesize presenterInfo;
-@synthesize abstractText;
 @synthesize uniqueId = _uniqueId;
+@synthesize presentationType;
+
 
 //@synthesize addToSchedule;
 
@@ -50,11 +52,25 @@
     self.mentorNameLabel.text = [NSString stringWithFormat:@"%@ %@", self.abstract.mFName1, self.abstract.mLName1];
     self.mentorInfo.text = [NSString stringWithFormat:@"%@, %@, %@", self.abstract.mCampus1, self.abstract.mCollege1, self.abstract.mDepartment1];
     self.presenterInfo.text = [NSString stringWithFormat:@"%@, %@, %@, %@", self.abstract.sCurrentYear1, self.abstract.sCampus1, self.abstract.sMajor1, self.abstract.sMinor1];
-    self.abstractText.text = self.abstract.Abstract;
+    self.presentationType.text = @"Change this!!";
     
     [self configureView];
 }
 
+#pragma mark - Segues
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showAbstract"])
+    {
+        
+        AbstractViewController *controller = segue.destinationViewController;
+        controller.abstractText = self.abstract.Abstract;
+        
+        controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
+        controller.navigationItem.leftItemsSupplementBackButton = YES;
+    }
+}
 
 
 -(IBAction) addToSchedule:(id)sender
