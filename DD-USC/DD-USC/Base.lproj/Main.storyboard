@@ -121,7 +121,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ufh-Av-Whj">
                                         <rect key="frame" x="20" y="403" width="288" height="510"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <mutableString key="text">Any activity where you learned something important to you or that was meaningful to you that you want to highlight or show-off to others. Common examples include:
+                                        <string key="text">Any activity where you learned something important to you or that was meaningful to you that you want to highlight or show-off to others. Common examples include:
 -research/scholarly projects
 -study abroad or study away
 -internships and co-ops
@@ -130,7 +130,7 @@
 -national fellowship competitions
                                                                                   Also:
 The work or activity to be presented may be IN PROGRESS or completed.
-There is no time limit on when you can present an experience. Activities completed in previous academic years are eligible to be presented at any Discovery Day, up until the academic year in which you graduate.</mutableString>
+There is no time limit on when you can present an experience. Activities completed in previous academic years are eligible to be presented at any Discovery Day, up until the academic year in which you graduate.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
