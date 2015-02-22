@@ -32,7 +32,7 @@
 		CD5AD4CD1A20F6EF009AC353 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5AD4CB1A20F6EF009AC353 /* AppDelegate.m */; };
 		CD987C2A1A8FE66C006CB8E2 /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD987C291A8FE66C006CB8E2 /* AbstractViewController.m */; };
 		CD987C2E1A8FF8F6006CB8E2 /* USClogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CD987C2D1A8FF8F6006CB8E2 /* USClogo.png */; };
-		CD987C321A9A4DB9006CB8E2 /* Discovery Day Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CD987C311A9A4DB9006CB8E2 /* Discovery Day Logo.png */; };
+		CD987C341A9A53F7006CB8E2 /* Discovery Day Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD987C331A9A53F7006CB8E2 /* Discovery Day Logo.jpg */; };
 		CDCED43D1A2FC783005184E8 /* Abstract_real.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = CDCED43C1A2FC783005184E8 /* Abstract_real.sqlite3 */; };
 		CDE680F11A015AD50070F870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F01A015AD50070F870 /* main.m */; };
 		CDE681001A015AD50070F870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE680FE1A015AD50070F870 /* Main.storyboard */; };
@@ -92,7 +92,7 @@
 		CD987C281A8FE66C006CB8E2 /* AbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractViewController.h; sourceTree = "<group>"; };
 		CD987C291A8FE66C006CB8E2 /* AbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractViewController.m; sourceTree = "<group>"; };
 		CD987C2D1A8FF8F6006CB8E2 /* USClogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USClogo.png; sourceTree = "<group>"; };
-		CD987C311A9A4DB9006CB8E2 /* Discovery Day Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Discovery Day Logo.png"; sourceTree = "<group>"; };
+		CD987C331A9A53F7006CB8E2 /* Discovery Day Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Discovery Day Logo.jpg"; sourceTree = "<group>"; };
 		CDCED43C1A2FC783005184E8 /* Abstract_real.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Abstract_real.sqlite3; sourceTree = "<group>"; };
 		CDE680EB1A015AD50070F870 /* DD-USC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DD-USC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE680EF1A015AD50070F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -194,7 +194,7 @@
 		CDE680EE1A015AD50070F870 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CD987C311A9A4DB9006CB8E2 /* Discovery Day Logo.png */,
+				CD987C331A9A53F7006CB8E2 /* Discovery Day Logo.jpg */,
 				CD987C2D1A8FF8F6006CB8E2 /* USClogo.png */,
 				BFD1FA311A784FED00A2FD9F /* Basement.jpg */,
 				BFD1FA321A784FED00A2FD9F /* First Floor.jpg */,
@@ -310,12 +310,12 @@
 			files = (
 				CD987C2E1A8FF8F6006CB8E2 /* USClogo.png in Resources */,
 				CDCED43D1A2FC783005184E8 /* Abstract_real.sqlite3 in Resources */,
-				CD987C321A9A4DB9006CB8E2 /* Discovery Day Logo.png in Resources */,
 				BF1D2BD81A1D070F001E88FF /* DiscoveryDayPic.png in Resources */,
 				BFD1FA381A784FED00A2FD9F /* Fourth Floor.jpg in Resources */,
 				CDE681001A015AD50070F870 /* Main.storyboard in Resources */,
 				CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */,
 				BFD1FA391A784FED00A2FD9F /* Second Floor.jpg in Resources */,
+				CD987C341A9A53F7006CB8E2 /* Discovery Day Logo.jpg in Resources */,
 				BF1D2BD61A1D0708001E88FF /* Twitter&Facebook.png in Resources */,
 				CD5AD4CA1A20F442009AC353 /* discoveryLogo.png in Resources */,
 				BFD1FA3A1A784FED00A2FD9F /* Third Floor.jpg in Resources */,
@@ -477,7 +477,6 @@
 		CDE681151A015AD50070F870 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -499,7 +498,6 @@
 		CDE681161A015AD50070F870 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
