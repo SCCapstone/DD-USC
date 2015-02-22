@@ -35,6 +35,7 @@
     
     logo.center = CGPointMake(self.view.center.x, logo.center.y);
     
+    /*
     searchButton.layer.cornerRadius = 3;
     searchButton.layer.borderWidth = 1;
     searchButton.layer.borderColor = [[UIColor grayColor]CGColor];
@@ -58,7 +59,7 @@
     faqButton.layer.cornerRadius = 3;
     faqButton.layer.borderWidth = 1;
     faqButton.layer.borderColor = [[UIColor grayColor]CGColor];
-    faqButton.center = CGPointMake(self.view.center.x, faqButton.center.y);
+    faqButton.center = CGPointMake(self.view.center.x, faqButton.center.y);*/
     
     FBLikeControl *like = [[FBLikeControl alloc] init];
     

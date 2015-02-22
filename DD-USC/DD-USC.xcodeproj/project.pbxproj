@@ -33,6 +33,12 @@
 		CD987C2A1A8FE66C006CB8E2 /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD987C291A8FE66C006CB8E2 /* AbstractViewController.m */; };
 		CD987C2E1A8FF8F6006CB8E2 /* USClogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CD987C2D1A8FF8F6006CB8E2 /* USClogo.png */; };
 		CD987C341A9A53F7006CB8E2 /* Discovery Day Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD987C331A9A53F7006CB8E2 /* Discovery Day Logo.jpg */; };
+		CD987C381A9A5887006CB8E2 /* CalendarICON.png in Resources */ = {isa = PBXBuildFile; fileRef = CD987C371A9A5887006CB8E2 /* CalendarICON.png */; };
+		CD987C3C1A9A59F0006CB8E2 /* MapICON.png in Resources */ = {isa = PBXBuildFile; fileRef = CD987C3B1A9A59F0006CB8E2 /* MapICON.png */; };
+		CD987C401A9A5BCD006CB8E2 /* FavICON.png in Resources */ = {isa = PBXBuildFile; fileRef = CD987C3D1A9A5BCD006CB8E2 /* FavICON.png */; };
+		CD987C411A9A5BCD006CB8E2 /* SearchICON2.png in Resources */ = {isa = PBXBuildFile; fileRef = CD987C3E1A9A5BCD006CB8E2 /* SearchICON2.png */; };
+		CD987C421A9A5BCD006CB8E2 /* FAQICON.png in Resources */ = {isa = PBXBuildFile; fileRef = CD987C3F1A9A5BCD006CB8E2 /* FAQICON.png */; };
+		CD987C441A9A6201006CB8E2 /* DiscoveryDayRounded.png in Resources */ = {isa = PBXBuildFile; fileRef = CD987C431A9A6201006CB8E2 /* DiscoveryDayRounded.png */; };
 		CDCED43D1A2FC783005184E8 /* Abstract_real.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = CDCED43C1A2FC783005184E8 /* Abstract_real.sqlite3 */; };
 		CDE680F11A015AD50070F870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F01A015AD50070F870 /* main.m */; };
 		CDE681001A015AD50070F870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE680FE1A015AD50070F870 /* Main.storyboard */; };
@@ -93,6 +99,12 @@
 		CD987C291A8FE66C006CB8E2 /* AbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractViewController.m; sourceTree = "<group>"; };
 		CD987C2D1A8FF8F6006CB8E2 /* USClogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USClogo.png; sourceTree = "<group>"; };
 		CD987C331A9A53F7006CB8E2 /* Discovery Day Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Discovery Day Logo.jpg"; sourceTree = "<group>"; };
+		CD987C371A9A5887006CB8E2 /* CalendarICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CalendarICON.png; sourceTree = "<group>"; };
+		CD987C3B1A9A59F0006CB8E2 /* MapICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MapICON.png; sourceTree = "<group>"; };
+		CD987C3D1A9A5BCD006CB8E2 /* FavICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavICON.png; sourceTree = "<group>"; };
+		CD987C3E1A9A5BCD006CB8E2 /* SearchICON2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SearchICON2.png; sourceTree = "<group>"; };
+		CD987C3F1A9A5BCD006CB8E2 /* FAQICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FAQICON.png; sourceTree = "<group>"; };
+		CD987C431A9A6201006CB8E2 /* DiscoveryDayRounded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DiscoveryDayRounded.png; sourceTree = "<group>"; };
 		CDCED43C1A2FC783005184E8 /* Abstract_real.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Abstract_real.sqlite3; sourceTree = "<group>"; };
 		CDE680EB1A015AD50070F870 /* DD-USC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DD-USC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE680EF1A015AD50070F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -194,6 +206,12 @@
 		CDE680EE1A015AD50070F870 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CD987C431A9A6201006CB8E2 /* DiscoveryDayRounded.png */,
+				CD987C3D1A9A5BCD006CB8E2 /* FavICON.png */,
+				CD987C3E1A9A5BCD006CB8E2 /* SearchICON2.png */,
+				CD987C3F1A9A5BCD006CB8E2 /* FAQICON.png */,
+				CD987C3B1A9A59F0006CB8E2 /* MapICON.png */,
+				CD987C371A9A5887006CB8E2 /* CalendarICON.png */,
 				CD987C331A9A53F7006CB8E2 /* Discovery Day Logo.jpg */,
 				CD987C2D1A8FF8F6006CB8E2 /* USClogo.png */,
 				BFD1FA311A784FED00A2FD9F /* Basement.jpg */,
@@ -308,19 +326,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD987C3C1A9A59F0006CB8E2 /* MapICON.png in Resources */,
 				CD987C2E1A8FF8F6006CB8E2 /* USClogo.png in Resources */,
 				CDCED43D1A2FC783005184E8 /* Abstract_real.sqlite3 in Resources */,
 				BF1D2BD81A1D070F001E88FF /* DiscoveryDayPic.png in Resources */,
+				CD987C421A9A5BCD006CB8E2 /* FAQICON.png in Resources */,
 				BFD1FA381A784FED00A2FD9F /* Fourth Floor.jpg in Resources */,
 				CDE681001A015AD50070F870 /* Main.storyboard in Resources */,
+				CD987C441A9A6201006CB8E2 /* DiscoveryDayRounded.png in Resources */,
+				CD987C411A9A5BCD006CB8E2 /* SearchICON2.png in Resources */,
 				CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */,
 				BFD1FA391A784FED00A2FD9F /* Second Floor.jpg in Resources */,
 				CD987C341A9A53F7006CB8E2 /* Discovery Day Logo.jpg in Resources */,
 				BF1D2BD61A1D0708001E88FF /* Twitter&Facebook.png in Resources */,
+				CD987C401A9A5BCD006CB8E2 /* FavICON.png in Resources */,
 				CD5AD4CA1A20F442009AC353 /* discoveryLogo.png in Resources */,
 				BFD1FA3A1A784FED00A2FD9F /* Third Floor.jpg in Resources */,
 				BFFDFC9A1A1BC5C800F1D5E6 /* test_db.sqlite3 in Resources */,
 				BFD1FA361A784FED00A2FD9F /* Basement.jpg in Resources */,
+				CD987C381A9A5887006CB8E2 /* CalendarICON.png in Resources */,
 				BFD1FA371A784FED00A2FD9F /* First Floor.jpg in Resources */,
 				CDE681021A015AD50070F870 /* Images.xcassets in Resources */,
 			);
