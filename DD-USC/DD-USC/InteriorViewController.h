@@ -9,13 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface InteriorViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIButton *FirstFloor;
+@property (strong, nonatomic) IBOutlet UIButton *SecondFloor;
+@property (strong, nonatomic) IBOutlet UIButton *ThirdFloor;
 
-@property (strong, nonatomic) IBOutlet UIButton *UpFloor;
-@property (strong, nonatomic) IBOutlet UIButton *DownFloor;
 
 
 
 @property (nonatomic, weak) IBOutlet UIImageView *image;
 
 - (IBAction)scaleImage:(UIPinchGestureRecognizer *)recognizer;
+
 @end

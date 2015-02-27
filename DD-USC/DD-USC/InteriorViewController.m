@@ -22,11 +22,9 @@
 /*!
  @brief variables for the class this includes the interior view controller the button's synthesized and a counter initially set to 2.
  */
+
 @implementation InteriorViewController
 
-@synthesize UpFloor;
-@synthesize DownFloor;
-static int counter = 2;
 
 /*!
  @brief viewDidLoad here we used the synthesized 
@@ -34,12 +32,8 @@ static int counter = 2;
  */
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UpFloor.layer.cornerRadius = 3;
-    UpFloor.layer.borderWidth = 1;
-    UpFloor.layer.borderColor = [[UIColor grayColor]CGColor];
-    DownFloor.layer.cornerRadius = 3;
-    DownFloor.layer.borderWidth = 1;
-    DownFloor.layer.borderColor = [[UIColor grayColor]CGColor];
+
+
     UIImage *image = [UIImage imageNamed:@"Second Floor.jpg"];
     self.secondFloorImageView.image = image;
 }
@@ -61,86 +55,23 @@ static int counter = 2;
     recognizer.scale = 1;
 }
 
-/*!
- @brief FloorUp and FloorDown these are the buttons codes they're set to switch between floors.
- @property image this variable will change the image of secondFloorImageView depending on the code below.
- */
-- (IBAction)FloorUp:(id)sender {
-    UIImage *theImage;
-    if(counter ==0)
-    {
-        counter++;
-        theImage = [UIImage imageNamed:@"First Floor.jpg"];
-    }
-    else if(counter ==1)
-    {
-        counter++;
-        theImage = [UIImage imageNamed:@"Second Floor.jpg"];
-    }
-    else if(counter == 2)
-    {
-        counter++;
-        theImage = [UIImage imageNamed:@"Third Floor.jpg"];
-
-    }
-    else if(counter == 3)
-    {
-        counter++;
-        theImage = [UIImage imageNamed:@"Fourth Floor.jpg"];
-
-    }
-    else if(counter ==4)
-    {
-        counter = 0;
-        theImage = [UIImage imageNamed:@"Basement.jpg"];
-
-    }
-    self.secondFloorImageView.image = theImage;
+- (IBAction)FirstFlr:(id)sender {
+    UIImage *image = [UIImage imageNamed:@"First Floor.jpg"];
+    self.secondFloorImageView.image = image;
 }
 
-- (IBAction)DownFloor:(id)sender {
-    UIImage *secondImage;
-    if(counter == 0)
-    {
-        counter = 4;
-        secondImage = [UIImage imageNamed:@"Fourth Floor.jpg"];
-    }
-    else if(counter ==1)
-    {
-        counter--;
-        secondImage = [UIImage imageNamed:@"Basement.jpg"];
-    }
-    else if(counter ==2)
-    {
-        counter--;
-        secondImage = [UIImage imageNamed:@"First Floor.jpg"];
-        
-    }
-    else if(counter ==3)
-    {
-        counter--;
-        secondImage = [UIImage imageNamed:@"Second Floor.jpg"];
-        
-    }
-    else if(counter ==4)
-    {
-        counter--;
-        secondImage = [UIImage imageNamed:@"Third Floor.jpg"];
-    }
-    
-    self.secondFloorImageView.image = secondImage;
-        
+- (IBAction)SecondFlr:(id)sender {
+    UIImage *image = [UIImage imageNamed:@"Second Floor.jpg"];
+    self.secondFloorImageView.image = image;
+}
+
+- (IBAction)ThrdFloor:(id)sender {
+    UIImage *image = [UIImage imageNamed:@"Third Floor.jpg"];
+    self.secondFloorImageView.image = image;
 }
 
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
 
 @end
