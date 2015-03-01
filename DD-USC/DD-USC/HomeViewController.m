@@ -20,7 +20,6 @@
 @synthesize faqButton;
 @synthesize fbButton;
 @synthesize logo;
-@synthesize lab;
 
 - (void)configureView
 {
