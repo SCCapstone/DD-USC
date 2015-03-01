@@ -116,8 +116,8 @@
 		CDE681E41A168C2F0070F870 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		DD3E9A591A3243740005A169 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
 		DD3E9A5A1A3243800005A169 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
-		DDD3B7291AA3AC39000A3A26 /* FBICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FBICON.png; path = ../../../FBICON.png; sourceTree = "<group>"; };
-		DDD3B72C1AA3BC85000A3A26 /* TwitterIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TwitterIcon.png; path = ../../../TwitterIcon.png; sourceTree = "<group>"; };
+		DDD3B7291AA3AC39000A3A26 /* FBICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FBICON.png; sourceTree = "<group>"; };
+		DDD3B72C1AA3BC85000A3A26 /* TwitterIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwitterIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
