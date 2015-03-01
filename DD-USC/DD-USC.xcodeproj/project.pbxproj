@@ -45,6 +45,8 @@
 		CDE681111A015AD50070F870 /* DD_USCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE681101A015AD50070F870 /* DD_USCTests.m */; };
 		CDE681E51A168C2F0070F870 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE681E41A168C2F0070F870 /* libsqlite3.dylib */; };
 		DD3E9A5B1A3243800005A169 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3E9A5A1A3243800005A169 /* EventViewController.m */; };
+		DDD3B72A1AA3AC39000A3A26 /* FBICON.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD3B7291AA3AC39000A3A26 /* FBICON.png */; };
+		DDD3B72D1AA3BC85000A3A26 /* TwitterIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD3B72C1AA3BC85000A3A26 /* TwitterIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,8 @@
 		CDE681E41A168C2F0070F870 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		DD3E9A591A3243740005A169 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
 		DD3E9A5A1A3243800005A169 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
+		DDD3B7291AA3AC39000A3A26 /* FBICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FBICON.png; path = ../../../FBICON.png; sourceTree = "<group>"; };
+		DDD3B72C1AA3BC85000A3A26 /* TwitterIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TwitterIcon.png; path = ../../../TwitterIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,7 +209,9 @@
 				CD987C431A9A6201006CB8E2 /* DiscoveryDayRounded.png */,
 				CD987C3D1A9A5BCD006CB8E2 /* FavICON.png */,
 				CD987C3E1A9A5BCD006CB8E2 /* SearchICON2.png */,
+				DDD3B7291AA3AC39000A3A26 /* FBICON.png */,
 				CD987C3F1A9A5BCD006CB8E2 /* FAQICON.png */,
+				DDD3B72C1AA3BC85000A3A26 /* TwitterIcon.png */,
 				CD987C3B1A9A59F0006CB8E2 /* MapICON.png */,
 				CD987C371A9A5887006CB8E2 /* CalendarICON.png */,
 				CD987C331A9A53F7006CB8E2 /* Discovery Day Logo.jpg */,
@@ -325,7 +331,9 @@
 				CDCED43D1A2FC783005184E8 /* Abstract_real.sqlite3 in Resources */,
 				BF1D2BD81A1D070F001E88FF /* DiscoveryDayPic.png in Resources */,
 				CD987C421A9A5BCD006CB8E2 /* FAQICON.png in Resources */,
+				DDD3B72D1AA3BC85000A3A26 /* TwitterIcon.png in Resources */,
 				CDE681001A015AD50070F870 /* Main.storyboard in Resources */,
+				DDD3B72A1AA3AC39000A3A26 /* FBICON.png in Resources */,
 				CD987C441A9A6201006CB8E2 /* DiscoveryDayRounded.png in Resources */,
 				CD987C411A9A5BCD006CB8E2 /* SearchICON2.png in Resources */,
 				CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */,

@@ -20,7 +20,7 @@
 @synthesize faqButton;
 @synthesize fbButton;
 @synthesize logo;
-
+@synthesize lab;
 
 - (void)configureView
 {
@@ -31,16 +31,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    /*
     CGSize screenSize = [[UIScreen mainScreen] bounds].size;
     
     logo.center = CGPointMake(self.view.center.x, logo.center.y);
     
-    /*
     searchButton.layer.cornerRadius = 3;
     searchButton.layer.borderWidth = 1;
     searchButton.layer.borderColor = [[UIColor grayColor]CGColor];
+     
+    lab.center = CGPointMake(self.view.center.x, self.view.center.x);
     searchButton.center = CGPointMake(self.view.center.x, searchButton.center.y);
-    
+
     personalScheduleButton.layer.cornerRadius = 3;
     personalScheduleButton.layer.borderWidth = 1;
     personalScheduleButton.layer.borderColor = [[UIColor grayColor]CGColor];
@@ -59,15 +62,12 @@
     faqButton.layer.cornerRadius = 3;
     faqButton.layer.borderWidth = 1;
     faqButton.layer.borderColor = [[UIColor grayColor]CGColor];
-    faqButton.center = CGPointMake(self.view.center.x, faqButton.center.y);*/
+    faqButton.center = CGPointMake(self.view.center.x, faqButton.center.y);
     
     FBLikeControl *like = [[FBLikeControl alloc] init];
-    
-    like.objectID = @"http://shareitexampleapp.parseapp.com/photo1/";
+    like.objectID = @"https://www.facebook.com/GamecockOUR";
     like.center = CGPointMake(self.view.center.x + screenSize.width/4, screenSize.height - 50);
-    
-    [self.view addSubview:like];
-    
+ 
     //Add the twitter follow button
     NSString *twitterFollowButton = @"<style>body{background-color:transparent}</style><a class='twitter-follow-button' href='https://twitter.com/gamecock_OUR' data-show-count='false' data-lang='en' data-width='120'> Follow @twitterapi </a> <script type='text/javascript'> window.twttr = (function (d, s, id) { var t, js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src= 'https://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } }); }(document, 'script', 'twitter-wjs')); </script>";
     CGRect viewRect = CGRectMake(0, 0, 130, 30);
@@ -84,6 +84,7 @@
     button.frame = CGRectMake(0, 0, 130, 30);
     button.center = CGPointMake(self.view.center.x - screenSize.width/4, screenSize.height - 50);
     [self.view addSubview:button];
+    */
     
     [self configureView];
     
@@ -92,8 +93,8 @@
 
 //Function to deal with follow button being pressed
 - (IBAction)twitterButton:(id)sender
-{
-    if (![[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"twitter://user?screen_name=UofSC"]]) {
+{ //twitter icon source: iconfinder.com
+    if (![[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"twitter://user?screen_name=gamecock_OUR"]]) {
         
         if (![[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://twitter.com/@gamecock_OUR"]]) {
             
@@ -101,6 +102,16 @@
     }
 }
 
+
+- (IBAction)fbButton:(id)sender
+{ //facebook icon source: findicons.com
+    if (![[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"fb://profile/1726558760903109"]]) {
+        
+        if (![[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.facebook.com/gamecockOUR"]]) {
+            
+        }
+    }
+}
 
 
 @end
