@@ -16,7 +16,6 @@
 @interface InteriorViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *secondFloorImageView;
-@property (strong, nonatomic) IBOutlet UIPinchGestureRecognizer *scaleImage;
 
 @end
 /*!
@@ -49,8 +48,7 @@
 /*!
  @brief scaleImage sets the image to a scale.
  */
-- (IBAction)scaleImage:(UIPinchGestureRecognizer *)recognizer
-{
+- (IBAction)handlePinch:(UIPinchGestureRecognizer *)recognizer {
     recognizer.view.transform = CGAffineTransformScale(recognizer.view.transform, recognizer.scale, recognizer.scale);
     recognizer.scale = 1;
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cZo-Gp-4Ks">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cZo-Gp-4Ks">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -780,13 +780,6 @@ There is no time limit on when you can present an experience. Activities complet
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Second Floor.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8bL-2V-eIk">
-                                <rect key="frame" x="5" y="65" width="310" height="367"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="rmB-Tt-KTH" appends="YES" id="Qrt-7s-mwv"/>
-                                </connections>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRf-3x-nWj">
                                 <rect key="frame" x="0.0" y="499" width="110" height="69"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -827,8 +820,16 @@ There is no time limit on when you can present an experience. Activities complet
                                     <action selector="ThrdFloor:" destination="beA-mj-rla" eventType="touchUpInside" id="pOB-Bl-BO0"/>
                                 </connections>
                             </button>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Second Floor.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8bL-2V-eIk">
+                                <rect key="frame" x="5" y="64" width="310" height="367"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Dzn-zC-iZr" appends="YES" id="oCP-KA-dlg"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.62065972219999999" green="0.077416089120000003" blue="0.1086289384" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="CRf-3x-nWj" firstAttribute="leading" secondItem="qhj-52-LA4" secondAttribute="leading" id="64G-9U-bea"/>
                             <constraint firstItem="8bL-2V-eIk" firstAttribute="centerX" secondItem="qhj-52-LA4" secondAttribute="centerX" id="78R-kh-ywY"/>
@@ -853,12 +854,15 @@ There is no time limit on when you can present an experience. Activities complet
                         <outlet property="FirstFloor" destination="CRf-3x-nWj" id="bCO-9f-E7v"/>
                         <outlet property="SecondFloor" destination="2ek-WS-UvV" id="waz-xz-Raw"/>
                         <outlet property="ThirdFloor" destination="abc-Iz-UGo" id="yk8-ad-XaO"/>
-                        <outlet property="scaleImage" destination="rmB-Tt-KTH" id="xvN-Qd-PhH"/>
                         <outlet property="secondFloorImageView" destination="8bL-2V-eIk" id="sT0-6B-pn7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aU9-UI-geH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <pinchGestureRecognizer id="rmB-Tt-KTH"/>
+                <pinchGestureRecognizer id="Dzn-zC-iZr">
+                    <connections>
+                        <action selector="handlePinch:" destination="beA-mj-rla" id="7xa-Rm-BvU"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-856" y="-868"/>
         </scene>

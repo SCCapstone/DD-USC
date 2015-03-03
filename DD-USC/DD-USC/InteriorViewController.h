@@ -18,6 +18,7 @@
 
 @property (nonatomic, weak) IBOutlet UIImageView *image;
 
-- (IBAction)scaleImage:(UIPinchGestureRecognizer *)recognizer;
+-(IBAction)handlePinch:(UIPinchGestureRecognizer *)recognizer;
+
 
 @end
