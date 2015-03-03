@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cZo-Gp-4Ks">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cZo-Gp-4Ks">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -784,7 +784,7 @@ There is no time limit on when you can present an experience. Activities complet
                                 <rect key="frame" x="5" y="65" width="310" height="367"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="rmB-Tt-KTH" appends="YES" id="Qrt-7s-mwv"/>
+                                    <outletCollection property="gestureRecognizers" destination="Yvc-ad-HoQ" appends="YES" id="2U4-Ll-4LH"/>
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRf-3x-nWj">
@@ -853,12 +853,15 @@ There is no time limit on when you can present an experience. Activities complet
                         <outlet property="FirstFloor" destination="CRf-3x-nWj" id="bCO-9f-E7v"/>
                         <outlet property="SecondFloor" destination="2ek-WS-UvV" id="waz-xz-Raw"/>
                         <outlet property="ThirdFloor" destination="abc-Iz-UGo" id="yk8-ad-XaO"/>
-                        <outlet property="scaleImage" destination="rmB-Tt-KTH" id="xvN-Qd-PhH"/>
                         <outlet property="secondFloorImageView" destination="8bL-2V-eIk" id="sT0-6B-pn7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aU9-UI-geH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <pinchGestureRecognizer id="rmB-Tt-KTH"/>
+                <pinchGestureRecognizer id="Yvc-ad-HoQ">
+                    <connections>
+                        <action selector="handlePinch:" destination="beA-mj-rla" id="iok-0y-hI1"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-856" y="-868"/>
         </scene>
