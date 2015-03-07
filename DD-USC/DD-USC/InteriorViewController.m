@@ -56,18 +56,40 @@
 - (IBAction)FirstFlr:(id)sender {
     UIImage *image = [UIImage imageNamed:@"First Floor.jpg"];
     self.secondFloorImageView.image = image;
+    [self performSelector:@selector(setSelected:) withObject:sender afterDelay:0.0];
 }
 
 - (IBAction)SecondFlr:(id)sender {
     UIImage *image = [UIImage imageNamed:@"Second Floor.jpg"];
     self.secondFloorImageView.image = image;
-}
+    [self performSelector:@selector(setSelected:) withObject:sender afterDelay:0.0];}
 
 - (IBAction)ThrdFloor:(id)sender {
     UIImage *image = [UIImage imageNamed:@"Third Floor.jpg"];
     self.secondFloorImageView.image = image;
+    [self performSelector:@selector(setSelected:) withObject:sender afterDelay:0.0];
 }
 
+
+- (void) setSelected:(UIButton *) button {
+        [button setHighlighted:YES];
+    if(button == _FirstFloor)
+    {
+        [_SecondFloor setHighlighted:NO];
+        [_ThirdFloor setHighlighted:NO];
+    }
+    else if (button == _SecondFloor)
+    {
+        [_FirstFloor setHighlighted:NO];
+        [_ThirdFloor setHighlighted:NO];
+    }
+    else
+    {
+        [_FirstFloor setHighlighted:NO];
+        [_SecondFloor setHighlighted:NO];
+    }
+    
+}
 
 
 

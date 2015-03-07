@@ -19,6 +19,6 @@
 @property (nonatomic, weak) IBOutlet UIImageView *image;
 
 -(IBAction)handlePinch:(UIPinchGestureRecognizer *)recognizer;
-
+-(void)setSelected:(UIButton *)button;
 
 @end
