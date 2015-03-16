@@ -38,6 +38,9 @@
 		CD987C421A9A5BCD006CB8E2 /* FAQICON.png in Resources */ = {isa = PBXBuildFile; fileRef = CD987C3F1A9A5BCD006CB8E2 /* FAQICON.png */; };
 		CD987C441A9A6201006CB8E2 /* DiscoveryDayRounded.png in Resources */ = {isa = PBXBuildFile; fileRef = CD987C431A9A6201006CB8E2 /* DiscoveryDayRounded.png */; };
 		CDCED43D1A2FC783005184E8 /* Abstract_real.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = CDCED43C1A2FC783005184E8 /* Abstract_real.sqlite3 */; };
+		CDE2183D1AB71D3500E5E415 /* DDIcon152.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE2183A1AB71D3500E5E415 /* DDIcon152.png */; };
+		CDE2183E1AB71D3500E5E415 /* DDIcon76.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE2183B1AB71D3500E5E415 /* DDIcon76.png */; };
+		CDE2183F1AB71D3500E5E415 /* DDIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE2183C1AB71D3500E5E415 /* DDIcon.png */; };
 		CDE680F11A015AD50070F870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE680F01A015AD50070F870 /* main.m */; };
 		CDE681001A015AD50070F870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE680FE1A015AD50070F870 /* Main.storyboard */; };
 		CDE681021A015AD50070F870 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE681011A015AD50070F870 /* Images.xcassets */; };
@@ -104,6 +107,9 @@
 		CD987C3F1A9A5BCD006CB8E2 /* FAQICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FAQICON.png; sourceTree = "<group>"; };
 		CD987C431A9A6201006CB8E2 /* DiscoveryDayRounded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DiscoveryDayRounded.png; sourceTree = "<group>"; };
 		CDCED43C1A2FC783005184E8 /* Abstract_real.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Abstract_real.sqlite3; sourceTree = "<group>"; };
+		CDE2183A1AB71D3500E5E415 /* DDIcon152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DDIcon152.png; sourceTree = "<group>"; };
+		CDE2183B1AB71D3500E5E415 /* DDIcon76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DDIcon76.png; sourceTree = "<group>"; };
+		CDE2183C1AB71D3500E5E415 /* DDIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DDIcon.png; sourceTree = "<group>"; };
 		CDE680EB1A015AD50070F870 /* DD-USC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DD-USC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE680EF1A015AD50070F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE680F01A015AD50070F870 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -206,6 +212,9 @@
 		CDE680EE1A015AD50070F870 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CDE2183A1AB71D3500E5E415 /* DDIcon152.png */,
+				CDE2183B1AB71D3500E5E415 /* DDIcon76.png */,
+				CDE2183C1AB71D3500E5E415 /* DDIcon.png */,
 				CD987C431A9A6201006CB8E2 /* DiscoveryDayRounded.png */,
 				CD987C3D1A9A5BCD006CB8E2 /* FavICON.png */,
 				CD987C3E1A9A5BCD006CB8E2 /* SearchICON2.png */,
@@ -329,7 +338,10 @@
 				CD987C3C1A9A59F0006CB8E2 /* MapICON.png in Resources */,
 				CD987C2E1A8FF8F6006CB8E2 /* USClogo.png in Resources */,
 				CDCED43D1A2FC783005184E8 /* Abstract_real.sqlite3 in Resources */,
+				CDE2183D1AB71D3500E5E415 /* DDIcon152.png in Resources */,
+				CDE2183F1AB71D3500E5E415 /* DDIcon.png in Resources */,
 				BF1D2BD81A1D070F001E88FF /* DiscoveryDayPic.png in Resources */,
+				CDE2183E1AB71D3500E5E415 /* DDIcon76.png in Resources */,
 				CD987C421A9A5BCD006CB8E2 /* FAQICON.png in Resources */,
 				DDD3B72D1AA3BC85000A3A26 /* TwitterIcon.png in Resources */,
 				CDE681001A015AD50070F870 /* Main.storyboard in Resources */,
@@ -501,6 +513,8 @@
 		CDE681151A015AD50070F870 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -522,6 +536,8 @@
 		CDE681161A015AD50070F870 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
