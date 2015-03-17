@@ -24,6 +24,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *mentorNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *mentorInfo;
 @property (weak, nonatomic) IBOutlet UILabel *presentationType;
+@property (nonatomic, retain) NSArray *abstractsInfos;
+
 
 - (IBAction)addToSchedule:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *seeAbstract;

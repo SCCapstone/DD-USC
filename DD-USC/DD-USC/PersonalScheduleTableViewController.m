@@ -9,6 +9,7 @@
 #import "PersonalScheduleTableViewController.h"
 #import "AbstractsDB.h"
 #import "Abstracts.h"
+#import "MasterViewController.h" 
 
 @interface PersonalScheduleTableViewController ()
 
@@ -16,12 +17,22 @@
 
 @implementation PersonalScheduleTableViewController
 
+static PersonalScheduleTableViewController *_perSchedule;
+
++ (PersonalScheduleTableViewController*)perSchedule
+{
+    if (_perSchedule == nil) {
+        _perSchedule = [[PersonalScheduleTableViewController alloc] init];
+    }
+    return _perSchedule;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     //self.favorites = [AbstractsDB database].abstractsInfos;
-    self.title = @"Personal Schedule";
+    self.title = @"Favorites";
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -55,16 +66,16 @@
     
     //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier: CellIdentifier];
-    
-    Abstracts *info = nil;
+    NSString *info = nil;
+    //Abstracts *info = nil;
     if (cell == nil)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     info = [self.favorites objectAtIndex:indexPath.row];
-
-    cell.textLabel.text = info.title;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@", info.sFName1, info.sLName1];
+    cell.textLabel.text = info;
+    //cell.textLabel.text = info.title;
+    //cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@", info.sFName1, info.sLName1];
     return cell;
 }
 

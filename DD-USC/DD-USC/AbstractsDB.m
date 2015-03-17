@@ -85,8 +85,9 @@ static AbstractsDB *_database;
             NSString *Room = [[NSString alloc] initWithUTF8String:RoomChars];
             NSString *Format = [[NSString alloc] initWithUTF8String:FormatChars];
             NSString *Section = [[NSString alloc] initWithUTF8String:SectionChars];
+            int favored = 0;
             
-            Abstracts *info = [[Abstracts alloc] initWithUniqueId:uniqueId sFName1:sFName1 sLName1:sLName1 sCampus1:sCampus1 sMajor1:sMajor1 sMinor1:sMinor1 sCurrentYear1:sCurrentYear1 mFName1:mFName1 mLName1:mLName1 mCampus1:mCampus1 mCollege1:mCollege1 mDepartment1:mDepartment1 title:title Abstract:Abstract FinalTime:FinalTime Room:Room Format:Format Section:Section];
+            Abstracts *info = [[Abstracts alloc] initWithUniqueId:uniqueId sFName1:sFName1 sLName1:sLName1 sCampus1:sCampus1 sMajor1:sMajor1 sMinor1:sMinor1 sCurrentYear1:sCurrentYear1 mFName1:mFName1 mLName1:mLName1 mCampus1:mCampus1 mCollege1:mCollege1 mDepartment1:mDepartment1 title:title Abstract:Abstract FinalTime:FinalTime Room:Room Format:Format Section:Section favored:favored];
             [retval addObject:info];
         }
         sqlite3_finalize(statement);

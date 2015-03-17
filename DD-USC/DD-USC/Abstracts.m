@@ -34,7 +34,7 @@
 
 
 
-- (id)initWithUniqueId:(int)uniqueId sFName1:(NSString *)sFName1 sLName1:(NSString*)sLName1 sCampus1:(NSString *)sCampus1 sMajor1:(NSString *)sMajor1 sMinor1:(NSString *)sMinor1 sCurrentYear1:(NSString *)sCurrentYear1 mFName1:(NSString *)mFName1 mLName1:(NSString *)mLName1 mCampus1:(NSString *)mCampus1 mCollege1:(NSString *)mCollege1 mDepartment1:(NSString *)mDepartment1 title:(NSString *)title Abstract:(NSString *)Abstract FinalTime:(NSString *)FinalTime Room:(NSString *)Room Format:(NSString *)Format Section:(NSString *)Section{
+- (id)initWithUniqueId:(int)uniqueId sFName1:(NSString *)sFName1 sLName1:(NSString*)sLName1 sCampus1:(NSString *)sCampus1 sMajor1:(NSString *)sMajor1 sMinor1:(NSString *)sMinor1 sCurrentYear1:(NSString *)sCurrentYear1 mFName1:(NSString *)mFName1 mLName1:(NSString *)mLName1 mCampus1:(NSString *)mCampus1 mCollege1:(NSString *)mCollege1 mDepartment1:(NSString *)mDepartment1 title:(NSString *)title Abstract:(NSString *)Abstract FinalTime:(NSString *)FinalTime Room:(NSString *)Room Format:(NSString *)Format Section:(NSString *)Section favored:(int)favored{
     if ((self = [super init])) {
         self.uniqueId = uniqueId;
         self.sFName1 = sFName1;
@@ -57,6 +57,7 @@
         self.Room = Room;
         self.Format = Format;
         self.Section = Section;
+        self.favored = 0;
     }
     return self;
 }

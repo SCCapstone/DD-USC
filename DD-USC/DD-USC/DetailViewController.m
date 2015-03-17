@@ -53,6 +53,9 @@
     self.mentorInfo.text = [NSString stringWithFormat:@"%@, %@, %@", self.abstract.mCampus1, self.abstract.mCollege1, self.abstract.mDepartment1];
     self.presenterInfo.text = [NSString stringWithFormat:@"%@, %@, %@, %@", self.abstract.sCurrentYear1, self.abstract.sCampus1, self.abstract.sMajor1, self.abstract.sMinor1];
     self.presentationType.text = @"Change this!!";
+    [PersonalScheduleTableViewController perSchedule].favorites = [[NSMutableArray alloc] initWithCapacity:20];
+    
+    //PersonalScheduleTableViewController *perSchd = [[PersonalScheduleTableViewController alloc] initWithNibName:@"PersonalScheduleTableViewController" bundle:nil];
     
     [self configureView];
 }
@@ -76,8 +79,14 @@
 -(IBAction) addToSchedule:(id)sender
 {
     NSLog(@"add button clicked");
-    PersonalScheduleTableViewController *perSchd = [[PersonalScheduleTableViewController alloc] initWithNibName:@"PersonalScheduleTableViewController" bundle:nil];
-    [perSchd.favorites addObject:_abstract];
+    //Abstracts *temp =nil;
+    //self.abstract.favored = 1;
+    //self.abstractsInfos = [AbstractsDB database].abstractsInfos;
+    //temp = [_abstractsInfos objectAtIndex:_abstract.uniqueId];
+    //temp.favored = 1;
+    //NSString *testing = @"test";
+    [[PersonalScheduleTableViewController perSchedule].favorites addObject:[NSString stringWithFormat:@"%@ %@", self.abstract.mFName1, self.abstract.mLName1]];
+    //NSLog([NSString stringWithFormat:@"%@ %@", self.abstract.mFName1, self.abstract.mLName1]);
     [self addAlertView];
 }
 
