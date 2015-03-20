@@ -13,12 +13,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *SecondFloor;
 @property (strong, nonatomic) IBOutlet UIButton *ThirdFloor;
 
-
-
-
-@property (nonatomic, weak) IBOutlet UIImageView *image;
-
 -(IBAction)handlePinch:(UIPinchGestureRecognizer *)recognizer;
+-(IBAction)handlePan:(UIPanGestureRecognizer *) recognizer;
 -(void)setSelected:(UIButton *)button;
 
 @end

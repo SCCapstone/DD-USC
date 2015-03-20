@@ -15,8 +15,8 @@
  */
 @interface InteriorViewController ()
 
-@property (weak, nonatomic) IBOutlet UIImageView *secondFloorImageView;
-
+@property (strong, nonatomic) IBOutlet UIImageView *secondFloorImageView;
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @end
 /*!
  @brief variables for the class this includes the interior view controller the button's synthesized and a counter initially set to 2.
@@ -31,10 +31,19 @@
  */
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-
+    
+    [self.scrollView setBackgroundColor:[UIColor clearColor]];
+    
     UIImage *image = [UIImage imageNamed:@"Second Floor.jpg"];
-    self.secondFloorImageView.image = image;
+    
+    [self.secondFloorImageView setImage:image];
+    
+    [self.scrollView addSubview:self.secondFloorImageView];
+    [self.scrollView setContentSize:CGSizeMake(self.secondFloorImageView.frame.size.width, self.secondFloorImageView.frame.size.height)];
+    self.scrollView.scrollEnabled = true;
+    
+    
+    [self.view addSubview:self.scrollView];
 }
 
 /*!
@@ -91,6 +100,13 @@
     
 }
 
+- (IBAction)handlePan:(UIPanGestureRecognizer *)recognizer {
+    
+    CGPoint translation = [recognizer translationInView:self.view];
+    recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x, recognizer.view.center.y + translation.y);
+    [recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
+    
+}
 
 
 
