@@ -10,6 +10,7 @@
 #import "AbstractsDB.h"
 #import "Abstracts.h"
 #import "MasterViewController.h" 
+#import "Favorites.h"
 
 @interface PersonalScheduleTableViewController ()
 
@@ -18,6 +19,7 @@
 @implementation PersonalScheduleTableViewController
 
 static PersonalScheduleTableViewController *_perSchedule;
+
 
 + (PersonalScheduleTableViewController*)perSchedule
 {
@@ -55,14 +57,15 @@ static PersonalScheduleTableViewController *_perSchedule;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
-    return [self.favorites count];
+    Favorites *favs= [Favorites FavoritesList];
+    return [favs.favList count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
+    Favorites *favs= [Favorites FavoritesList];
     
     //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier: CellIdentifier];
@@ -72,7 +75,7 @@ static PersonalScheduleTableViewController *_perSchedule;
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    info = [self.favorites objectAtIndex:indexPath.row];
+    info = [favs.favList objectAtIndex:indexPath.row];
     cell.textLabel.text = info;
     //cell.textLabel.text = info.title;
     //cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@", info.sFName1, info.sLName1];

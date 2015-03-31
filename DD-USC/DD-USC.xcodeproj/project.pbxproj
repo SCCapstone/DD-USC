@@ -48,6 +48,7 @@
 		CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE681031A015AD50070F870 /* LaunchScreen.xib */; };
 		CDE681111A015AD50070F870 /* DD_USCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE681101A015AD50070F870 /* DD_USCTests.m */; };
 		CDE681E51A168C2F0070F870 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE681E41A168C2F0070F870 /* libsqlite3.dylib */; };
+		DD2DF2851AC8CC1A007E2ECF /* Favorites.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2DF2841AC8CC1A007E2ECF /* Favorites.m */; };
 		DD3E9A5B1A3243800005A169 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3E9A5A1A3243800005A169 /* EventViewController.m */; };
 		DDD3B72A1AA3AC39000A3A26 /* FBICON.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD3B7291AA3AC39000A3A26 /* FBICON.png */; };
 		DDD3B72D1AA3BC85000A3A26 /* TwitterIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD3B72C1AA3BC85000A3A26 /* TwitterIcon.png */; };
@@ -122,6 +123,8 @@
 		CDE6810F1A015AD50070F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE681101A015AD50070F870 /* DD_USCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DD_USCTests.m; sourceTree = "<group>"; };
 		CDE681E41A168C2F0070F870 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DD2DF2831AC8C73C007E2ECF /* Favorites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Favorites.h; sourceTree = "<group>"; };
+		DD2DF2841AC8CC1A007E2ECF /* Favorites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favorites.m; sourceTree = "<group>"; };
 		DD3E9A591A3243740005A169 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
 		DD3E9A5A1A3243800005A169 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
 		DDD3B7291AA3AC39000A3A26 /* FBICON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FBICON.png; sourceTree = "<group>"; };
@@ -205,6 +208,8 @@
 				CD50D4041A326C9600548149 /* PersonalScheduleTableViewController.m */,
 				7F5AA72E1A322F0B006BDC82 /* FAQViewController.h */,
 				7F5AA72F1A322F0B006BDC82 /* FAQViewController.m */,
+				DD2DF2841AC8CC1A007E2ECF /* Favorites.m */,
+				DD2DF2831AC8C73C007E2ECF /* Favorites.h */,
 				CDE681011A015AD50070F870 /* Images.xcassets */,
 				CDE681031A015AD50070F870 /* LaunchScreen.xib */,
 				CDE680EE1A015AD50070F870 /* Supporting Files */,
@@ -389,6 +394,7 @@
 				CD50D4081A34EFB300548149 /* InteriorViewController.m in Sources */,
 				CD5AD4CD1A20F6EF009AC353 /* AppDelegate.m in Sources */,
 				BFCACC231A15A61D0099D27D /* MapViewController.m in Sources */,
+				DD2DF2851AC8CC1A007E2ECF /* Favorites.m in Sources */,
 				CDE680F11A015AD50070F870 /* main.m in Sources */,
 				CD987C2A1A8FE66C006CB8E2 /* AbstractViewController.m in Sources */,
 				BF1D2BD11A1D069E001E88FF /* DetailViewController.m in Sources */,
