@@ -14,7 +14,7 @@
 		BF1D2BD41A1D06FA001E88FF /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D2BD31A1D06FA001E88FF /* MasterViewController.m */; };
 		BF1D2BD61A1D0708001E88FF /* Twitter&Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1D2BD51A1D0708001E88FF /* Twitter&Facebook.png */; };
 		BF1D2BD81A1D070F001E88FF /* DiscoveryDayPic.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1D2BD71A1D070F001E88FF /* DiscoveryDayPic.png */; };
-		BF5AD5411AC85F4F00DDD62C /* BuildingIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5AD5401AC85F4F00DDD62C /* BuildingIcon.png */; };
+		BF4060C01ACC27670012DDD1 /* schooliconEdit.png in Resources */ = {isa = PBXBuildFile; fileRef = BF4060BF1ACC27670012DDD1 /* schooliconEdit.png */; };
 		BFCACC231A15A61D0099D27D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC221A15A61D0099D27D /* MapViewController.m */; };
 		BFCACC261A15A9480099D27D /* RHLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC251A15A9480099D27D /* RHLocation.m */; };
 		BFCACC291A15AB920099D27D /* RHLocationDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCACC281A15AB920099D27D /* RHLocationDataController.m */; };
@@ -77,7 +77,7 @@
 		BF1D2BD31A1D06FA001E88FF /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		BF1D2BD51A1D0708001E88FF /* Twitter&Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter&Facebook.png"; sourceTree = "<group>"; };
 		BF1D2BD71A1D070F001E88FF /* DiscoveryDayPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DiscoveryDayPic.png; sourceTree = "<group>"; };
-		BF5AD5401AC85F4F00DDD62C /* BuildingIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BuildingIcon.png; sourceTree = "<group>"; };
+		BF4060BF1ACC27670012DDD1 /* schooliconEdit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = schooliconEdit.png; sourceTree = "<group>"; };
 		BFCACC211A15A61D0099D27D /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		BFCACC221A15A61D0099D27D /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		BFCACC241A15A9480099D27D /* RHLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHLocation.h; sourceTree = "<group>"; };
@@ -178,7 +178,6 @@
 		CDE680ED1A015AD50070F870 /* DD-USC */ = {
 			isa = PBXGroup;
 			children = (
-				BF5AD5401AC85F4F00DDD62C /* BuildingIcon.png */,
 				CD5AD4CB1A20F6EF009AC353 /* AppDelegate.m */,
 				CD5AD4CC1A20F6EF009AC353 /* AppDelegate.h */,
 				CDE680FE1A015AD50070F870 /* Main.storyboard */,
@@ -221,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				CDE2183A1AB71D3500E5E415 /* DDIcon152.png */,
+				BF4060BF1ACC27670012DDD1 /* schooliconEdit.png */,
 				CDE2183B1AB71D3500E5E415 /* DDIcon76.png */,
 				CDE2183C1AB71D3500E5E415 /* DDIcon.png */,
 				CD987C431A9A6201006CB8E2 /* DiscoveryDayRounded.png */,
@@ -346,6 +346,7 @@
 				CD987C3C1A9A59F0006CB8E2 /* MapICON.png in Resources */,
 				CD987C2E1A8FF8F6006CB8E2 /* USClogo.png in Resources */,
 				CDCED43D1A2FC783005184E8 /* Abstract_real.sqlite3 in Resources */,
+				BF4060C01ACC27670012DDD1 /* schooliconEdit.png in Resources */,
 				CDE2183D1AB71D3500E5E415 /* DDIcon152.png in Resources */,
 				CDE2183F1AB71D3500E5E415 /* DDIcon.png in Resources */,
 				BF1D2BD81A1D070F001E88FF /* DiscoveryDayPic.png in Resources */,
@@ -357,7 +358,6 @@
 				CD987C441A9A6201006CB8E2 /* DiscoveryDayRounded.png in Resources */,
 				CD987C411A9A5BCD006CB8E2 /* SearchICON2.png in Resources */,
 				CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */,
-				BF5AD5411AC85F4F00DDD62C /* BuildingIcon.png in Resources */,
 				BFD1FA391A784FED00A2FD9F /* Second Floor.jpg in Resources */,
 				CD987C341A9A53F7006CB8E2 /* Discovery Day Logo.jpg in Resources */,
 				BF1D2BD61A1D0708001E88FF /* Twitter&Facebook.png in Resources */,
