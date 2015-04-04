@@ -30,6 +30,7 @@
 @synthesize presenterInfo;
 @synthesize uniqueId = _uniqueId;
 @synthesize presentationType;
+@synthesize fullAbstractText;
 
 
 //@synthesize addToSchedule;
@@ -52,8 +53,9 @@
     self.locationLabel.text = self.abstract.Room;
     self.mentorNameLabel.text = [NSString stringWithFormat:@"%@ %@", self.abstract.mFName1, self.abstract.mLName1];
     self.mentorInfo.text = [NSString stringWithFormat:@"%@, %@, %@", self.abstract.mCampus1, self.abstract.mCollege1, self.abstract.mDepartment1];
-    self.presenterInfo.text = [NSString stringWithFormat:@"%@, %@, %@, %@", self.abstract.sCurrentYear1, self.abstract.sCampus1, self.abstract.sMajor1, self.abstract.sMinor1];
-    self.presentationType.text = @"Change this!!";
+    self.presenterInfo.text = [NSString stringWithFormat:@"%@, %@, %@", self.abstract.sCurrentYear1, self.abstract.sCampus1, self.abstract.sMajor1];
+    self.presentationType.text = [self.abstract.Format uppercaseString];
+    self.fullAbstractText.text = self.abstract.Abstract;
     //[PersonalScheduleTableViewController perSchedule].favorites = [[NSMutableArray alloc] initWithCapacity:20];
     
     //PersonalScheduleTableViewController *perSchd = [[PersonalScheduleTableViewController alloc] initWithNibName:@"PersonalScheduleTableViewController" bundle:nil];

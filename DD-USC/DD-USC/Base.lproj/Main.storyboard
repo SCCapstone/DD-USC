@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cZo-Gp-4Ks">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cZo-Gp-4Ks">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
     </dependencies>
@@ -294,7 +294,7 @@ There is no time limit on when you can present an experience. Activities complet
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name(s)" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFt-Rq-gJM">
-                                <rect key="frame" x="16" y="177" width="249" height="61"/>
+                                <rect key="frame" x="16" y="160" width="249" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -310,7 +310,7 @@ There is no time limit on when you can present an experience. Activities complet
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mentor Name(s)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7b-ip-hsG">
-                                <rect key="frame" x="15" y="269" width="173" height="59"/>
+                                <rect key="frame" x="15" y="216" width="173" height="59"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -329,55 +329,74 @@ There is no time limit on when you can present an experience. Activities complet
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNi-If-rlo">
-                                <rect key="frame" x="222" y="366" width="55" height="21"/>
+                                <rect key="frame" x="16" y="287" width="55" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Year, Campus, Major, Minor" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMH-ah-Tum">
-                                <rect key="frame" x="16" y="210" width="211" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Year, Campus, Major" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMH-ah-Tum">
+                                <rect key="frame" x="16" y="197" width="211" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Campus, College, Department" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5N-gt-KDX">
-                                <rect key="frame" x="15" y="305" width="211" height="30"/>
+                                <rect key="frame" x="15" y="251" width="211" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oral or Poster" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylG-bn-g4u">
-                                <rect key="frame" x="16" y="362" width="210" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylG-bn-g4u">
+                                <rect key="frame" x="136" y="283" width="97" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location, Category Poster #" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNh-bU-4no">
-                                <rect key="frame" x="16" y="399" width="210" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNh-bU-4no">
+                                <rect key="frame" x="228" y="283" width="76" height="29"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Location">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.26666666666666666" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="36"/>
+                                                    <textTab alignment="left" location="72"/>
+                                                    <textTab alignment="left" location="108"/>
+                                                    <textTab alignment="left" location="144"/>
+                                                    <textTab alignment="left" location="180"/>
+                                                    <textTab alignment="left" location="216"/>
+                                                    <textTab alignment="left" location="252"/>
+                                                    <textTab alignment="left" location="288"/>
+                                                    <textTab alignment="left" location="324"/>
+                                                    <textTab alignment="left" location="360"/>
+                                                    <textTab alignment="left" location="396"/>
+                                                    <textTab alignment="left" location="432"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                            <color key="NSUnderlineColor" red="0.0" green="0.26666666666666666" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.045681361269999998" green="0.1506975052" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edz-7s-UFy">
+                                <rect key="frame" x="0.0" y="335" width="320" height="184"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wq7-ce-ecN">
-                                <rect key="frame" x="52" y="481" width="68" height="30"/>
-                                <color key="backgroundColor" red="0.72156864399999998" green="0.27843138579999999" blue="0.27843138579999999" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="View Map">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="197" y="282" width="113" height="30"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.045681361269999998" green="0.1506975052" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="beA-mj-rla" kind="push" id="9ia-dB-cMS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoA-mn-gGn">
-                                <rect key="frame" x="159" y="481" width="118" height="30"/>
-                                <color key="backgroundColor" red="0.72156864399999998" green="0.27843138579999999" blue="0.27843138579999999" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="View Full Abstact">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="V98-za-bkc" kind="push" identifier="showAbstract" id="0Hj-Kr-JeY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -387,13 +406,13 @@ There is no time limit on when you can present an experience. Activities complet
                         <barButtonItem key="backBarButtonItem" title="Back" id="L2O-K1-gBT"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="fullAbstractText" destination="edz-7s-UFy" id="L1F-O7-MoN"/>
                         <outlet property="locationLabel" destination="mNh-bU-4no" id="gIT-eC-b8T"/>
                         <outlet property="mentorInfo" destination="k5N-gt-KDX" id="ZKI-co-OJQ"/>
                         <outlet property="mentorNameLabel" destination="L7b-ip-hsG" id="SyC-K3-WB0"/>
                         <outlet property="nameLabel" destination="eFt-Rq-gJM" id="2xM-FN-ORU"/>
                         <outlet property="presentationType" destination="ylG-bn-g4u" id="QDi-mE-rEY"/>
                         <outlet property="presenterInfo" destination="LMH-ah-Tum" id="9XZ-Ei-qJD"/>
-                        <outlet property="seeAbstract" destination="zoA-mn-gGn" id="2a2-ei-0A3"/>
                         <outlet property="timeLabel" destination="nNi-If-rlo" id="xBh-lU-6Pt"/>
                         <outlet property="titleLabel" destination="ZIf-dG-b4Z" id="kjB-bZ-qRH"/>
                     </connections>
@@ -401,39 +420,6 @@ There is no time limit on when you can present an experience. Activities complet
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZO-YA-16u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-477" y="-1665"/>
-        </scene>
-        <!--Abstract View-->
-        <scene sceneID="zCW-yf-x1b">
-            <objects>
-                <viewController title="Abstract View" id="V98-za-bkc" customClass="AbstractViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KDj-Y3-QHd"/>
-                        <viewControllerLayoutGuide type="bottom" id="uR8-To-kBm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="v0Q-IC-CXN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Bh-4W-B4q">
-                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Full Text" id="3Q8-os-4UW">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="Wfd-Pc-6OY"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="fullAbstractText" destination="4Bh-4W-B4q" id="u1T-hf-Ste"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ygG-FF-SUP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-34" y="-1674"/>
         </scene>
         <!--Master View-->
         <scene sceneID="4eh-Cl-1Vy">
@@ -767,7 +753,7 @@ There is no time limit on when you can present an experience. Activities complet
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UI1-mi-cSG">
                                 <rect key="frame" x="5" y="64" width="310" height="367"/>
                                 <subviews>
-                                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="21549F4C-7B49-4F8E-84D2-B258074D00A4" translatesAutoresizingMaskIntoConstraints="NO" id="8bL-2V-eIk">
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="64B3B2C4-F963-4830-ADEC-3EB9F12D8DF4" translatesAutoresizingMaskIntoConstraints="NO" id="8bL-2V-eIk">
                                         <rect key="frame" x="0.0" y="0.0" width="650" height="583"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -839,7 +825,7 @@ There is no time limit on when you can present an experience. Activities complet
         </scene>
     </scenes>
     <resources>
-        <image name="21549F4C-7B49-4F8E-84D2-B258074D00A4" width="650" height="583">
+        <image name="64B3B2C4-F963-4830-ADEC-3EB9F12D8DF4" width="650" height="583">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -26173,7 +26159,7 @@ AAAAAAAAQgAAAAAAAAAAAAAAAAAXK6s
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="EXd-zB-HoP"/>
+        <segue reference="9ia-dB-cMS"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
