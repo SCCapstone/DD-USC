@@ -111,7 +111,7 @@ There is no time limit on when you can present an experience. Activities complet
             <objects>
                 <tableViewController title="Personal Schedule" id="vdT-Nc-hw7" customClass="PersonalScheduleTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="bjl-07-4WF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -142,7 +142,7 @@ There is no time limit on when you can present an experience. Activities complet
                         <viewControllerLayoutGuide type="bottom" id="c1B-JP-qEm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleAspectFit" id="Fgb-Yn-Qae">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zJi-ct-7bB">
@@ -1041,35 +1041,69 @@ There is no time limit on when you can present an experience. Activities complet
                         <viewControllerLayoutGuide type="bottom" id="PGv-Qx-nAp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eur-j4-mU2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name(s)" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFt-Rq-gJM">
-                                <rect key="frame" x="16" y="160" width="249" height="61"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Name(s)" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFt-Rq-gJM">
+                                <rect key="frame" x="48" y="207" width="249" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="249" id="12i-ZS-4AN"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="249" id="vb6-83-dHQ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="12i-ZS-4AN"/>
+                                        <exclude reference="vb6-83-dHQ"/>
+                                    </mask>
+                                </variation>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="28" y="160" width="249" height="61"/>
                                 </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="12i-ZS-4AN"/>
+                                        <include reference="vb6-83-dHQ"/>
+                                    </mask>
+                                </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sL-fV-W9d">
-                                <rect key="frame" x="103" y="139" width="113" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sL-fV-W9d">
+                                <rect key="frame" x="135" y="186" width="113" height="30"/>
                                 <color key="backgroundColor" red="0.72156864399999998" green="0.27843138579999999" blue="0.27843138579999999" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="413" id="ezp-Eg-0uI"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="413" id="fui-Na-gQN"/>
+                                </constraints>
                                 <state key="normal" title="Add to Favorites">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ezp-Eg-0uI"/>
+                                        <exclude reference="fui-Na-gQN"/>
+                                    </mask>
+                                </variation>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="131" y="141" width="113" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="ezp-Eg-0uI"/>
+                                        <include reference="fui-Na-gQN"/>
+                                    </mask>
                                 </variation>
                                 <connections>
                                     <action selector="addToSchedule:" destination="soM-rw-LWT" eventType="touchUpInside" id="rtS-RX-L2f"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mentor Name(s)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7b-ip-hsG">
-                                <rect key="frame" x="15" y="216" width="173" height="59"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Mentor Name(s)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7b-ip-hsG">
+                                <rect key="frame" x="47" y="263" width="173" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="173" id="Ooy-df-v8B"/>
+                                    <constraint firstAttribute="width" constant="173" id="R42-zU-Iv6"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="173" id="XNL-Ui-5zc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1077,10 +1111,18 @@ There is no time limit on when you can present an experience. Activities complet
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="Ooy-df-v8B"/>
+                                        <exclude reference="R42-zU-Iv6"/>
+                                        <exclude reference="XNL-Ui-5zc"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="27" y="216" width="173" height="59"/>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="R42-zU-Iv6"/>
+                                        <include reference="XNL-Ui-5zc"/>
+                                    </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
@@ -1088,28 +1130,35 @@ There is no time limit on when you can present an experience. Activities complet
                                     </mask>
                                 </variation>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mw8-hy-OGm">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIf-dG-b4Z">
-                                <rect key="frame" x="0.0" y="67" width="320" height="69"/>
+                                <rect key="frame" x="32" y="114" width="320" height="69"/>
                                 <color key="backgroundColor" white="1" alpha="0.76000000000000001" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="413" id="RcQ-dg-g0B"/>
+                                    <constraint firstAttribute="height" constant="69" id="ZfH-pt-5em"/>
                                     <constraint firstAttribute="height" constant="69" id="n21-LP-anu"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="413" id="reM-0A-CDS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="RcQ-dg-g0B"/>
+                                        <exclude reference="ZfH-pt-5em"/>
                                         <exclude reference="n21-LP-anu"/>
+                                        <exclude reference="reM-0A-CDS"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="27" y="64" width="320" height="69"/>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="RcQ-dg-g0B"/>
+                                        <include reference="ZfH-pt-5em"/>
+                                        <include reference="reM-0A-CDS"/>
+                                    </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
@@ -1117,23 +1166,36 @@ There is no time limit on when you can present an experience. Activities complet
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNi-If-rlo">
-                                <rect key="frame" x="16" y="287" width="55" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNi-If-rlo">
+                                <rect key="frame" x="48" y="334" width="55" height="21"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Cgc-mJ-xdX"/>
                                     <constraint firstAttribute="width" constant="55" id="I5e-Xx-cSc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="WT4-Np-nJc"/>
                                     <constraint firstAttribute="height" constant="21" id="fVR-Mq-kek"/>
+                                    <constraint firstAttribute="width" constant="55" id="mMj-6Q-ZHW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="Cgc-mJ-xdX"/>
                                         <exclude reference="I5e-Xx-cSc"/>
+                                        <exclude reference="WT4-Np-nJc"/>
                                         <exclude reference="fVR-Mq-kek"/>
+                                        <exclude reference="mMj-6Q-ZHW"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="28" y="287" width="55" height="21"/>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Cgc-mJ-xdX"/>
+                                        <include reference="WT4-Np-nJc"/>
+                                        <include reference="mMj-6Q-ZHW"/>
+                                    </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
@@ -1142,21 +1204,31 @@ There is no time limit on when you can present an experience. Activities complet
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Year, Campus, Major" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMH-ah-Tum">
-                                <rect key="frame" x="16" y="197" width="211" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Year, Campus, Major" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMH-ah-Tum">
+                                <rect key="frame" x="48" y="244" width="211" height="36"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="211" id="FXf-xa-eKq"/>
                                     <constraint firstAttribute="width" constant="211" id="n4O-cT-IOK"/>
+                                    <constraint firstAttribute="width" constant="211" id="sUN-MF-3aG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="FXf-xa-eKq"/>
                                         <exclude reference="n4O-cT-IOK"/>
+                                        <exclude reference="sUN-MF-3aG"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="28" y="197" width="211" height="36"/>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="FXf-xa-eKq"/>
+                                        <include reference="sUN-MF-3aG"/>
+                                    </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
@@ -1164,11 +1236,13 @@ There is no time limit on when you can present an experience. Activities complet
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Campus, College, Department" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5N-gt-KDX">
-                                <rect key="frame" x="15" y="251" width="211" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Campus, College, Department" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5N-gt-KDX">
+                                <rect key="frame" x="47" y="298" width="211" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="211" id="4Kn-Hj-cfr"/>
                                     <constraint firstAttribute="height" constant="30" id="U8h-qz-LD2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="211" id="lmx-9a-qkG"/>
+                                    <constraint firstAttribute="width" constant="211" id="uuy-PD-ibt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1177,10 +1251,18 @@ There is no time limit on when you can present an experience. Activities complet
                                     <mask key="constraints">
                                         <exclude reference="4Kn-Hj-cfr"/>
                                         <exclude reference="U8h-qz-LD2"/>
+                                        <exclude reference="lmx-9a-qkG"/>
+                                        <exclude reference="uuy-PD-ibt"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="27" y="251" width="211" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="lmx-9a-qkG"/>
+                                        <include reference="uuy-PD-ibt"/>
+                                    </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
@@ -1189,9 +1271,11 @@ There is no time limit on when you can present an experience. Activities complet
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylG-bn-g4u">
-                                <rect key="frame" x="136" y="283" width="97" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylG-bn-g4u">
+                                <rect key="frame" x="168" y="330" width="97" height="29"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="E7L-bd-eau"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="97" id="eWE-NB-XCD"/>
                                     <constraint firstAttribute="width" constant="97" id="xDp-l6-rcJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1199,11 +1283,19 @@ There is no time limit on when you can present an experience. Activities complet
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="E7L-bd-eau"/>
+                                        <exclude reference="eWE-NB-XCD"/>
                                         <exclude reference="xDp-l6-rcJ"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="148" y="283" width="97" height="29"/>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="E7L-bd-eau"/>
+                                        <include reference="eWE-NB-XCD"/>
+                                    </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
@@ -1211,10 +1303,12 @@ There is no time limit on when you can present an experience. Activities complet
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNh-bU-4no">
-                                <rect key="frame" x="228" y="283" width="76" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNh-bU-4no">
+                                <rect key="frame" x="260" y="330" width="76" height="29"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="76" id="94p-S7-YlK"/>
                                     <constraint firstAttribute="width" constant="76" id="AXd-Ih-50p"/>
+                                    <constraint firstAttribute="width" constant="76" id="daC-3W-O89"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Location">
@@ -1245,7 +1339,15 @@ There is no time limit on when you can present an experience. Activities complet
                                 <color key="highlightedColor" red="0.045681361269999998" green="0.1506975052" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="94p-S7-YlK"/>
                                         <exclude reference="AXd-Ih-50p"/>
+                                        <exclude reference="daC-3W-O89"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="94p-S7-YlK"/>
+                                        <include reference="daC-3W-O89"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -1254,68 +1356,156 @@ There is no time limit on when you can present an experience. Activities complet
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wq7-ce-ecN">
-                                <rect key="frame" x="200" y="287" width="113" height="33"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wq7-ce-ecN">
+                                <rect key="frame" x="232" y="334" width="113" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="LFZ-ep-H8L"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="113" id="pJw-qm-0Cy"/>
+                                </constraints>
                                 <state key="normal">
                                     <color key="titleColor" red="0.045681361269999998" green="0.1506975052" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LFZ-ep-H8L"/>
+                                        <exclude reference="pJw-qm-0Cy"/>
+                                    </mask>
+                                </variation>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="212" y="287" width="113" height="33"/>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="LFZ-ep-H8L"/>
+                                        <include reference="pJw-qm-0Cy"/>
+                                    </mask>
                                 </variation>
                                 <connections>
                                     <segue destination="beA-mj-rla" kind="show" id="9ia-dB-cMS"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(click to view map)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTr-0d-NKX">
-                                <rect key="frame" x="208" y="306" width="96" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(click to view map)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTr-0d-NKX">
+                                <rect key="frame" x="240" y="353" width="96" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="Z4s-E5-5YG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="96" id="wfg-Gh-lwM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Z4s-E5-5YG"/>
+                                        <exclude reference="wfg-Gh-lwM"/>
+                                    </mask>
+                                </variation>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="220" y="306" width="96" height="21"/>
                                 </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Z4s-E5-5YG"/>
+                                        <include reference="wfg-Gh-lwM"/>
+                                    </mask>
+                                </variation>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edz-7s-UFy">
-                                <rect key="frame" x="0.0" y="335" width="320" height="184"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edz-7s-UFy">
+                                <rect key="frame" x="108" y="469" width="552" height="334"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="413" id="J0g-CG-62k"/>
+                                    <constraint firstAttribute="width" constant="413" id="dNA-pG-eo0"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="J0g-CG-62k"/>
+                                        <exclude reference="dNA-pG-eo0"/>
+                                    </mask>
+                                </variation>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="28" y="335" width="319" height="275"/>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="J0g-CG-62k"/>
+                                        <include reference="dNA-pG-eo0"/>
+                                    </mask>
                                 </variation>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="nNi-If-rlo" firstAttribute="leading" secondItem="edz-7s-UFy" secondAttribute="leading" id="0FH-eY-tYQ"/>
+                            <constraint firstItem="nNi-If-rlo" firstAttribute="top" secondItem="k5N-gt-KDX" secondAttribute="bottom" constant="8" symbolic="YES" id="0YG-Bv-5s0">
+                                <variation key="widthClass=regular" constant="2"/>
+                            </constraint>
+                            <constraint firstItem="eFt-Rq-gJM" firstAttribute="baseline" secondItem="LMH-ah-Tum" secondAttribute="firstBaseline" id="3H1-Qm-W6Y"/>
                             <constraint firstItem="ZIf-dG-b4Z" firstAttribute="leading" secondItem="L7b-ip-hsG" secondAttribute="leading" id="4Fe-Tl-EUP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wq7-ce-ecN" secondAttribute="trailing" constant="34" id="4ou-Cv-QZI"/>
+                            <constraint firstItem="edz-7s-UFy" firstAttribute="top" secondItem="ylG-bn-g4u" secondAttribute="bottom" constant="8" symbolic="YES" id="5T4-zp-diu">
+                                <variation key="widthClass=regular" constant="34"/>
+                            </constraint>
+                            <constraint firstItem="eFt-Rq-gJM" firstAttribute="leading" secondItem="5sL-fV-W9d" secondAttribute="leading" id="5kg-UV-Ekw"/>
+                            <constraint firstItem="LMH-ah-Tum" firstAttribute="baseline" secondItem="L7b-ip-hsG" secondAttribute="firstBaseline" id="6Qw-GA-aGf"/>
                             <constraint firstItem="ZIf-dG-b4Z" firstAttribute="centerX" secondItem="eur-j4-mU2" secondAttribute="centerX" id="6lt-N0-1Ek"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eFt-Rq-gJM" secondAttribute="trailing" constant="82" id="8Iz-VN-Flk"/>
+                            <constraint firstItem="ZIf-dG-b4Z" firstAttribute="leading" secondItem="eur-j4-mU2" secondAttribute="leading" constant="135" id="9NX-Kv-Fqn">
+                                <variation key="widthClass=regular" constant="179"/>
+                            </constraint>
+                            <constraint firstItem="ylG-bn-g4u" firstAttribute="top" secondItem="LMH-ah-Tum" secondAttribute="bottom" constant="8" symbolic="YES" id="9nT-uY-rlb">
+                                <variation key="widthClass=regular" constant="55"/>
+                            </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="mNh-bU-4no" secondAttribute="trailing" constant="55" id="Aes-hH-axc"/>
+                            <constraint firstItem="edz-7s-UFy" firstAttribute="top" secondItem="uTr-0d-NKX" secondAttribute="bottom" constant="8" symbolic="YES" id="BbE-8C-FNM">
+                                <variation key="widthClass=regular" constant="19"/>
+                            </constraint>
                             <constraint firstItem="nNi-If-rlo" firstAttribute="top" secondItem="k5N-gt-KDX" secondAttribute="bottom" constant="8" symbolic="YES" id="DhG-ee-2DS">
                                 <variation key="heightClass=regular-widthClass=compact" constant="6"/>
                             </constraint>
                             <constraint firstAttribute="centerX" secondItem="ZIf-dG-b4Z" secondAttribute="centerX" constant="27.5" id="E9g-Rc-juH"/>
+                            <constraint firstItem="PGv-Qx-nAp" firstAttribute="top" secondItem="edz-7s-UFy" secondAttribute="bottom" constant="8" symbolic="YES" id="ECr-B4-dRD">
+                                <variation key="widthClass=regular" constant="66"/>
+                            </constraint>
                             <constraint firstItem="edz-7s-UFy" firstAttribute="top" secondItem="nNi-If-rlo" secondAttribute="bottom" constant="8" symbolic="YES" id="H2c-CA-7DV">
                                 <variation key="heightClass=regular-widthClass=compact" constant="27"/>
                             </constraint>
                             <constraint firstItem="ylG-bn-g4u" firstAttribute="leading" secondItem="nNi-If-rlo" secondAttribute="trailing" constant="65" id="HZS-s4-73g"/>
+                            <constraint firstItem="L7b-ip-hsG" firstAttribute="baseline" secondItem="k5N-gt-KDX" secondAttribute="firstBaseline" id="HgL-xh-1cx"/>
                             <constraint firstItem="edz-7s-UFy" firstAttribute="top" secondItem="ylG-bn-g4u" secondAttribute="bottom" constant="8" symbolic="YES" id="IDx-oL-11E">
                                 <variation key="heightClass=regular-widthClass=compact" constant="23"/>
                             </constraint>
+                            <constraint firstItem="LMH-ah-Tum" firstAttribute="top" secondItem="5sL-fV-W9d" secondAttribute="bottom" constant="8" symbolic="YES" id="IND-PR-G4C">
+                                <variation key="widthClass=regular" constant="34"/>
+                            </constraint>
+                            <constraint firstItem="eFt-Rq-gJM" firstAttribute="leading" secondItem="LMH-ah-Tum" secondAttribute="leading" id="KPa-4g-7Yd"/>
                             <constraint firstItem="ZIf-dG-b4Z" firstAttribute="centerX" secondItem="5sL-fV-W9d" secondAttribute="centerX" id="L0N-n2-MMH"/>
+                            <constraint firstItem="edz-7s-UFy" firstAttribute="top" secondItem="wq7-ce-ecN" secondAttribute="bottom" constant="8" symbolic="YES" id="Lqn-0H-zeQ">
+                                <variation key="widthClass=regular" constant="26"/>
+                            </constraint>
+                            <constraint firstItem="uTr-0d-NKX" firstAttribute="trailing" secondItem="mNh-bU-4no" secondAttribute="trailing" id="Lx9-k2-IO2"/>
                             <constraint firstItem="uTr-0d-NKX" firstAttribute="centerX" secondItem="wq7-ce-ecN" secondAttribute="centerX" id="NZU-5l-SWq"/>
                             <constraint firstItem="k5N-gt-KDX" firstAttribute="top" secondItem="LMH-ah-Tum" secondAttribute="bottom" constant="8" symbolic="YES" id="PUA-RL-H8o">
                                 <variation key="heightClass=regular-widthClass=compact" constant="18"/>
                             </constraint>
                             <constraint firstItem="LMH-ah-Tum" firstAttribute="baseline" secondItem="L7b-ip-hsG" secondAttribute="firstBaseline" id="QhU-X3-V0P"/>
+                            <constraint firstItem="mNh-bU-4no" firstAttribute="top" secondItem="5sL-fV-W9d" secondAttribute="bottom" constant="8" symbolic="YES" id="SXL-eS-lhd">
+                                <variation key="widthClass=regular" constant="125"/>
+                            </constraint>
                             <constraint firstItem="L7b-ip-hsG" firstAttribute="top" secondItem="5sL-fV-W9d" secondAttribute="bottom" constant="8" symbolic="YES" id="TJw-ka-m3z">
                                 <variation key="heightClass=regular-widthClass=compact" constant="45"/>
                             </constraint>
+                            <constraint firstItem="edz-7s-UFy" firstAttribute="leading" secondItem="k5N-gt-KDX" secondAttribute="leading" id="Uc7-8d-g16"/>
+                            <constraint firstItem="eFt-Rq-gJM" firstAttribute="top" secondItem="ZIf-dG-b4Z" secondAttribute="bottom" constant="8" symbolic="YES" id="Vtz-Br-XGE">
+                                <variation key="widthClass=regular" constant="31"/>
+                            </constraint>
                             <constraint firstItem="5sL-fV-W9d" firstAttribute="centerX" secondItem="edz-7s-UFy" secondAttribute="centerX" id="Ymp-Qo-uCA"/>
+                            <constraint firstItem="edz-7s-UFy" firstAttribute="top" secondItem="nNi-If-rlo" secondAttribute="bottom" constant="8" symbolic="YES" id="a4R-EO-gRd">
+                                <variation key="widthClass=regular" constant="38"/>
+                            </constraint>
                             <constraint firstItem="ylG-bn-g4u" firstAttribute="top" secondItem="k5N-gt-KDX" secondAttribute="bottom" constant="8" symbolic="YES" id="bFX-Kw-mFm">
                                 <variation key="heightClass=regular-widthClass=compact" constant="2"/>
                             </constraint>
@@ -1331,11 +1521,31 @@ There is no time limit on when you can present an experience. Activities complet
                             <constraint firstItem="wq7-ce-ecN" firstAttribute="top" secondItem="k5N-gt-KDX" secondAttribute="bottom" constant="8" symbolic="YES" id="dVg-cH-NFE">
                                 <variation key="heightClass=regular-widthClass=compact" constant="6"/>
                             </constraint>
+                            <constraint firstItem="k5N-gt-KDX" firstAttribute="top" secondItem="LMH-ah-Tum" secondAttribute="bottom" constant="8" symbolic="YES" id="eWw-2z-V5N">
+                                <variation key="widthClass=regular" constant="27"/>
+                            </constraint>
                             <constraint firstItem="edz-7s-UFy" firstAttribute="trailing" secondItem="ZIf-dG-b4Z" secondAttribute="trailing" id="ex6-AV-WoW"/>
+                            <constraint firstItem="5sL-fV-W9d" firstAttribute="top" secondItem="ZIf-dG-b4Z" secondAttribute="bottom" constant="8" symbolic="YES" id="fVB-Uz-ua0">
+                                <variation key="widthClass=regular" constant="12"/>
+                            </constraint>
+                            <constraint firstItem="L7b-ip-hsG" firstAttribute="leading" secondItem="LMH-ah-Tum" secondAttribute="leading" id="fyv-GA-hrG"/>
+                            <constraint firstItem="k5N-gt-KDX" firstAttribute="leading" secondItem="L7b-ip-hsG" secondAttribute="leading" id="gTy-gy-PvJ"/>
                             <constraint firstItem="edz-7s-UFy" firstAttribute="top" secondItem="mNh-bU-4no" secondAttribute="bottom" constant="8" symbolic="YES" id="hTh-dj-nyi">
                                 <variation key="heightClass=regular-widthClass=compact" constant="23"/>
                             </constraint>
                             <constraint firstItem="ylG-bn-g4u" firstAttribute="top" secondItem="L7b-ip-hsG" secondAttribute="bottom" constant="8" symbolic="YES" id="hn5-kq-IfG"/>
+                            <constraint firstItem="nNi-If-rlo" firstAttribute="leading" secondItem="eur-j4-mU2" secondAttribute="leading" constant="193" id="k0u-py-z5O">
+                                <variation key="widthClass=regular" constant="237"/>
+                            </constraint>
+                            <constraint firstItem="wq7-ce-ecN" firstAttribute="leading" secondItem="eur-j4-mU2" secondAttribute="leading" constant="377" id="kYX-rg-QjL">
+                                <variation key="widthClass=regular" constant="421"/>
+                            </constraint>
+                            <constraint firstItem="ZIf-dG-b4Z" firstAttribute="top" secondItem="Aeq-to-IAo" secondAttribute="bottom" constant="8" symbolic="YES" id="l19-Up-3Xy">
+                                <variation key="widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="nNi-If-rlo" firstAttribute="top" secondItem="L7b-ip-hsG" secondAttribute="bottom" constant="8" symbolic="YES" id="lHb-ef-faT">
+                                <variation key="widthClass=regular" constant="17"/>
+                            </constraint>
                             <constraint firstItem="nNi-If-rlo" firstAttribute="leading" secondItem="LMH-ah-Tum" secondAttribute="leading" id="lkE-vC-cOt"/>
                             <constraint firstItem="ZIf-dG-b4Z" firstAttribute="top" secondItem="Aeq-to-IAo" secondAttribute="bottom" constant="8" symbolic="YES" id="mdQ-O2-sif">
                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
@@ -1344,12 +1554,27 @@ There is no time limit on when you can present an experience. Activities complet
                             <constraint firstItem="LMH-ah-Tum" firstAttribute="top" secondItem="5sL-fV-W9d" secondAttribute="bottom" constant="8" symbolic="YES" id="orF-Xk-tyQ">
                                 <variation key="heightClass=regular-widthClass=compact" constant="26"/>
                             </constraint>
+                            <constraint firstItem="edz-7s-UFy" firstAttribute="top" secondItem="mNh-bU-4no" secondAttribute="bottom" constant="8" symbolic="YES" id="p9Z-G0-u9P">
+                                <variation key="widthClass=regular" constant="34"/>
+                            </constraint>
                             <constraint firstItem="mNh-bU-4no" firstAttribute="top" secondItem="k5N-gt-KDX" secondAttribute="bottom" constant="8" symbolic="YES" id="pIl-ym-2Xy">
                                 <variation key="heightClass=regular-widthClass=compact" constant="2"/>
+                            </constraint>
+                            <constraint firstItem="wq7-ce-ecN" firstAttribute="top" secondItem="eFt-Rq-gJM" secondAttribute="bottom" constant="8" symbolic="YES" id="phq-5d-YU9">
+                                <variation key="widthClass=regular" constant="79"/>
+                            </constraint>
+                            <constraint firstItem="L7b-ip-hsG" firstAttribute="top" secondItem="eFt-Rq-gJM" secondAttribute="bottom" constant="8" symbolic="YES" id="qHq-Y7-Brq">
+                                <variation key="widthClass=regular" constant="3"/>
                             </constraint>
                             <constraint firstItem="ZIf-dG-b4Z" firstAttribute="leading" secondItem="eur-j4-mU2" secondAttribute="leadingMargin" constant="11" id="qop-6I-xq9"/>
                             <constraint firstItem="edz-7s-UFy" firstAttribute="top" secondItem="uTr-0d-NKX" secondAttribute="bottom" constant="8" symbolic="YES" id="rMf-Ju-MIC"/>
                             <constraint firstItem="LMH-ah-Tum" firstAttribute="leading" secondItem="eFt-Rq-gJM" secondAttribute="leading" id="rgO-56-IiP"/>
+                            <constraint firstItem="ylG-bn-g4u" firstAttribute="leading" secondItem="nNi-If-rlo" secondAttribute="trailing" constant="65" id="sef-Q7-Lzh"/>
+                            <constraint firstItem="wq7-ce-ecN" firstAttribute="centerX" secondItem="uTr-0d-NKX" secondAttribute="centerX" id="tLs-oz-xbK"/>
+                            <constraint firstItem="ZIf-dG-b4Z" firstAttribute="leading" secondItem="5sL-fV-W9d" secondAttribute="leading" id="tVy-f2-3UJ"/>
+                            <constraint firstItem="uTr-0d-NKX" firstAttribute="top" secondItem="5sL-fV-W9d" secondAttribute="bottom" constant="8" symbolic="YES" id="vtF-C0-zJz">
+                                <variation key="widthClass=regular" constant="148"/>
+                            </constraint>
                             <constraint firstItem="k5N-gt-KDX" firstAttribute="top" secondItem="eFt-Rq-gJM" secondAttribute="bottom" constant="8" symbolic="YES" id="xpl-pl-cQL">
                                 <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                             </constraint>
@@ -1361,46 +1586,116 @@ There is no time limit on when you can present an experience. Activities complet
                             <mask key="constraints">
                                 <exclude reference="4Fe-Tl-EUP"/>
                                 <exclude reference="6lt-N0-1Ek"/>
+                                <exclude reference="9NX-Kv-Fqn"/>
                                 <exclude reference="E9g-Rc-juH"/>
                                 <exclude reference="L0N-n2-MMH"/>
+                                <exclude reference="l19-Up-3Xy"/>
                                 <exclude reference="mdQ-O2-sif"/>
                                 <exclude reference="qop-6I-xq9"/>
-                                <exclude reference="8Iz-VN-Flk"/>
-                                <exclude reference="z7Q-sU-ZF2"/>
+                                <exclude reference="tVy-f2-3UJ"/>
                                 <exclude reference="Ymp-Qo-uCA"/>
                                 <exclude reference="bnY-Or-nza"/>
+                                <exclude reference="fVB-Uz-ua0"/>
+                                <exclude reference="3H1-Qm-W6Y"/>
+                                <exclude reference="5kg-UV-Ekw"/>
+                                <exclude reference="8Iz-VN-Flk"/>
+                                <exclude reference="KPa-4g-7Yd"/>
+                                <exclude reference="Vtz-Br-XGE"/>
+                                <exclude reference="z7Q-sU-ZF2"/>
+                                <exclude reference="6Qw-GA-aGf"/>
+                                <exclude reference="IND-PR-G4C"/>
                                 <exclude reference="QhU-X3-V0P"/>
                                 <exclude reference="orF-Xk-tyQ"/>
                                 <exclude reference="rgO-56-IiP"/>
+                                <exclude reference="HgL-xh-1cx"/>
                                 <exclude reference="TJw-ka-m3z"/>
+                                <exclude reference="fyv-GA-hrG"/>
+                                <exclude reference="qHq-Y7-Brq"/>
                                 <exclude reference="PUA-RL-H8o"/>
                                 <exclude reference="ch7-ih-zOy"/>
+                                <exclude reference="eWw-2z-V5N"/>
+                                <exclude reference="gTy-gy-PvJ"/>
                                 <exclude reference="xpl-pl-cQL"/>
                                 <exclude reference="0FH-eY-tYQ"/>
+                                <exclude reference="0YG-Bv-5s0"/>
                                 <exclude reference="DhG-ee-2DS"/>
+                                <exclude reference="k0u-py-z5O"/>
+                                <exclude reference="lHb-ef-faT"/>
                                 <exclude reference="lkE-vC-cOt"/>
-                                <exclude reference="HZS-s4-73g"/>
-                                <exclude reference="bFX-Kw-mFm"/>
-                                <exclude reference="hn5-kq-IfG"/>
+                                <exclude reference="5T4-zp-diu"/>
+                                <exclude reference="BbE-8C-FNM"/>
                                 <exclude reference="H2c-CA-7DV"/>
                                 <exclude reference="IDx-oL-11E"/>
+                                <exclude reference="Lqn-0H-zeQ"/>
+                                <exclude reference="Uc7-8d-g16"/>
+                                <exclude reference="a4R-EO-gRd"/>
                                 <exclude reference="dGt-XF-r3Y"/>
                                 <exclude reference="ex6-AV-WoW"/>
                                 <exclude reference="hTh-dj-nyi"/>
+                                <exclude reference="p9Z-G0-u9P"/>
                                 <exclude reference="rMf-Ju-MIC"/>
+                                <exclude reference="9nT-uY-rlb"/>
+                                <exclude reference="HZS-s4-73g"/>
+                                <exclude reference="bFX-Kw-mFm"/>
+                                <exclude reference="hn5-kq-IfG"/>
+                                <exclude reference="sef-Q7-Lzh"/>
                                 <exclude reference="4ou-Cv-QZI"/>
                                 <exclude reference="dVg-cH-NFE"/>
-                                <exclude reference="Aes-hH-axc"/>
-                                <exclude reference="pIl-ym-2Xy"/>
+                                <exclude reference="kYX-rg-QjL"/>
+                                <exclude reference="phq-5d-YU9"/>
+                                <exclude reference="tLs-oz-xbK"/>
+                                <exclude reference="Lx9-k2-IO2"/>
                                 <exclude reference="NZU-5l-SWq"/>
                                 <exclude reference="d6N-NG-iF5"/>
                                 <exclude reference="nZE-Oh-eKx"/>
+                                <exclude reference="vtF-C0-zJz"/>
+                                <exclude reference="Aes-hH-axc"/>
+                                <exclude reference="SXL-eS-lhd"/>
+                                <exclude reference="pIl-ym-2Xy"/>
+                                <exclude reference="ECr-B4-dRD"/>
                                 <exclude reference="cJm-4K-hvh"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="constraints">
                                 <include reference="E9g-Rc-juH"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="9NX-Kv-Fqn"/>
+                                <include reference="l19-Up-3Xy"/>
+                                <include reference="tVy-f2-3UJ"/>
+                                <include reference="fVB-Uz-ua0"/>
+                                <include reference="3H1-Qm-W6Y"/>
+                                <include reference="5kg-UV-Ekw"/>
+                                <include reference="KPa-4g-7Yd"/>
+                                <include reference="Vtz-Br-XGE"/>
+                                <include reference="6Qw-GA-aGf"/>
+                                <include reference="IND-PR-G4C"/>
+                                <include reference="HgL-xh-1cx"/>
+                                <include reference="fyv-GA-hrG"/>
+                                <include reference="qHq-Y7-Brq"/>
+                                <include reference="eWw-2z-V5N"/>
+                                <include reference="gTy-gy-PvJ"/>
+                                <include reference="0YG-Bv-5s0"/>
+                                <include reference="k0u-py-z5O"/>
+                                <include reference="lHb-ef-faT"/>
+                                <include reference="5T4-zp-diu"/>
+                                <include reference="BbE-8C-FNM"/>
+                                <include reference="Lqn-0H-zeQ"/>
+                                <include reference="Uc7-8d-g16"/>
+                                <include reference="a4R-EO-gRd"/>
+                                <include reference="p9Z-G0-u9P"/>
+                                <include reference="9nT-uY-rlb"/>
+                                <include reference="sef-Q7-Lzh"/>
+                                <include reference="kYX-rg-QjL"/>
+                                <include reference="phq-5d-YU9"/>
+                                <include reference="tLs-oz-xbK"/>
+                                <include reference="Lx9-k2-IO2"/>
+                                <include reference="vtF-C0-zJz"/>
+                                <include reference="SXL-eS-lhd"/>
+                                <include reference="ECr-B4-dRD"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1411,10 +1706,10 @@ There is no time limit on when you can present an experience. Activities complet
                                 <include reference="L0N-n2-MMH"/>
                                 <include reference="mdQ-O2-sif"/>
                                 <include reference="qop-6I-xq9"/>
-                                <include reference="8Iz-VN-Flk"/>
-                                <include reference="z7Q-sU-ZF2"/>
                                 <include reference="Ymp-Qo-uCA"/>
                                 <include reference="bnY-Or-nza"/>
+                                <include reference="8Iz-VN-Flk"/>
+                                <include reference="z7Q-sU-ZF2"/>
                                 <include reference="QhU-X3-V0P"/>
                                 <include reference="orF-Xk-tyQ"/>
                                 <include reference="rgO-56-IiP"/>
@@ -1425,22 +1720,22 @@ There is no time limit on when you can present an experience. Activities complet
                                 <include reference="0FH-eY-tYQ"/>
                                 <include reference="DhG-ee-2DS"/>
                                 <include reference="lkE-vC-cOt"/>
-                                <include reference="HZS-s4-73g"/>
-                                <include reference="bFX-Kw-mFm"/>
-                                <include reference="hn5-kq-IfG"/>
                                 <include reference="H2c-CA-7DV"/>
                                 <include reference="IDx-oL-11E"/>
                                 <include reference="dGt-XF-r3Y"/>
                                 <include reference="ex6-AV-WoW"/>
                                 <include reference="hTh-dj-nyi"/>
                                 <include reference="rMf-Ju-MIC"/>
+                                <include reference="HZS-s4-73g"/>
+                                <include reference="bFX-Kw-mFm"/>
+                                <include reference="hn5-kq-IfG"/>
                                 <include reference="4ou-Cv-QZI"/>
                                 <include reference="dVg-cH-NFE"/>
-                                <include reference="Aes-hH-axc"/>
-                                <include reference="pIl-ym-2Xy"/>
                                 <include reference="NZU-5l-SWq"/>
                                 <include reference="d6N-NG-iF5"/>
                                 <include reference="nZE-Oh-eKx"/>
+                                <include reference="Aes-hH-axc"/>
+                                <include reference="pIl-ym-2Xy"/>
                                 <include reference="cJm-4K-hvh"/>
                             </mask>
                         </variation>
@@ -1462,18 +1757,18 @@ There is no time limit on when you can present an experience. Activities complet
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZO-YA-16u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-894.5" y="-1759.875"/>
+            <point key="canvasLocation" x="-898.5" y="-1760"/>
         </scene>
         <!--Master View-->
         <scene sceneID="4eh-Cl-1Vy">
             <objects>
                 <tableViewController title="Master View" clearsSelectionOnViewWillAppear="NO" id="qxZ-5G-LKp" customClass="MasterViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="22" sectionFooterHeight="22" id="W2Z-fE-5X0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" text="" placeholder="Seach Name, Abstract, Time etc..." showsScopeBar="YES" id="V4J-bl-qhe">
-                            <rect key="frame" x="0.0" y="64" width="375" height="88"/>
+                            <rect key="frame" x="0.0" y="64" width="768" height="88"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
                             <scopeButtonTitles>
@@ -1543,7 +1838,7 @@ There is no time limit on when you can present an experience. Activities complet
                         <viewControllerLayoutGuide type="bottom" id="gOe-gv-6R5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eqH-6w-yFJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8:15" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5H-Rf-hET">
@@ -1691,7 +1986,7 @@ There is no time limit on when you can present an experience. Activities complet
                         <viewControllerLayoutGuide type="bottom" id="sDv-Of-yPL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VmJ-VK-vJZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="1400 Greene St, Columbia, SC 29208" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cw-bh-leW">
@@ -1904,13 +2199,13 @@ There is no time limit on when you can present an experience. Activities complet
                         <viewControllerLayoutGuide type="bottom" id="9gz-RM-f9W"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qhj-52-LA4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UI1-mi-cSG">
                                 <rect key="frame" x="21" y="64" width="727" height="623"/>
                                 <subviews>
-                                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="C4182A38-1999-4CB0-9A5C-F55A32981328" translatesAutoresizingMaskIntoConstraints="NO" id="8bL-2V-eIk">
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="74CAAD7C-D65F-4924-9E75-E6C09CFFC8D8" translatesAutoresizingMaskIntoConstraints="NO" id="8bL-2V-eIk">
                                         <rect key="frame" x="1" y="33" width="726" height="583"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -2298,7 +2593,7 @@ There is no time limit on when you can present an experience. Activities complet
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cZo-Gp-4Ks" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sjg-bW-U3E">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2314,7 +2609,7 @@ There is no time limit on when you can present an experience. Activities complet
         </scene>
     </scenes>
     <resources>
-        <image name="C4182A38-1999-4CB0-9A5C-F55A32981328" width="650" height="583">
+        <image name="74CAAD7C-D65F-4924-9E75-E6C09CFFC8D8" width="650" height="583">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
