@@ -48,6 +48,7 @@
 		CDE681051A015AD50070F870 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE681031A015AD50070F870 /* LaunchScreen.xib */; };
 		CDE681111A015AD50070F870 /* DD_USCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE681101A015AD50070F870 /* DD_USCTests.m */; };
 		CDE681E51A168C2F0070F870 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE681E41A168C2F0070F870 /* libsqlite3.dylib */; };
+		CDF62C781AD6B61D00853D54 /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = CDF62C771AD6B61D00853D54 /* Readme.txt */; };
 		DD2DF2851AC8CC1A007E2ECF /* Favorites.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2DF2841AC8CC1A007E2ECF /* Favorites.m */; };
 		DD3E9A5B1A3243800005A169 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3E9A5A1A3243800005A169 /* EventViewController.m */; };
 		DDD3B72A1AA3AC39000A3A26 /* FBICON.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD3B7291AA3AC39000A3A26 /* FBICON.png */; };
@@ -123,6 +124,7 @@
 		CDE6810F1A015AD50070F870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE681101A015AD50070F870 /* DD_USCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DD_USCTests.m; sourceTree = "<group>"; };
 		CDE681E41A168C2F0070F870 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CDF62C771AD6B61D00853D54 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
 		DD2DF2831AC8C73C007E2ECF /* Favorites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Favorites.h; sourceTree = "<group>"; };
 		DD2DF2841AC8CC1A007E2ECF /* Favorites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favorites.m; sourceTree = "<group>"; };
 		DD3E9A591A3243740005A169 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				CDE680FE1A015AD50070F870 /* Main.storyboard */,
 				CD50D4061A34EFB300548149 /* InteriorViewController.h */,
 				CD50D4071A34EFB300548149 /* InteriorViewController.m */,
+				CDF62C771AD6B61D00853D54 /* Readme.txt */,
 				CD5AD4C61A20ECA0009AC353 /* HomeViewController.h */,
 				CD5AD4C71A20ECA0009AC353 /* HomeViewController.m */,
 				BFCACC241A15A9480099D27D /* RHLocation.h */,
@@ -347,6 +350,7 @@
 				CD987C2E1A8FF8F6006CB8E2 /* USClogo.png in Resources */,
 				CDCED43D1A2FC783005184E8 /* Abstract_real.sqlite3 in Resources */,
 				BF4060C01ACC27670012DDD1 /* schooliconEdit.png in Resources */,
+				CDF62C781AD6B61D00853D54 /* Readme.txt in Resources */,
 				CDE2183D1AB71D3500E5E415 /* DDIcon152.png in Resources */,
 				CDE2183F1AB71D3500E5E415 /* DDIcon.png in Resources */,
 				BF1D2BD81A1D070F001E88FF /* DiscoveryDayPic.png in Resources */,
