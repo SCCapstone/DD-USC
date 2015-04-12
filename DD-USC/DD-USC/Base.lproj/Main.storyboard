@@ -111,7 +111,7 @@ There is no time limit on when you can present an experience. Activities complet
             <objects>
                 <tableViewController title="Personal Schedule" id="vdT-Nc-hw7" customClass="PersonalScheduleTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="bjl-07-4WF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -142,7 +142,7 @@ There is no time limit on when you can present an experience. Activities complet
                         <viewControllerLayoutGuide type="bottom" id="c1B-JP-qEm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleAspectFit" id="Fgb-Yn-Qae">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zJi-ct-7bB">
@@ -990,7 +990,7 @@ There is no time limit on when you can present an experience. Activities complet
                         <viewControllerLayoutGuide type="bottom" id="PGv-Qx-nAp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eur-j4-mU2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Name(s)" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFt-Rq-gJM">
@@ -1076,42 +1076,6 @@ There is no time limit on when you can present an experience. Activities complet
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="Ooy-df-v8B"/>
-                                    </mask>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIf-dG-b4Z">
-                                <rect key="frame" x="32" y="114" width="320" height="69"/>
-                                <color key="backgroundColor" white="1" alpha="0.76000000000000001" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="413" id="RcQ-dg-g0B"/>
-                                    <constraint firstAttribute="height" constant="69" id="ZfH-pt-5em"/>
-                                    <constraint firstAttribute="height" constant="69" id="n21-LP-anu"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="413" id="reM-0A-CDS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="RcQ-dg-g0B"/>
-                                        <exclude reference="ZfH-pt-5em"/>
-                                        <exclude reference="n21-LP-anu"/>
-                                        <exclude reference="reM-0A-CDS"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="27" y="64" width="320" height="69"/>
-                                </variation>
-                                <variation key="widthClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="RcQ-dg-g0B"/>
-                                        <include reference="ZfH-pt-5em"/>
-                                        <include reference="reM-0A-CDS"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="n21-LP-anu"/>
                                     </mask>
                                 </variation>
                             </label>
@@ -1292,7 +1256,8 @@ There is no time limit on when you can present an experience. Activities complet
                                 <variation key="heightClass=regular" ambiguous="YES">
                                     <rect key="frame" x="28" y="335" width="319" height="275"/>
                                 </variation>
-                                <variation key="widthClass=regular">
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="179" y="454" width="413" height="199"/>
                                     <mask key="constraints">
                                         <include reference="J0g-CG-62k"/>
                                         <include reference="dNA-pG-eo0"/>
@@ -1387,6 +1352,46 @@ There is no time limit on when you can present an experience. Activities complet
                                     </mask>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIf-dG-b4Z">
+                                <rect key="frame" x="31" y="114" width="320" height="69"/>
+                                <color key="backgroundColor" white="1" alpha="0.76000000000000001" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="413" id="RcQ-dg-g0B">
+                                        <variation key="widthClass=regular" constant="668"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="69" id="ZfH-pt-5em">
+                                        <variation key="widthClass=regular" constant="99"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="69" id="n21-LP-anu"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="413" id="reM-0A-CDS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="RcQ-dg-g0B"/>
+                                        <exclude reference="ZfH-pt-5em"/>
+                                        <exclude reference="n21-LP-anu"/>
+                                        <exclude reference="reM-0A-CDS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="27" y="64" width="320" height="69"/>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="RcQ-dg-g0B"/>
+                                        <include reference="ZfH-pt-5em"/>
+                                        <include reference="reM-0A-CDS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="n21-LP-anu"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1405,7 +1410,7 @@ There is no time limit on when you can present an experience. Activities complet
                             <constraint firstItem="ZIf-dG-b4Z" firstAttribute="centerX" secondItem="eur-j4-mU2" secondAttribute="centerX" id="6lt-N0-1Ek"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eFt-Rq-gJM" secondAttribute="trailing" constant="82" id="8Iz-VN-Flk"/>
                             <constraint firstItem="ZIf-dG-b4Z" firstAttribute="leading" secondItem="eur-j4-mU2" secondAttribute="leading" constant="135" id="9NX-Kv-Fqn">
-                                <variation key="widthClass=regular" constant="179"/>
+                                <variation key="widthClass=regular" constant="178"/>
                             </constraint>
                             <constraint firstItem="ylG-bn-g4u" firstAttribute="top" secondItem="LMH-ah-Tum" secondAttribute="bottom" constant="8" symbolic="YES" id="9nT-uY-rlb">
                                 <variation key="widthClass=regular" constant="55"/>
@@ -1415,6 +1420,9 @@ There is no time limit on when you can present an experience. Activities complet
                             </constraint>
                             <constraint firstItem="edz-7s-UFy" firstAttribute="top" secondItem="uTr-0d-NKX" secondAttribute="bottom" constant="8" symbolic="YES" id="BbE-8C-FNM">
                                 <variation key="widthClass=regular" constant="19"/>
+                            </constraint>
+                            <constraint firstItem="ZIf-dG-b4Z" firstAttribute="width" secondItem="eur-j4-mU2" secondAttribute="width" id="BsJ-a4-zZv">
+                                <variation key="widthClass=regular" constant="-356"/>
                             </constraint>
                             <constraint firstItem="nNi-If-rlo" firstAttribute="top" secondItem="k5N-gt-KDX" secondAttribute="bottom" constant="8" symbolic="YES" id="DhG-ee-2DS">
                                 <variation key="heightClass=regular-widthClass=compact" constant="6"/>
@@ -1439,6 +1447,9 @@ There is no time limit on when you can present an experience. Activities complet
                                 <variation key="widthClass=regular" constant="34"/>
                             </constraint>
                             <constraint firstItem="eFt-Rq-gJM" firstAttribute="leading" secondItem="LMH-ah-Tum" secondAttribute="leading" id="KPa-4g-7Yd"/>
+                            <constraint firstItem="ZIf-dG-b4Z" firstAttribute="leading" secondItem="eur-j4-mU2" secondAttribute="leadingMargin" constant="163" id="KQE-k4-VaF">
+                                <variation key="widthClass=regular" constant="162"/>
+                            </constraint>
                             <constraint firstItem="ZIf-dG-b4Z" firstAttribute="centerX" secondItem="5sL-fV-W9d" secondAttribute="centerX" id="L0N-n2-MMH"/>
                             <constraint firstItem="edz-7s-UFy" firstAttribute="top" secondItem="wq7-ce-ecN" secondAttribute="bottom" constant="8" symbolic="YES" id="Lqn-0H-zeQ">
                                 <variation key="widthClass=regular" constant="26"/>
@@ -1457,7 +1468,10 @@ There is no time limit on when you can present an experience. Activities complet
                             </constraint>
                             <constraint firstItem="edz-7s-UFy" firstAttribute="leading" secondItem="k5N-gt-KDX" secondAttribute="leading" id="Uc7-8d-g16"/>
                             <constraint firstItem="eFt-Rq-gJM" firstAttribute="top" secondItem="ZIf-dG-b4Z" secondAttribute="bottom" constant="8" symbolic="YES" id="Vtz-Br-XGE">
-                                <variation key="widthClass=regular" constant="31"/>
+                                <variation key="widthClass=regular" constant="52"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZIf-dG-b4Z" secondAttribute="trailing" constant="416" id="Wal-Nh-nKA">
+                                <variation key="widthClass=regular" constant="162"/>
                             </constraint>
                             <constraint firstItem="5sL-fV-W9d" firstAttribute="centerX" secondItem="edz-7s-UFy" secondAttribute="centerX" id="Ymp-Qo-uCA"/>
                             <constraint firstItem="edz-7s-UFy" firstAttribute="top" secondItem="nNi-If-rlo" secondAttribute="bottom" constant="8" symbolic="YES" id="a4R-EO-gRd">
@@ -1483,7 +1497,7 @@ There is no time limit on when you can present an experience. Activities complet
                             </constraint>
                             <constraint firstItem="edz-7s-UFy" firstAttribute="trailing" secondItem="ZIf-dG-b4Z" secondAttribute="trailing" id="ex6-AV-WoW"/>
                             <constraint firstItem="5sL-fV-W9d" firstAttribute="top" secondItem="ZIf-dG-b4Z" secondAttribute="bottom" constant="8" symbolic="YES" id="fVB-Uz-ua0">
-                                <variation key="widthClass=regular" constant="12"/>
+                                <variation key="widthClass=regular" constant="33"/>
                             </constraint>
                             <constraint firstItem="L7b-ip-hsG" firstAttribute="leading" secondItem="LMH-ah-Tum" secondAttribute="leading" id="fyv-GA-hrG"/>
                             <constraint firstItem="k5N-gt-KDX" firstAttribute="leading" secondItem="L7b-ip-hsG" secondAttribute="leading" id="gTy-gy-PvJ"/>
@@ -1498,7 +1512,7 @@ There is no time limit on when you can present an experience. Activities complet
                                 <variation key="widthClass=regular" constant="421"/>
                             </constraint>
                             <constraint firstItem="ZIf-dG-b4Z" firstAttribute="top" secondItem="Aeq-to-IAo" secondAttribute="bottom" constant="8" symbolic="YES" id="l19-Up-3Xy">
-                                <variation key="widthClass=regular" constant="8"/>
+                                <variation key="widthClass=regular" constant="24"/>
                             </constraint>
                             <constraint firstItem="nNi-If-rlo" firstAttribute="top" secondItem="L7b-ip-hsG" secondAttribute="bottom" constant="8" symbolic="YES" id="lHb-ef-faT">
                                 <variation key="widthClass=regular" constant="17"/>
@@ -1528,7 +1542,9 @@ There is no time limit on when you can present an experience. Activities complet
                             <constraint firstItem="LMH-ah-Tum" firstAttribute="leading" secondItem="eFt-Rq-gJM" secondAttribute="leading" id="rgO-56-IiP"/>
                             <constraint firstItem="ylG-bn-g4u" firstAttribute="leading" secondItem="nNi-If-rlo" secondAttribute="trailing" constant="65" id="sef-Q7-Lzh"/>
                             <constraint firstItem="wq7-ce-ecN" firstAttribute="centerX" secondItem="uTr-0d-NKX" secondAttribute="centerX" id="tLs-oz-xbK"/>
-                            <constraint firstItem="ZIf-dG-b4Z" firstAttribute="leading" secondItem="5sL-fV-W9d" secondAttribute="leading" id="tVy-f2-3UJ"/>
+                            <constraint firstItem="ZIf-dG-b4Z" firstAttribute="leading" secondItem="5sL-fV-W9d" secondAttribute="leading" id="tVy-f2-3UJ">
+                                <variation key="widthClass=regular" constant="-1"/>
+                            </constraint>
                             <constraint firstItem="uTr-0d-NKX" firstAttribute="top" secondItem="5sL-fV-W9d" secondAttribute="bottom" constant="8" symbolic="YES" id="vtF-C0-zJz">
                                 <variation key="widthClass=regular" constant="148"/>
                             </constraint>
@@ -1544,21 +1560,24 @@ There is no time limit on when you can present an experience. Activities complet
                                 <exclude reference="4Fe-Tl-EUP"/>
                                 <exclude reference="6lt-N0-1Ek"/>
                                 <exclude reference="9NX-Kv-Fqn"/>
+                                <exclude reference="BsJ-a4-zZv"/>
                                 <exclude reference="E9g-Rc-juH"/>
+                                <exclude reference="KQE-k4-VaF"/>
                                 <exclude reference="L0N-n2-MMH"/>
+                                <exclude reference="Wal-Nh-nKA"/>
                                 <exclude reference="l19-Up-3Xy"/>
                                 <exclude reference="mdQ-O2-sif"/>
                                 <exclude reference="qop-6I-xq9"/>
                                 <exclude reference="tVy-f2-3UJ"/>
+                                <exclude reference="Ymp-Qo-uCA"/>
+                                <exclude reference="bnY-Or-nza"/>
+                                <exclude reference="fVB-Uz-ua0"/>
                                 <exclude reference="3H1-Qm-W6Y"/>
                                 <exclude reference="5kg-UV-Ekw"/>
                                 <exclude reference="8Iz-VN-Flk"/>
                                 <exclude reference="KPa-4g-7Yd"/>
                                 <exclude reference="Vtz-Br-XGE"/>
                                 <exclude reference="z7Q-sU-ZF2"/>
-                                <exclude reference="Ymp-Qo-uCA"/>
-                                <exclude reference="bnY-Or-nza"/>
-                                <exclude reference="fVB-Uz-ua0"/>
                                 <exclude reference="6Qw-GA-aGf"/>
                                 <exclude reference="IND-PR-G4C"/>
                                 <exclude reference="QhU-X3-V0P"/>
@@ -1579,6 +1598,18 @@ There is no time limit on when you can present an experience. Activities complet
                                 <exclude reference="k0u-py-z5O"/>
                                 <exclude reference="lHb-ef-faT"/>
                                 <exclude reference="lkE-vC-cOt"/>
+                                <exclude reference="5T4-zp-diu"/>
+                                <exclude reference="BbE-8C-FNM"/>
+                                <exclude reference="H2c-CA-7DV"/>
+                                <exclude reference="IDx-oL-11E"/>
+                                <exclude reference="Lqn-0H-zeQ"/>
+                                <exclude reference="Uc7-8d-g16"/>
+                                <exclude reference="a4R-EO-gRd"/>
+                                <exclude reference="dGt-XF-r3Y"/>
+                                <exclude reference="ex6-AV-WoW"/>
+                                <exclude reference="hTh-dj-nyi"/>
+                                <exclude reference="p9Z-G0-u9P"/>
+                                <exclude reference="rMf-Ju-MIC"/>
                                 <exclude reference="9nT-uY-rlb"/>
                                 <exclude reference="HZS-s4-73g"/>
                                 <exclude reference="bFX-Kw-mFm"/>
@@ -1597,18 +1628,6 @@ There is no time limit on when you can present an experience. Activities complet
                                 <exclude reference="d6N-NG-iF5"/>
                                 <exclude reference="nZE-Oh-eKx"/>
                                 <exclude reference="vtF-C0-zJz"/>
-                                <exclude reference="5T4-zp-diu"/>
-                                <exclude reference="BbE-8C-FNM"/>
-                                <exclude reference="H2c-CA-7DV"/>
-                                <exclude reference="IDx-oL-11E"/>
-                                <exclude reference="Lqn-0H-zeQ"/>
-                                <exclude reference="Uc7-8d-g16"/>
-                                <exclude reference="a4R-EO-gRd"/>
-                                <exclude reference="dGt-XF-r3Y"/>
-                                <exclude reference="ex6-AV-WoW"/>
-                                <exclude reference="hTh-dj-nyi"/>
-                                <exclude reference="p9Z-G0-u9P"/>
-                                <exclude reference="rMf-Ju-MIC"/>
                                 <exclude reference="ECr-B4-dRD"/>
                                 <exclude reference="cJm-4K-hvh"/>
                             </mask>
@@ -1621,13 +1640,16 @@ There is no time limit on when you can present an experience. Activities complet
                         <variation key="widthClass=regular">
                             <mask key="constraints">
                                 <include reference="9NX-Kv-Fqn"/>
+                                <include reference="BsJ-a4-zZv"/>
+                                <include reference="KQE-k4-VaF"/>
+                                <include reference="Wal-Nh-nKA"/>
                                 <include reference="l19-Up-3Xy"/>
                                 <include reference="tVy-f2-3UJ"/>
+                                <include reference="fVB-Uz-ua0"/>
                                 <include reference="3H1-Qm-W6Y"/>
                                 <include reference="5kg-UV-Ekw"/>
                                 <include reference="KPa-4g-7Yd"/>
                                 <include reference="Vtz-Br-XGE"/>
-                                <include reference="fVB-Uz-ua0"/>
                                 <include reference="6Qw-GA-aGf"/>
                                 <include reference="IND-PR-G4C"/>
                                 <include reference="HgL-xh-1cx"/>
@@ -1638,6 +1660,12 @@ There is no time limit on when you can present an experience. Activities complet
                                 <include reference="0YG-Bv-5s0"/>
                                 <include reference="k0u-py-z5O"/>
                                 <include reference="lHb-ef-faT"/>
+                                <include reference="5T4-zp-diu"/>
+                                <include reference="BbE-8C-FNM"/>
+                                <include reference="Lqn-0H-zeQ"/>
+                                <include reference="Uc7-8d-g16"/>
+                                <include reference="a4R-EO-gRd"/>
+                                <include reference="p9Z-G0-u9P"/>
                                 <include reference="9nT-uY-rlb"/>
                                 <include reference="sef-Q7-Lzh"/>
                                 <include reference="kYX-rg-QjL"/>
@@ -1646,12 +1674,6 @@ There is no time limit on when you can present an experience. Activities complet
                                 <include reference="SXL-eS-lhd"/>
                                 <include reference="Lx9-k2-IO2"/>
                                 <include reference="vtF-C0-zJz"/>
-                                <include reference="5T4-zp-diu"/>
-                                <include reference="BbE-8C-FNM"/>
-                                <include reference="Lqn-0H-zeQ"/>
-                                <include reference="Uc7-8d-g16"/>
-                                <include reference="a4R-EO-gRd"/>
-                                <include reference="p9Z-G0-u9P"/>
                                 <include reference="ECr-B4-dRD"/>
                             </mask>
                         </variation>
@@ -1663,10 +1685,10 @@ There is no time limit on when you can present an experience. Activities complet
                                 <include reference="L0N-n2-MMH"/>
                                 <include reference="mdQ-O2-sif"/>
                                 <include reference="qop-6I-xq9"/>
-                                <include reference="8Iz-VN-Flk"/>
-                                <include reference="z7Q-sU-ZF2"/>
                                 <include reference="Ymp-Qo-uCA"/>
                                 <include reference="bnY-Or-nza"/>
+                                <include reference="8Iz-VN-Flk"/>
+                                <include reference="z7Q-sU-ZF2"/>
                                 <include reference="QhU-X3-V0P"/>
                                 <include reference="orF-Xk-tyQ"/>
                                 <include reference="rgO-56-IiP"/>
@@ -1677,6 +1699,12 @@ There is no time limit on when you can present an experience. Activities complet
                                 <include reference="0FH-eY-tYQ"/>
                                 <include reference="DhG-ee-2DS"/>
                                 <include reference="lkE-vC-cOt"/>
+                                <include reference="H2c-CA-7DV"/>
+                                <include reference="IDx-oL-11E"/>
+                                <include reference="dGt-XF-r3Y"/>
+                                <include reference="ex6-AV-WoW"/>
+                                <include reference="hTh-dj-nyi"/>
+                                <include reference="rMf-Ju-MIC"/>
                                 <include reference="HZS-s4-73g"/>
                                 <include reference="bFX-Kw-mFm"/>
                                 <include reference="hn5-kq-IfG"/>
@@ -1687,12 +1715,6 @@ There is no time limit on when you can present an experience. Activities complet
                                 <include reference="NZU-5l-SWq"/>
                                 <include reference="d6N-NG-iF5"/>
                                 <include reference="nZE-Oh-eKx"/>
-                                <include reference="H2c-CA-7DV"/>
-                                <include reference="IDx-oL-11E"/>
-                                <include reference="dGt-XF-r3Y"/>
-                                <include reference="ex6-AV-WoW"/>
-                                <include reference="hTh-dj-nyi"/>
-                                <include reference="rMf-Ju-MIC"/>
                                 <include reference="cJm-4K-hvh"/>
                             </mask>
                         </variation>
@@ -1714,18 +1736,18 @@ There is no time limit on when you can present an experience. Activities complet
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZO-YA-16u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-446" y="-1758.75"/>
+            <point key="canvasLocation" x="-446.25" y="-1759"/>
         </scene>
         <!--Master View-->
         <scene sceneID="4eh-Cl-1Vy">
             <objects>
                 <tableViewController title="Master View" clearsSelectionOnViewWillAppear="NO" id="qxZ-5G-LKp" customClass="MasterViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="22" sectionFooterHeight="22" id="W2Z-fE-5X0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" text="" placeholder="Seach Name, Abstract, Time etc..." showsScopeBar="YES" id="V4J-bl-qhe">
-                            <rect key="frame" x="0.0" y="64" width="375" height="88"/>
+                            <rect key="frame" x="0.0" y="64" width="768" height="88"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
                             <scopeButtonTitles>
@@ -1795,7 +1817,7 @@ There is no time limit on when you can present an experience. Activities complet
                         <viewControllerLayoutGuide type="bottom" id="gOe-gv-6R5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eqH-6w-yFJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8:15" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5H-Rf-hET">
@@ -1943,7 +1965,7 @@ There is no time limit on when you can present an experience. Activities complet
                         <viewControllerLayoutGuide type="bottom" id="sDv-Of-yPL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VmJ-VK-vJZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="1400 Greene St, Columbia, SC 29208" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cw-bh-leW">
@@ -2156,13 +2178,13 @@ There is no time limit on when you can present an experience. Activities complet
                         <viewControllerLayoutGuide type="bottom" id="9gz-RM-f9W"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qhj-52-LA4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UI1-mi-cSG">
                                 <rect key="frame" x="21" y="64" width="727" height="623"/>
                                 <subviews>
-                                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="A30CF48C-6BE8-40F3-B1E2-0DF14479F5EB" translatesAutoresizingMaskIntoConstraints="NO" id="8bL-2V-eIk">
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="3E93BCEB-72E0-419B-910D-087009C28104" translatesAutoresizingMaskIntoConstraints="NO" id="8bL-2V-eIk">
                                         <rect key="frame" x="1" y="33" width="726" height="583"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -2550,7 +2572,7 @@ There is no time limit on when you can present an experience. Activities complet
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cZo-Gp-4Ks" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sjg-bW-U3E">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2566,7 +2588,7 @@ There is no time limit on when you can present an experience. Activities complet
         </scene>
     </scenes>
     <resources>
-        <image name="A30CF48C-6BE8-40F3-B1E2-0DF14479F5EB" width="650" height="583">
+        <image name="3E93BCEB-72E0-419B-910D-087009C28104" width="650" height="583">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
