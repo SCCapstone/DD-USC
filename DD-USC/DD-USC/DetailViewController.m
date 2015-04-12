@@ -82,7 +82,8 @@
 -(IBAction) addToSchedule:(id)sender
 {
     Favorites *favs= [Favorites FavoritesList];
-    [favs.favList addObject:[NSString stringWithFormat:@"%@ %@", self.abstract.mFName1, self.abstract.mLName1]];
+    [favs.favList addObject:[NSString stringWithFormat:@"%@ %@ -- %@ %@", self.abstract.mFName1, self.abstract.mLName1, self.abstract.FinalTime, self.abstract.Room]];
+    //[favs.favList addObject:self.abstract];
     
     NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
     [def setObject:favs.favList forKey:@"Favorites"];

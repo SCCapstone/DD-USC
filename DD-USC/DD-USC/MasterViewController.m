@@ -142,15 +142,18 @@
 
 - (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
+    //NSString *titleName = [NSString stringWithFormat:@"%@ %@ %@", @"title", @"fName1", @"sLName1"];
     NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"title contains[c] %@", searchText];
     searchResults = [abstractsInfos filteredArrayUsingPredicate:resultPredicate];
     
     NSArray *tempArray = [searchResults filteredArrayUsingPredicate:resultPredicate];
-    if (![scope isEqualToString:@"All"])
+    if ([scope isEqualToString:@"Morning"])
     {
         // Further filter the array with the scope
-        NSPredicate *scopePredicate = [NSPredicate predicateWithFormat:@"FinalTime contains[c] %@",scope];
-        tempArray = [tempArray filteredArrayUsingPredicate:scopePredicate];
+        //NSPredicate *scopePredicate = [NSPredicate predicateWithFormat:@"FinalTime contains[c] %@",scope];
+        //tempArray = [tempArray filteredArrayUsingPredicate:scopePredicate];
+        resultPredicate = [NSPredicate predicateWithFormat:@"sLName1 contains[c] %@", searchText];
+        searchResults = [abstractsInfos filteredArrayUsingPredicate:resultPredicate];
     }
     
     searchResults = [NSMutableArray arrayWithArray:tempArray];

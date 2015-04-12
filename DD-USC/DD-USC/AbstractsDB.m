@@ -25,7 +25,7 @@ static AbstractsDB *_database;
 - (id)init
 {
     if ((self = [super init])) {
-        NSString *sqLiteDb = [[NSBundle mainBundle] pathForResource:@"Abstract_real" ofType:@"sqlite3"];
+        NSString *sqLiteDb = [[NSBundle mainBundle] pathForResource:@"2015AbstractDB" ofType:@"sqlite3"];
         
         if (sqlite3_open([sqLiteDb UTF8String], &_database) != SQLITE_OK)
         {
@@ -39,7 +39,7 @@ static AbstractsDB *_database;
 {
     
     NSMutableArray *retval = [[NSMutableArray alloc] init];
-    NSString *query = @"SELECT id, sFName1, sLName1, sCampus1, sMajor1, sMinor1, sCurrentYear1, mFName1, mLName1, mCampus1, mCollege1, mDepartment1, Title, Abstract, TimeFinal, Room, Format, Section FROM abstract_data where id != 'id'";
+    NSString *query = @"SELECT id, sFName1, sLName1, sCampus1, sMajor1, sMinor1, sCurrentYear1, mFName1, mLName1, mCampus1, mCollege1, mDepartment1, Title, Abstract, TimeFinal, Room, Format, Section FROM Data_2015 where id != 'id'";
     sqlite3_stmt *statement;
     if (sqlite3_prepare_v2(_database, [query UTF8String], -1, &statement, nil) == SQLITE_OK) {
         while (sqlite3_step(statement) == SQLITE_ROW) {
