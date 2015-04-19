@@ -26,9 +26,11 @@
     if(self = [super init])
     {
         NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
-        favList = [def objectForKey:@"Favorites"];
-        if(favList == nil){
+        NSArray *temp = [def objectForKey:@"Favorites"];
+        if(temp == nil){
             favList = [[NSMutableArray alloc] init];
+        }else{
+            favList = [temp mutableCopy];
         }
     }
     return self;
