@@ -104,7 +104,7 @@
 
 - (IBAction)fbButton:(id)sender
 { //facebook icon source: findicons.com
-    if (![[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"fb://profile/1726558760903109"]]) {
+    if (![[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"fb://profile/gamecockOUR"]]) {
         
         if (![[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.facebook.com/gamecockOUR"]]) {
             
