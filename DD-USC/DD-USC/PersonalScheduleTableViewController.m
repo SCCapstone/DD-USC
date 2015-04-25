@@ -35,6 +35,9 @@ static PersonalScheduleTableViewController *_perSchedule;
     
     
     
+    //[vw setBackgroundView:nil];
+    //vw.backgroundColor = [UIColor colorWithRed:0.55 green:0.11 blue:0.086 alpha:1.0];
+    
     //self.favorites = [AbstractsDB database].abstractsInfos;
     self.title = @"Favorites";
     
@@ -69,6 +72,8 @@ static PersonalScheduleTableViewController *_perSchedule;
     static NSString *CellIdentifier = @"Cell";
     Favorites *favs= [Favorites FavoritesList];
     
+    //tableView.backgroundColor = [UIColor colorWithRed:0.55 green:0.11 blue:0.086 alpha:1.0];
+    
     //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier: CellIdentifier];
     NSString *info = nil;
@@ -78,13 +83,27 @@ static PersonalScheduleTableViewController *_perSchedule;
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     info = [favs.favList objectAtIndex:indexPath.row];
+    
+    [cell setBackgroundView:nil];
+    cell.backgroundColor = [UIColor colorWithRed:0.55 green:0.11 blue:0.086 alpha:1.0];
+    //108/255 22/255 17/255
+    
+    UIView *selectedView = [[UIView alloc] initWithFrame:cell.frame];
+    selectedView.backgroundColor = [UIColor colorWithRed:108.0/255.0 green:22.0/255.0 blue:0.086 alpha:1.0];
+    cell.selectedBackgroundView = selectedView;
+    
     cell.textLabel.text = info;
+    cell.textLabel.textColor = [UIColor whiteColor];
+    
     //cell.textLabel.text = info.title;
     //cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@", info.sFName1, info.sLName1];
     return cell;
 }
 
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+}
 
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
