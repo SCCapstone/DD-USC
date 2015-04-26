@@ -7,9 +7,10 @@
 //
 
 #import "PersonalScheduleTableViewController.h"
+#import "DetailViewController.h"
+#import "MasterViewController.h"
 #import "AbstractsDB.h"
 #import "Abstracts.h"
-#import "MasterViewController.h" 
 #import "Favorites.h"
 
 @interface PersonalScheduleTableViewController ()
@@ -33,12 +34,8 @@ static PersonalScheduleTableViewController *_perSchedule;
 {
     [super viewDidLoad];
     
+    self.abstractsInfos = [AbstractsDB database].abstractsInfos;
     
-    
-    //[vw setBackgroundView:nil];
-    //vw.backgroundColor = [UIColor colorWithRed:0.55 green:0.11 blue:0.086 alpha:1.0];
-    
-    //self.favorites = [AbstractsDB database].abstractsInfos;
     self.title = @"Favorites";
     
     // Uncomment the following line to preserve selection between presentations.
@@ -54,6 +51,29 @@ static PersonalScheduleTableViewController *_perSchedule;
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Segues
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"TheIdentifier"])
+    {
+        NSIndexPath *indexPath = nil;
+        Abstracts *abstract = nil;
+        Favorites *favs= [Favorites FavoritesList];
+        
+        indexPath = [self.tableView indexPathForSelectedRow];
+        NSUInteger ns = [[favs.ids objectAtIndex:indexPath.row] unsignedLongValue];
+        
+        abstract = [self.abstractsInfos objectAtIndex:ns];
+       
+        DetailViewController *controller = segue.destinationViewController;
+        controller.abstract = abstract;
+        
+        controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
+        controller.navigationItem.leftItemsSupplementBackButton = YES;
+    }
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -66,6 +86,8 @@ static PersonalScheduleTableViewController *_perSchedule;
     return [favs.favList count];
 }
 
+//[favs.favList setObject:[NSString stringWithFormat:@"%@ %@ -- %@ -- %@", self.abstract.sFName1, self.abstract.sLName1, self.abstract.FinalTime, self.abstract.Room] forKey:@(favs.favList.count-1)];
+//[favs.favList setObject:[NSNumber numberWithInt:self.abstract.uniqueId] forKey:@(favs.favList.count/10)];
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -82,7 +104,13 @@ static PersonalScheduleTableViewController *_perSchedule;
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
+    
+    
+    
+    
+    
     info = [favs.favList objectAtIndex:indexPath.row];
+    
     
     [cell setBackgroundView:nil];
     cell.backgroundColor = [UIColor colorWithRed:0.55 green:0.11 blue:0.086 alpha:1.0];
@@ -101,7 +129,8 @@ static PersonalScheduleTableViewController *_perSchedule;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    [self performSegueWithIdentifier:@"TheIdentifier" sender:nil];
     
 }
 
@@ -119,38 +148,41 @@ static PersonalScheduleTableViewController *_perSchedule;
         // Delete the row from the data source
         Favorites *favs= [Favorites FavoritesList];
         [favs.favList removeObjectAtIndex:indexPath.row];
+        [favs.ids removeObjectAtIndex:indexPath.row];
         
+        //NSUserDefaults *def2 = [NSUserDefaults standardUserDefaults];
         NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
         [def setObject:favs.favList forKey:@"Favorites"];
+        [def setObject:favs.ids forKey:@"ids"];
         
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } //else if (editingStyle == UITableViewCellEditingStyleInsert)
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+    // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
 }
 
 
 /*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
+ // Override to support rearranging the table view.
+ - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+ }
+ */
 
 /*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
+ // Override to support conditional rearranging of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+ // Return NO if you do not want the item to be re-orderable.
+ return YES;
+ }
+ */
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

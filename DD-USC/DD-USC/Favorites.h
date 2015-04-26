@@ -12,11 +12,14 @@
 @interface Favorites : NSObject
 {
     NSMutableArray *favList;
+    NSMutableArray *ids;
 }
 
 @property (nonatomic, retain) NSMutableArray *favList;
+@property (nonatomic, retain) NSMutableArray *ids;
 
 + (id)FavoritesList;
+- (id)init;
 
 @end
 

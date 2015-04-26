@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AbstractsDB.h"
 #import "Abstracts.h"
+#import "Favorites.h"
 
 
 @interface DetailViewController : UIViewController <UIAlertViewDelegate>
@@ -26,11 +27,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *presentationType;
 @property (nonatomic, retain) NSArray *abstractsInfos;
 @property (weak, nonatomic) IBOutlet UITextView *fullAbstractText;
-
+@property (nonatomic, retain) NSMutableArray *favList;
+@property (nonatomic, retain) NSMutableArray *ids;
 
 - (IBAction)addToSchedule:(id)sender;
-
-
 
 
 @property (nonatomic, assign) int uniqueId;

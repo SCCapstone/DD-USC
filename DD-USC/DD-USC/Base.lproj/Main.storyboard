@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cZo-Gp-4Ks">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cZo-Gp-4Ks">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -120,6 +120,9 @@ There is no time limit on when you can present an experience. Activities complet
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l2c-gM-EeJ" id="cGP-Zw-5GQ">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="soM-rw-LWT" kind="show" identifier="TheIdentifier" id="L7L-tR-Xkv"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -131,7 +134,7 @@ There is no time limit on when you can present an experience. Activities complet
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ztJ-Jf-6Fh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2972" y="-2953"/>
+            <point key="canvasLocation" x="-2552" y="-3281"/>
         </scene>
         <!--HomePage-->
         <scene sceneID="l2Y-N8-HL2">
@@ -1736,7 +1739,7 @@ There is no time limit on when you can present an experience. Activities complet
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZO-YA-16u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-446.25" y="-1759"/>
+            <point key="canvasLocation" x="-787" y="-1901"/>
         </scene>
         <!--Master View-->
         <scene sceneID="4eh-Cl-1Vy">
@@ -2184,7 +2187,7 @@ There is no time limit on when you can present an experience. Activities complet
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UI1-mi-cSG">
                                 <rect key="frame" x="21" y="64" width="727" height="623"/>
                                 <subviews>
-                                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="AECD1C3A-0F4A-47DA-9948-A3B299A62D06" translatesAutoresizingMaskIntoConstraints="NO" id="8bL-2V-eIk">
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="9B16C790-E228-4E57-AAC3-7840CF60C1CC" translatesAutoresizingMaskIntoConstraints="NO" id="8bL-2V-eIk">
                                         <rect key="frame" x="1" y="33" width="726" height="583"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -2588,7 +2591,7 @@ There is no time limit on when you can present an experience. Activities complet
         </scene>
     </scenes>
     <resources>
-        <image name="AECD1C3A-0F4A-47DA-9948-A3B299A62D06" width="650" height="583">
+        <image name="9B16C790-E228-4E57-AAC3-7840CF60C1CC" width="650" height="583">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -27917,6 +27920,7 @@ AAAAAAAAQgAAAAAAAAAAAAAAAAAXK6s
         <image name="schooliconEdit.png" width="60" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="L7L-tR-Xkv"/>
         <segue reference="9ia-dB-cMS"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.42352941176470588" green="0.086274509803921567" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>

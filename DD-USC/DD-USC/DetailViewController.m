@@ -31,8 +31,9 @@
 @synthesize uniqueId = _uniqueId;
 @synthesize presentationType;
 @synthesize fullAbstractText;
-
-
+@synthesize favList;
+@synthesize ids;
+@synthesize abstractsInfos;
 //@synthesize addToSchedule;
 
 
@@ -56,9 +57,11 @@
     self.presenterInfo.text = [NSString stringWithFormat:@"%@, %@, %@", self.abstract.sCurrentYear1, self.abstract.sCampus1, self.abstract.sMajor1];
     self.presentationType.text = [self.abstract.Format uppercaseString];
     self.fullAbstractText.text = self.abstract.Abstract;
-    //[PersonalScheduleTableViewController perSchedule].favorites = [[NSMutableArray alloc] initWithCapacity:20];
     
-    //PersonalScheduleTableViewController *perSchd = [[PersonalScheduleTableViewController alloc] initWithNibName:@"PersonalScheduleTableViewController" bundle:nil];
+    self.abstractsInfos = [AbstractsDB database].abstractsInfos;
+    Favorites *favs= [Favorites FavoritesList];
+    favList = favs.favList;
+    ids = favs.ids;
     
     [self configureView];
 }
@@ -79,19 +82,15 @@
 }
 
 
+
 -(IBAction) addToSchedule:(id)sender
 {
-    Favorites *favs= [Favorites FavoritesList];
-    [favs.favList addObject:[NSString stringWithFormat:@"%@ %@ -- %@ -- %@", self.abstract.sFName1, self.abstract.sLName1, self.abstract.FinalTime, self.abstract.Room]];
-    
-    NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
-    [def setObject:favs.favList forKey:@"Favorites"];
-    
     [self addAlertView];
 }
 
 -(void)addAlertView
 {
+   
     UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:
                               @"Add event to favorites" message:@"Are you sure?" delegate:self
                                              cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil];
@@ -101,15 +100,28 @@
 
 #pragma mark - Alert view delegate
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex{
-    switch (buttonIndex) {
-        case 0:
+    if(buttonIndex == 0){
             NSLog(@"Cancel button clicked");
-            break;
-        case 1:
-            NSLog(@"OK button clicked");
-            break;
-        default:
-            break;
+            return;
+    }else if(buttonIndex == 1){
+        NSUInteger count = 0;
+        Abstracts *ab;
+        for(ab in self.abstractsInfos)
+        {
+            if(ab.uniqueId == self.abstract.uniqueId)
+            {
+                break;
+            }
+            count++;
+        }
+            [favList addObject:[NSString stringWithFormat:@"%@ %@ -- %@ -- %@", self.abstract.sFName1, self.abstract.sLName1, self.abstract.FinalTime, self.abstract.Room]];
+            [ids addObject:[NSNumber numberWithUnsignedLong:count]];
+            NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+            [def setObject:ids forKey:@"ids"];
+            [def setObject:favList forKey:@"Favorites"];
+        return;
+    }else{
+        return;
     }
 }
 

@@ -14,4 +14,6 @@
 
 + (PersonalScheduleTableViewController*)perSchedule;
 
+@property (nonatomic, retain) NSArray *abstractsInfos;
+
 @end
