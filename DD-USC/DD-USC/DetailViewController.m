@@ -106,6 +106,14 @@
     }else if(buttonIndex == 1){
         NSUInteger count = 0;
         Abstracts *ab;
+        
+        if([favList containsObject:[NSString stringWithFormat:@"%@ %@ -- %@ -- %@", self.abstract.sFName1, self.abstract.sLName1, self.abstract.FinalTime, self.abstract.Room]])
+        {
+            [self addDupAlert];
+            [alertView removeFromSuperview];
+            return;
+        }
+        
         for(ab in self.abstractsInfos)
         {
             if(ab.uniqueId == self.abstract.uniqueId)
@@ -124,6 +132,23 @@
         return;
     }
 }
+
+- (void)addDupAlert
+{
+    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:
+                              @"Error" message:@"This presenter is already on your Favorites list!" delegate:self
+                                             cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    
+    [alertView show];
+}
+
+- (void)dupAlert:(UIAlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex
+{
+    [alertView dismissWithClickedButtonIndex:0 animated:YES];
+    return;
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
